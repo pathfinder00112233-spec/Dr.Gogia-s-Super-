@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Microscope Painless Root Canal (RCT) | Apex Dental & Implant Studio</title>
+  <meta name="description" content="Specialist microscopic painless root canal treatment (RCT) featuring rotary disinfection and 3D hermetic obturation for tooth preservation.">
+  <link rel="canonical" href="https://apexdentalstudio.pages.dev/rct.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Microscope Painless Root Canal (RCT) | Apex Dental Studio">
+  <meta property="og:description" content="Learn how microscopic rotary endodontics eliminates tooth infection while preserving your natural tooth structure.">
+  <meta property="og:url" content="https://apexdentalstudio.pages.dev/rct.html">
+
+  <!-- Structured Data for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Microscopic Root Canal Therapy (Endodontics)",
+    "procedureType": "SurgicalProcedure",
+    "bodyLocation": "Tooth Pulp and Root Canals",
+    "howPerformed": "Microscopic rotary disinfection of infected dental pulp and hermetic 3D root canal obturation followed by protective crown restoration.",
+    "performer": {
+      "@type": "Dentist",
+      "name": "Dr. Julian Vance",
+      "medicalSpecialty": "Endodontics",
+      "worksFor": {
+        "@type": "Dentist",
+        "name": "Apex Dental & Implant Studio",
+        "telephone": "+919876543210",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Suite 400, Central Medical Square",
+          "addressLocality": "Central District",
+          "addressRegion": "Metro",
+          "postalCode": "110001",
+          "addressCountry": "IN"
+        }
+      }
+    }
+  }
+  </script>
+
+  <!-- Three.js & Touch Orbit Controls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg-canvas: #faf8f4;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f4ede2;
+
+      --text-main: #17211e;
+      --text-muted: #5e6d67;
+
+      --teal-primary: #0a3834;
+      --teal-hover: #062623;
+      --teal-dark: #0a3834;
+      --teal-soft: #f0f7f5;
+      --teal-border: #b8ded7;
+
+      --gold-primary: #b5893b;
+      --gold-accent: #966e28;
+      --gold-soft: #fcf8f0;
+      --gold-border: #ebd9b5;
+
+      --rose-accent: #e11d48;
+      --rose-soft: #fff1f2;
+      --rose-border: #fecdd3;
+
+      --border-color: #ebe4d8;
+      --border-dark: #d5c8b5;
+
+      --shadow-sm: 0 1px 3px rgba(10, 56, 52, 0.04);
+      --shadow-card: 0 4px 18px -2px rgba(10, 56, 52, 0.06);
+      --shadow-desk: 0 16px 40px -6px rgba(10, 56, 52, 0.22);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html { scroll-behavior: smooth; }
+    html, body { width: 100%; max-width: 100vw; overflow-x: hidden; }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 96px;
+    }
+
+    @media (min-width: 900px) {
+      body { padding-bottom: 0; }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+
+    /* ==========================================================
+       1. LUXURY SUBPAGE HEADER (MATCHED TO MAIN CARD DESIGN)
+    =========================================================== */
+    .luxury-subpage-header {
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      width: 100%;
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      border: 1.5px solid #ebe2d3;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      margin-top: 10px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+    }
+
+    .header-brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .gold-tooth-icon {
+      width: clamp(28px, 3.5vw, 36px);
+      height: clamp(28px, 3.5vw, 36px);
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 4px rgba(181, 137, 59, 0.25));
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .brand-name-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.05rem, 3.5vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--teal-primary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-tagline-sans {
+      font-size: 0.52rem;
+      color: var(--teal-primary);
+      opacity: 0.85;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .back-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--teal-primary);
+      text-decoration: none;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: var(--teal-soft);
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .back-nav-btn:hover {
+      border-color: var(--teal-primary);
+      background: #e1f0ec;
+    }
+
+    .desktop-header-cta {
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      .desktop-header-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--teal-primary);
+        color: #ffffff !important;
+        padding: 8px 14px;
+        border-radius: var(--radius-sm);
+        font-size: 0.80rem;
+        font-weight: 800;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .luxury-subpage-header { padding: 8px 10px; }
+      .back-nav-btn { padding: 6px 9px; font-size: 0.68rem; }
+    }
+
+    /* ==========================================================
+       2. HERO SECTION
+    =========================================================== */
+    .article-hero {
+      margin-top: 14px;
+      margin-bottom: 18px;
+    }
+
+    .pill-tag {
+      display: inline-block;
+      background: var(--gold-soft);
+      color: var(--gold-accent);
+      border: 1px solid var(--gold-border);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .article-hero h1 {
+      font-size: clamp(2.1rem, 5.5vw, 3.1rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--teal-primary);
+      margin-bottom: 8px;
+    }
+
+    .article-hero p.intro-lede {
+      font-size: clamp(0.92rem, 2.2vw, 1.05rem);
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .specialist-callout {
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      border: 1.5px solid var(--border-color);
+      border-left: 4px solid var(--teal-primary);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .specialist-callout strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      margin-bottom: 2px;
+    }
+
+    .specialist-callout span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .group-label {
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-primary);
+      margin: 30px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .group-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+    }
+
+    /* ==========================================================
+       3. 3D ANATOMY CARD (BUTTONS MATCHED TO IMAGE 1)
+    =========================================================== */
+    .anatomy-card {
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      border: 1.5px solid #ebe2d3;
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-desk);
+      margin: 20px 0 28px;
+    }
+
+    .layer-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .layer-btn {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 12px 8px;
+      text-align: center;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      color: var(--text-main);
+      transition: all 0.15s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .layer-btn[aria-pressed="true"] {
+      background: var(--teal-primary);
+      border-color: var(--teal-primary);
+      color: #ffffff;
+      outline: 2px solid var(--teal-primary);
+    }
+
+    .canvas-viewport-wrapper {
+      position: relative;
+      width: 100%;
+      height: 420px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 40%, #0f3d37 0%, #062623 65%, #021210 100%);
+      border: 1.5px solid var(--teal-primary);
+      box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    #gogia-rct-canvas {
+      width: 100%;
+      height: 100%;
+      touch-action: pan-y !important;
+      position: relative;
+    }
+
+    #gogia-rct-canvas canvas {
+      touch-action: pan-y !important;
+      display: block;
+    }
+
+    .interaction-shield {
+      position: absolute;
+      inset: 0;
+      background: rgba(6, 38, 35, 0.45);
+      backdrop-filter: blur(3px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      z-index: 10;
+      cursor: pointer;
+      transition: opacity 0.25s ease;
+    }
+
+    .interaction-shield.is-active {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .shield-badge {
+      background: var(--bg-surface);
+      color: var(--teal-primary);
+      border: 1.5px solid var(--gold-border);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 10px 24px;
+      border-radius: 999px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .shield-subtext {
+      font-size: 0.74rem;
+      color: #b8ded7;
+      font-weight: 600;
+    }
+
+    .viewer-helper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-top: 10px;
+      padding: 0 4px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .reset-view-btn {
+      background: var(--teal-soft);
+      border: 1.5px solid var(--teal-border);
+      color: var(--teal-primary);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .reset-view-btn:hover {
+      background: var(--teal-primary);
+      color: #fff;
+      border-color: var(--teal-primary);
+    }
+
+    .loading-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 40%, #0f3d37 0%, #062623 65%, #021210 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      z-index: 20;
+      transition: opacity 0.4s ease;
+    }
+
+    .loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .spinner {
+      width: 42px;
+      height: 42px;
+      border: 3px solid rgba(184, 222, 215, 0.25);
+      border-top-color: #b8ded7;
+      border-radius: 50%;
+      animation: spin 0.85s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      font-size: 0.82rem;
+      color: #b8ded7;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .anatomy-details {
+      margin-top: 14px;
+      padding: 16px;
+      background: var(--teal-soft);
+      border: 1.5px solid var(--teal-border);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+
+    .anatomy-details h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      margin-bottom: 4px;
+    }
+
+    .anatomy-details p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================
+       4. CONTENT CARDS (COMPARISON & FAQS)
+    =========================================================== */
+    .content-card {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px 20px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .content-card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 12px;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.84rem;
+    }
+
+    .comp-table th, .comp-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-color);
+      text-align: left;
+    }
+
+    .comp-table th {
+      background: var(--bg-subtle);
+      font-weight: 800;
+      color: var(--teal-primary);
+    }
+
+    .comp-table td strong {
+      color: var(--teal-primary);
+    }
+
+    .faq-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    details {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: border-color 0.15s ease;
+    }
+
+    details[open] { border-color: var(--teal-border); }
+
+    summary {
+      padding: 13px 15px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--teal-primary);
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 1.1rem;
+      color: var(--gold-primary);
+      font-weight: 800;
+    }
+    details[open] summary::after { content: '−'; }
+
+    details p {
+      padding: 0 15px 13px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* ==========================================================
+       5. STANDARDIZED BOOKING CARD ("Book an Appointment")
+    =========================================================== */
+    .desk-card {
+      background: var(--bg-surface);
+      border: 2px solid var(--teal-primary);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-desk);
+      margin-top: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .desk-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #0a3834, #b5893b);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .desk-card h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 6px;
+    }
+
+    .desk-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .primary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: var(--teal-primary);
+      color: #ffffff !important;
+      padding: 15px 24px;
+      border-radius: var(--radius-md);
+      font-size: 0.92rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(10, 56, 52, 0.3);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .primary-btn:hover {
+      background: var(--teal-hover);
+      transform: translateY(-2px);
+    }
+
+    .site-footer {
+      margin-top: 48px;
+      padding: 24px 0;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================
+       6. PERSISTENT MOBILE ACTION BAR (MATCHED TO MAIN PAGE)
+    =========================================================== */
+    .mobile-action-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(250, 248, 244, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+      box-shadow: 0 -4px 12px rgba(10, 56, 52, 0.05);
+    }
+
+    @media (min-width: 900px) {
+      .mobile-action-bar { display: none; }
+    }
+
+    .mobile-call-btn, .mobile-book-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      padding: 13px 0;
+      font-weight: 700;
+    }
+
+    .mobile-call-btn {
+      flex: 1;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      color: var(--text-main);
+      gap: 6px;
+      font-size: 0.88rem;
+    }
+
+    .mobile-book-btn {
+      flex: 2;
+      background: var(--teal-primary);
+      color: #ffffff;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      border: none;
+      box-shadow: 0 4px 12px rgba(10, 56, 52, 0.2);
+    }
+
+    .mobile-book-btn:active {
+      transform: scale(0.99);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Top Luxury Navigation Card -->
+    <nav class="luxury-subpage-header" aria-label="Top navigation">
+      <a href="/#treatmentTrack" class="header-brand-link" aria-label="Apex Dental Studio">
+        <svg class="gold-tooth-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="gogiaRctGoldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f5e0a3"/>
+              <stop offset="40%" stop-color="#b5893b"/>
+              <stop offset="80%" stop-color="#8a611c"/>
+              <stop offset="100%" stop-color="#d6ab58"/>
+            </linearGradient>
+          </defs>
+          <path d="M10 4C6.5 4 4 6.8 4 10.8c0 5.2 2.6 11 4.7 16.6.7 2 2.8 2.6 4.1 1.3 1.6-1.6 2.4-4 3.2-6.7.8 2.7 1.6 5.1 3.2 6.7 1.3 1.3 3.4.7 4.1-1.3C25.4 21.8 28 16 28 10.8 28 6.8 25.5 4 22 4c-3.1 0-5 2-6 2s-2.9-2-6-2z" fill="url(#gogiaRctGoldShine)" stroke="#8a611c" stroke-width="0.8"/>
+          <path d="M19 8 L20 6 L21 8 L23 9 L21 10 L20 12 L19 10 L17 9 Z" fill="#ffffff"/>
+        </svg>
+
+        <div class="brand-text-block">
+          <span class="brand-name-serif">APEX DENTAL</span>
+          <span class="brand-tagline-sans">IMPLANT &amp; ESTHETIC STUDIO</span>
+        </div>
+      </a>
+
+      <div class="header-right-tools">
+        <a href="/#treatmentTrack" class="back-nav-btn" aria-label="Back to Main Treatments">
+          <span aria-hidden="true">←</span>
+          <span>Main Page</span>
+        </a>
+        <a href="/?service=rct#bookingDeskSection" class="desktop-header-cta">
+          Book an Appointment
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="article-hero">
+        <span class="pill-tag">MDS Endodontic Care</span>
+        <h1 class="serif-title">Microscope Painless Root Canal Therapy (RCT)</h1>
+        <p class="intro-lede">
+          Preserve your natural tooth structure and eliminate nerve infection permanently. Directed personally by specialist endodontists at Apex Dental Studio.
+        </p>
+      </section>
+
+      <div class="specialist-callout">
+        <strong>Endodontic Precision by Specialist Clinicians</strong>
+        <span>Endodontists are dedicated tooth-saving specialists with post-graduate surgical training in root canal anatomy, motorized rotary instrumentation, and apex sealing.</span>
+      </div>
+
+      <!-- Interactive 3D RCT Anatomy Stage -->
+      <div class="group-label">Interactive 3D RCT Layer Explorer</div>
+      <section class="anatomy-card" id="anatomyCard" aria-label="Root Canal Layer Breakdown">
+        <div class="layer-selector" role="tablist">
+          <button type="button" class="layer-btn" id="rctBtnPulp" aria-pressed="true" role="tab">1. Infected Nerve</button>
+          <button type="button" class="layer-btn" id="rctBtnClean" aria-pressed="false" role="tab">2. Rotary Cleaning</button>
+          <button type="button" class="layer-btn" id="rctBtnSeal" aria-pressed="false" role="tab">3. Sealed &amp; Crowned</button>
+        </div>
+
+        <div class="canvas-viewport-wrapper">
+          <div class="loading-overlay" id="loadingOverlay">
+            <div class="spinner"></div>
+            <div class="loading-text">Loading 3D Model...</div>
+          </div>
+          <div id="gogia-rct-canvas"></div>
+          <div class="interaction-shield" id="interactionShield">
+            <div class="shield-badge">
+              <span>🔄 Tap to Inspect in 3D</span>
+            </div>
+            <span class="shield-subtext">Page scrolls freely until tapped</span>
+          </div>
+        </div>
+
+        <div class="viewer-helper">
+          <span>🔄 Swipe to rotate · 🔍 Pinch to zoom</span>
+          <button type="button" class="reset-view-btn" id="resetViewBtn">Reset View</button>
+        </div>
+
+        <div class="anatomy-details">
+          <h4 id="rctLayerTitle">1. Deep Bacterial Pulp Infection</h4>
+          <p id="rctLayerDescription">
+            Deep cavities breach the protective enamel and dentin barriers, invading the vascular dental pulp chamber and canals, triggering acute throbbing pain.
+          </p>
+        </div>
+      </section>
+
+      <!-- Clinical Comparison -->
+      <section class="content-card">
+        <h2 class="serif-title">Microscopic Endodontics vs. Extraction</h2>
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Microscopic RCT</th>
+              <th>Tooth Extraction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Natural Tooth</strong></td>
+              <td>100% Preserved in jawbone</td>
+              <td>Permanently lost</td>
+            </tr>
+            <tr>
+              <td><strong>Chewing Force</strong></td>
+              <td>Maintains natural bite force</td>
+              <td>Neighboring teeth shift and tilt</td>
+            </tr>
+            <tr>
+              <td><strong>Long-Term Cost</strong></td>
+              <td>One-time preservation treatment</td>
+              <td>Requires costly implants or bridges</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- FAQs -->
+      <section class="content-card">
+        <h2 class="serif-title">Frequently Asked Questions</h2>
+        <div class="faq-accordion">
+          <details>
+            <summary>Does a Root Canal hurt at Apex Dental?</summary>
+            <p>
+              No. With localized computer-controlled anesthesia and gentle clinical technique, root canal treatment eliminates pain rather than causing it. Most patients experience instant pain relief.
+            </p>
+          </details>
+          <details>
+            <summary>How many appointments are required?</summary>
+            <p>
+              Depending on the severity of the infection, many root canals are completed in a single sitting or two comfortable visits.
+            </p>
+          </details>
+          <details>
+            <summary>Do I always need a crown after an RCT?</summary>
+            <p>
+              A crown is highly recommended for posterior chewing teeth to reinforce the tooth structure and prevent fractures under bite pressure.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Standardized Booking Card -->
+      <section class="desk-card">
+        <h3 class="serif-title">Book an RCT Evaluation</h3>
+        <p>Consult with our endodontic specialists at Apex Dental Studio.</p>
+
+        <a
+          href="/?service=rct#bookingDeskSection"
+          class="primary-btn"
+        >
+          <span>Book an Appointment</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Apex Dental &amp; Implant Studio · Call: +91 98765 43210</p>
+    </footer>
+
+  </div>
+
+  <div class="mobile-action-bar">
+    <a href="tel:+919876543210" class="mobile-call-btn">Call Desk</a>
+    <a
+      href="/?service=rct#bookingDeskSection"
+      class="mobile-book-btn"
+    >
+      Book an Appointment
+    </a>
+  </div>
+
+  <!-- Medical 3D Engine untouched -->
+  <script>
+    (function () {
+      "use strict";
+
+      const container = document.getElementById('gogia-rct-canvas');
+      const shield = document.getElementById('interactionShield');
+      const anatomyCard = document.getElementById('anatomyCard');
+      const loadingOverlay = document.getElementById('loadingOverlay');
+      const resetViewBtn = document.getElementById('resetViewBtn');
+
+      const scene = new THREE.Scene();
+
+      const camera = new THREE.PerspectiveCamera(38, container.clientWidth / container.clientHeight, 0.1, 100);
+      camera.position.set(0, 0.2, 7.0);
+
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(0x000000, 0);
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.25;
+      container.appendChild(renderer.domElement);
+
+      const controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.06;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 1.2;
+      controls.enablePan = false;
+      controls.minDistance = 4.2;
+      controls.maxDistance = 8.5;
+      controls.maxPolarAngle = Math.PI / 2 + 0.12;
+      controls.enabled = false;
+
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+      scene.add(ambientLight);
+
+      const keyLight = new THREE.DirectionalLight(0xffffff, 1.6);
+      keyLight.position.set(4, 8, 6);
+      scene.add(keyLight);
+
+      const fillLight = new THREE.DirectionalLight(0xe0f7f4, 0.7);
+      fillLight.position.set(-4, 3, 5);
+      scene.add(fillLight);
+
+      const tealRim = new THREE.DirectionalLight(0x2dd4bf, 1.5);
+      tealRim.position.set(-5, -1, -3);
+      scene.add(tealRim);
+
+      const toothGleam = new THREE.PointLight(0xffffff, 1.4, 12);
+      toothGleam.position.set(0, 2, 4);
+      scene.add(toothGleam);
+
+      const rootGroup = new THREE.Group();
+      rootGroup.position.y = -0.15;
+      scene.add(rootGroup);
+
+      const shadowCanvas = document.createElement('canvas');
+      shadowCanvas.width = 128;
+      shadowCanvas.height = 128;
+      const sCtx = shadowCanvas.getContext('2d');
+      const gradient = sCtx.createRadialGradient(64, 64, 0, 64, 64, 60);
+      gradient.addColorStop(0, 'rgba(0, 0, 0, 0.7)');
+      gradient.addColorStop(0.4, 'rgba(0, 0, 0, 0.35)');
+      gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      sCtx.fillStyle = gradient;
+      sCtx.fillRect(0, 0, 128, 128);
+
+      const shadowTexture = new THREE.CanvasTexture(shadowCanvas);
+      const shadowPlane = new THREE.Mesh(
+        new THREE.PlaneGeometry(3.2, 3.2),
+        new THREE.MeshBasicMaterial({ map: shadowTexture, transparent: true, depthWrite: false })
+      );
+      shadowPlane.rotation.x = -Math.PI / 2;
+      shadowPlane.position.y = -1.65;
+      rootGroup.add(shadowPlane);
+
+      const toothBaseGroup = new THREE.Group();
+      toothBaseGroup.position.y = -0.45;
+
+      const rootMat = new THREE.MeshPhysicalMaterial({
+        color: 0xfef08a,
+        roughness: 0.28,
+        metalness: 0.02,
+        clearcoat: 0.8,
+        clearcoatRoughness: 0.1,
+        transmission: 0.35,
+        thickness: 0.6,
+        transparent: true,
+        opacity: 0.95
+      });
+
+      const rootLeftGeom = new THREE.ConeGeometry(0.32, 1.45, 32);
+      const rootLeft = new THREE.Mesh(rootLeftGeom, rootMat);
+      rootLeft.position.set(-0.35, -0.65, 0);
+      rootLeft.rotation.z = 0.12;
+      toothBaseGroup.add(rootLeft);
+
+      const rootRightGeom = new THREE.ConeGeometry(0.30, 1.35, 32);
+      const rootRight = new THREE.Mesh(rootRightGeom, rootMat);
+      rootRight.position.set(0.35, -0.60, 0);
+      rootRight.rotation.z = -0.12;
+      toothBaseGroup.add(rootRight);
+
+      const trunkGeom = new THREE.CylinderGeometry(0.68, 0.58, 0.55, 32);
+      const rootTrunk = new THREE.Mesh(trunkGeom, rootMat);
+      rootTrunk.position.y = 0.05;
+      toothBaseGroup.add(rootTrunk);
+
+      rootGroup.add(toothBaseGroup);
+
+      const toothBodyMat = new THREE.MeshPhysicalMaterial({
+        color: 0xffffff,
+        roughness: 0.16,
+        metalness: 0.0,
+        transmission: 0.52,
+        thickness: 0.85,
+        transparent: true,
+        opacity: 0.90,
+        clearcoat: 1.0,
+        clearcoatRoughness: 0.05,
+        reflectivity: 0.95
+      });
+
+      const bodyGeom = new THREE.CylinderGeometry(0.72, 0.64, 0.90, 32);
+      const toothBody = new THREE.Mesh(bodyGeom, toothBodyMat);
+      toothBody.position.y = 0.35;
+      rootGroup.add(toothBody);
+
+      const pulpGroup = new THREE.Group();
+
+      const pulpMat = new THREE.MeshStandardMaterial({
+        color: 0xe11d48,
+        emissive: 0xe11d48,
+        emissiveIntensity: 0.8,
+        roughness: 0.25
+      });
+
+      const chamberGeom = new THREE.SphereGeometry(0.30, 24, 24);
+      const pulpChamber = new THREE.Mesh(chamberGeom, pulpMat);
+      pulpChamber.scale.set(1.2, 0.9, 1.0);
+      pulpChamber.position.set(0, 0.35, 0);
+      pulpGroup.add(pulpChamber);
+
+      const leftCanalGeom = new THREE.CylinderGeometry(0.09, 0.025, 1.45, 16);
+      const canalLeft = new THREE.Mesh(leftCanalGeom, pulpMat);
+      canalLeft.position.set(-0.28, -0.45, 0);
+      canalLeft.rotation.z = 0.12;
+      pulpGroup.add(canalLeft);
+
+      const rightCanalGeom = new THREE.CylinderGeometry(0.09, 0.025, 1.35, 16);
+      const canalRight = new THREE.Mesh(rightCanalGeom, pulpMat);
+      canalRight.position.set(0.28, -0.40, 0);
+      canalRight.rotation.z = -0.12;
+      pulpGroup.add(canalRight);
+
+      rootGroup.add(pulpGroup);
+
+      function createAnatomicalCrownCapGeometry() {
+        const geom = new THREE.CylinderGeometry(0.75, 0.68, 0.85, 32, 20);
+        const pos = geom.attributes.position;
+        const v = new THREE.Vector3();
+
+        for (let i = 0; i < pos.count; i++) {
+          v.fromBufferAttribute(pos, i);
+
+          const r = Math.sqrt(v.x * v.x + v.z * v.z);
+          const angle = Math.atan2(v.z, v.x);
+
+          const lobe = Math.cos(angle * 4) * 0.04;
+          v.x += (v.x / (r || 1)) * lobe;
+          v.z += (v.z / (r || 1)) * lobe;
+
+          const belly = Math.sin((v.y + 0.42) / 0.85 * Math.PI) * 0.08;
+          v.x += (v.x / (r || 1)) * belly;
+          v.z += (v.z / (r || 1)) * belly;
+
+          if (v.y > 0.2) {
+            const cuspMounds = Math.cos(angle * 4) * 0.07 * (r / 0.75);
+            const centerDip = Math.max(0, (0.42 - r) * 0.20);
+            v.y += cuspMounds - centerDip;
+          }
+
+          pos.setXYZ(i, v.x, v.y, v.z);
+        }
+
+        geom.computeVertexNormals();
+        return geom;
+      }
+
+      const crownCapMat = new THREE.MeshPhysicalMaterial({
+        color: 0xffffff,
+        roughness: 0.10,
+        metalness: 0.0,
+        clearcoat: 1.0,
+        clearcoatRoughness: 0.04,
+        transparent: true,
+        opacity: 0.0,
+        reflectivity: 0.95
+      });
+
+      const crownCap = new THREE.Mesh(createAnatomicalCrownCapGeometry(), crownCapMat);
+      crownCap.position.y = 1.95;
+      rootGroup.add(crownCap);
+
+      // Hide loading after short delay
+      setTimeout(() => {
+        loadingOverlay.classList.add('hidden');
+      }, 600);
+
+      shield.addEventListener('click', () => {
+        shield.classList.add('is-active');
+        controls.enabled = true;
+        controls.autoRotate = false;
+      });
+
+      document.addEventListener('pointerdown', (e) => {
+        if (!anatomyCard.contains(e.target)) {
+          shield.classList.remove('is-active');
+          controls.enabled = false;
+          controls.autoRotate = true;
+        }
+      });
+
+      // Reset View button
+      resetViewBtn.addEventListener('click', () => {
+        camera.position.set(0, 0.2, 7.0);
+        controls.target.set(0, 0, 0);
+        controls.update();
+        controls.autoRotate = true;
+      });
+
+      let targetCrownY = 1.95;
+      let targetCrownOpacity = 0.0;
+      let currentStage = 1;
+      const clock = new THREE.Clock();
+
+      function animate() {
+        requestAnimationFrame(animate);
+
+        const elapsedTime = clock.getElapsedTime();
+
+        crownCap.position.y += (targetCrownY - crownCap.position.y) * 0.08;
+        crownCapMat.opacity += (targetCrownOpacity - crownCapMat.opacity) * 0.08;
+
+        if (currentStage === 1) {
+          pulpMat.emissiveIntensity = 0.55 + Math.sin(elapsedTime * 4.0) * 0.35;
+        } else {
+          pulpMat.emissiveIntensity = 0.25;
+        }
+
+        controls.update();
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', () => {
+        if (!container) return;
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+      });
+
+      const rctBtnPulp = document.getElementById('rctBtnPulp');
+      const rctBtnClean = document.getElementById('rctBtnClean');
+      const rctBtnSeal = document.getElementById('rctBtnSeal');
+
+      const rctLayerTitle = document.getElementById('rctLayerTitle');
+      const rctLayerDescription = document.getElementById('rctLayerDescription');
+
+      function resetTabs() {
+        [rctBtnPulp, rctBtnClean, rctBtnSeal].forEach(b => b.setAttribute('aria-pressed', 'false'));
+      }
+
+      rctBtnPulp.addEventListener('click', () => {
+        resetTabs();
+        rctBtnPulp.setAttribute('aria-pressed', 'true');
+        currentStage = 1;
+
+        pulpMat.color.setHex(0xe11d48);
+        pulpMat.emissive.setHex(0xe11d48);
+
+        targetCrownY = 1.95;
+        targetCrownOpacity = 0.0;
+
+        rctLayerTitle.textContent = "1. Deep Bacterial Pulp Infection";
+        rctLayerDescription.textContent = "Deep cavities breach the protective enamel and dentin barriers, invading the vascular dental pulp chamber and canals, triggering acute throbbing pain.";
+      });
+
+      rctBtnClean.addEventListener('click', () => {
+        resetTabs();
+        rctBtnClean.setAttribute('aria-pressed', 'true');
+        currentStage = 2;
+
+        pulpMat.color.setHex(0x0d9488);
+        pulpMat.emissive.setHex(0x042f2e);
+
+        targetCrownY = 1.95;
+        targetCrownOpacity = 0.0;
+
+        rctLayerTitle.textContent = "2. Microscopic Rotary Disinfection";
+        rctLayerDescription.textContent = "Under surgical magnification, flexible nickel-titanium motorized instruments thoroughly cleanse and shape root canals, flushing out all bacteria with antimicrobial irrigants.";
+      });
+
+      rctBtnSeal.addEventListener('click', () => {
+        resetTabs();
+        rctBtnSeal.setAttribute('aria-pressed', 'true');
+        currentStage = 3;
+
+        pulpMat.color.setHex(0xf59e0b);
+        pulpMat.emissive.setHex(0xd97706);
+
+        targetCrownY = 0.85;
+        targetCrownOpacity = 1.0;
+
+        rctLayerTitle.textContent = "3. Hermetic 3D Canal Seal & Protective Crown";
+        rctLayerDescription.textContent = "The cleansed root system is hermetically sealed with biocompatible gutta-percha. A precision-milled crown is bonded over the tooth to reinforce structural integrity and prevent future fracture.";
+      });
+
+    })();
+  </script>
+</body>
+</html>
