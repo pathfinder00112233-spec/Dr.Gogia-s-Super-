@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dental Implants | Apex Dental & Implant Studio</title>
+  <meta name="description" content="Specialist dental implant placement featuring 3D interactive anatomy inspection, transparent titanium roots, and permanent fixed zirconia crown restoration.">
+  <link rel="canonical" href="https://apexdentalstudio.pages.dev/implants.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Permanent Dental Implants | Apex Dental Studio">
+  <meta property="og:description" content="Explore interactive 3D implant anatomy and specialist fixed teeth replacements.">
+  <meta property="og:url" content="https://apexdentalstudio.pages.dev/implants.html">
+
+  <!-- Structured Data for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Dental Implant Restoration",
+    "procedureType": "SurgicalProcedure",
+    "bodyLocation": "Mouth",
+    "howPerformed": "Surgical placement of a biocompatible titanium fixture into the jawbone followed by attachment of a custom monolithic zirconia crown.",
+    "performer": {
+      "@type": "Dentist",
+      "name": "Dr. Julian Vance",
+      "medicalSpecialty": "Prosthodontics",
+      "worksFor": {
+        "@type": "Dentist",
+        "name": "Apex Dental & Implant Studio",
+        "telephone": "+919876543210",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Suite 400, Central Medical Square",
+          "addressLocality": "Central District",
+          "addressRegion": "Metro",
+          "postalCode": "110001",
+          "addressCountry": "IN"
+        }
+      }
+    }
+  }
+  </script>
+
+  <!-- Three.js & Touch Orbit Controls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg-canvas: #faf8f4;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f4ede2;
+
+      --text-main: #17211e;
+      --text-muted: #5e6d67;
+
+      --teal-primary: #0a3834;
+      --teal-hover: #062623;
+      --teal-soft: #f0f7f5;
+      --teal-border: #b8ded7;
+
+      --gold-primary: #b5893b;
+      --gold-accent: #966e28;
+      --gold-soft: #fcf8f0;
+      --gold-border: #ebd9b5;
+
+      --border-color: #ebe4d8;
+      --border-dark: #d5c8b5;
+
+      --shadow-sm: 0 1px 3px rgba(10, 56, 52, 0.04);
+      --shadow-card: 0 4px 18px -2px rgba(10, 56, 52, 0.06);
+      --shadow-desk: 0 16px 40px -6px rgba(10, 56, 52, 0.22);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html { scroll-behavior: smooth; }
+    html, body { width: 100%; max-width: 100vw; overflow-x: hidden; }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 96px;
+    }
+
+    @media (min-width: 900px) {
+      body { padding-bottom: 0; }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+
+    /* ==========================================================
+       1. LUXURY SUBPAGE HEADER (MATCHED TO MAIN CARD DESIGN)
+    =========================================================== */
+    .luxury-subpage-header {
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      width: 100%;
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      border: 1.5px solid #ebe2d3;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      margin-top: 10px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+    }
+
+    .header-brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .gold-tooth-icon {
+      width: clamp(28px, 3.5vw, 36px);
+      height: clamp(28px, 3.5vw, 36px);
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 4px rgba(181, 137, 59, 0.25));
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .brand-name-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.05rem, 3.5vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--teal-primary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-tagline-sans {
+      font-size: 0.52rem;
+      color: var(--teal-primary);
+      opacity: 0.85;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .back-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--teal-primary);
+      text-decoration: none;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: var(--teal-soft);
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .back-nav-btn:hover {
+      border-color: var(--teal-primary);
+      background: #e1f0ec;
+    }
+
+    .desktop-header-cta {
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      .desktop-header-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--teal-primary);
+        color: #ffffff !important;
+        padding: 8px 14px;
+        border-radius: var(--radius-sm);
+        font-size: 0.80rem;
+        font-weight: 800;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .luxury-subpage-header { padding: 8px 10px; }
+      .back-nav-btn { padding: 6px 9px; font-size: 0.68rem; }
+    }
+
+    /* ==========================================================
+       2. HERO SECTION
+    =========================================================== */
+    .article-hero {
+      margin-top: 14px;
+      margin-bottom: 18px;
+    }
+
+    .pill-tag {
+      display: inline-block;
+      background: var(--gold-soft);
+      color: var(--gold-accent);
+      border: 1px solid var(--gold-border);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .article-hero h1 {
+      font-size: clamp(2.1rem, 5.5vw, 3.1rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--teal-primary);
+      margin-bottom: 8px;
+    }
+
+    .article-hero p.intro-lede {
+      font-size: clamp(0.92rem, 2.2vw, 1.05rem);
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .specialist-callout {
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      border: 1.5px solid var(--border-color);
+      border-left: 4px solid var(--teal-primary);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .specialist-callout strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      margin-bottom: 2px;
+    }
+
+    .specialist-callout span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .group-label {
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-primary);
+      margin: 30px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .group-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+    }
+
+    /* ==========================================================
+       3. 3D ANATOMY CARD
+    =========================================================== */
+    .anatomy-card {
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      border: 1.5px solid #ebe2d3;
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-desk);
+      margin: 20px 0 28px;
+    }
+
+    .layer-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .layer-btn {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 12px 8px;
+      text-align: center;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      color: var(--text-main);
+      transition: all 0.15s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .layer-btn[aria-pressed="true"] {
+      background: var(--teal-primary);
+      border-color: var(--teal-primary);
+      color: #ffffff;
+      outline: 2px solid var(--teal-primary);
+    }
+
+    .canvas-viewport-wrapper {
+      position: relative;
+      width: 100%;
+      height: 420px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 40%, #0f3d37 0%, #062623 65%, #021210 100%);
+      border: 1.5px solid var(--teal-primary);
+      box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    #implant-canvas-container {
+      width: 100%;
+      height: 100%;
+      touch-action: pan-y !important;
+      position: relative;
+    }
+
+    #implant-canvas-container canvas {
+      touch-action: pan-y !important;
+      display: block;
+    }
+
+    .interaction-shield {
+      position: absolute;
+      inset: 0;
+      background: rgba(6, 38, 35, 0.45);
+      backdrop-filter: blur(3px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      z-index: 10;
+      cursor: pointer;
+      transition: opacity 0.25s ease;
+    }
+
+    .interaction-shield.is-active {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .shield-badge {
+      background: var(--bg-surface);
+      color: var(--teal-primary);
+      border: 1.5px solid var(--gold-border);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 10px 24px;
+      border-radius: 999px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .shield-subtext {
+      font-size: 0.74rem;
+      color: #b8ded7;
+      font-weight: 600;
+    }
+
+    .viewer-helper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-top: 10px;
+      padding: 0 4px;
+    }
+
+    .anatomy-details {
+      margin-top: 14px;
+      padding: 16px;
+      background: var(--teal-soft);
+      border: 1.5px solid var(--teal-border);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+
+    .anatomy-details h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      margin-bottom: 4px;
+    }
+
+    .anatomy-details p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================
+       4. CONTENT CARDS (COMPARISON & FAQS)
+    =========================================================== */
+    .content-card {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px 20px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .content-card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 12px;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.84rem;
+    }
+
+    .comp-table th, .comp-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-color);
+      text-align: left;
+    }
+
+    .comp-table th {
+      background: var(--bg-subtle);
+      font-weight: 800;
+      color: var(--teal-primary);
+    }
+
+    .comp-table td strong {
+      color: var(--teal-primary);
+    }
+
+    .faq-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    details {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: border-color 0.15s ease;
+    }
+
+    details[open] { border-color: var(--teal-border); }
+
+    summary {
+      padding: 13px 15px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--teal-primary);
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 1.1rem;
+      color: var(--gold-primary);
+      font-weight: 800;
+    }
+    details[open] summary::after { content: '−'; }
+
+    details p {
+      padding: 0 15px 13px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* ==========================================================
+       5. STANDARDIZED BOOKING CARD ("Book an Appointment")
+    =========================================================== */
+    .desk-card {
+      background: var(--bg-surface);
+      border: 2px solid var(--teal-primary);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-desk);
+      margin-top: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .desk-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #0a3834, #b5893b);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .desk-card h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 6px;
+    }
+
+    .desk-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .primary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: var(--teal-primary);
+      color: #ffffff !important;
+      padding: 15px 24px;
+      border-radius: var(--radius-md);
+      font-size: 0.92rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(10, 56, 52, 0.3);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .primary-btn:hover {
+      background: var(--teal-hover);
+      transform: translateY(-2px);
+    }
+
+    .site-footer {
+      margin-top: 48px;
+      padding: 24px 0;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================
+       6. PERSISTENT MOBILE ACTION BAR (MATCHED TO MAIN PAGE)
+    =========================================================== */
+    .mobile-action-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(250, 248, 244, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+      box-shadow: 0 -4px 12px rgba(10, 56, 52, 0.05);
+    }
+
+    @media (min-width: 900px) {
+      .mobile-action-bar { display: none; }
+    }
+
+    .mobile-call-btn, .mobile-book-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      padding: 13px 0;
+      font-weight: 700;
+    }
+
+    .mobile-call-btn {
+      flex: 1;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      color: var(--text-main);
+      gap: 6px;
+      font-size: 0.88rem;
+    }
+
+    .mobile-book-btn {
+      flex: 2;
+      background: var(--teal-primary);
+      color: #ffffff;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      border: none;
+      box-shadow: 0 4px 12px rgba(10, 56, 52, 0.2);
+    }
+
+    .mobile-book-btn:active {
+      transform: scale(0.99);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Top Luxury Navigation Card -->
+    <nav class="luxury-subpage-header" aria-label="Top navigation">
+      <a href="/#treatmentTrack" class="header-brand-link" aria-label="Apex Dental Studio">
+        <svg class="gold-tooth-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="gogiaGoldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f5e0a3"/>
+              <stop offset="40%" stop-color="#b5893b"/>
+              <stop offset="80%" stop-color="#8a611c"/>
+              <stop offset="100%" stop-color="#d6ab58"/>
+            </linearGradient>
+          </defs>
+          <path d="M10 4C6.5 4 4 6.8 4 10.8c0 5.2 2.6 11 4.7 16.6.7 2 2.8 2.6 4.1 1.3 1.6-1.6 2.4-4 3.2-6.7.8 2.7 1.6 5.1 3.2 6.7 1.3 1.3 3.4.7 4.1-1.3C25.4 21.8 28 16 28 10.8 28 6.8 25.5 4 22 4c-3.1 0-5 2-6 2s-2.9-2-6-2z" fill="url(#gogiaGoldShine)" stroke="#8a611c" stroke-width="0.8"/>
+          <path d="M19 8 L20 6 L21 8 L23 9 L21 10 L20 12 L19 10 L17 9 Z" fill="#ffffff"/>
+        </svg>
+
+        <div class="brand-text-block">
+          <span class="brand-name-serif">APEX DENTAL</span>
+          <span class="brand-tagline-sans">IMPLANT &amp; ESTHETIC STUDIO</span>
+        </div>
+      </a>
+
+      <div class="header-right-tools">
+        <a href="/#treatmentTrack" class="back-nav-btn" aria-label="Back to Main Treatments">
+          <span aria-hidden="true">←</span>
+          <span>Main Page</span>
+        </a>
+        <a href="/?service=implants#bookingDeskSection" class="desktop-header-cta">
+          Book an Appointment
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="article-hero">
+        <span class="pill-tag">Prosthodontic Implantology</span>
+        <h1 class="serif-title">Permanent Dental Implants</h1>
+        <p class="intro-lede">
+          Permanent, natural-looking replacement for missing teeth, directed personally by specialist prosthodontist Dr. Julian Vance at Apex Dental Studio.
+        </p>
+      </section>
+
+      <div class="specialist-callout">
+        <strong>Specialist-Supervised Placement</strong>
+        <span>Prosthodontists specialize in complete tooth reconstruction, bone preservation, and precision biomechanics to ensure implants last a lifetime.</span>
+      </div>
+
+      <!-- Interactive 3D Implant Anatomy Stage -->
+      <div class="group-label">Interactive 3D Implant Layer Explorer</div>
+      <section class="anatomy-card" id="anatomyCard" aria-label="Implant Layer Breakdown">
+        <div class="layer-selector" role="tablist">
+          <button type="button" class="layer-btn" id="implantBtnCrown" aria-pressed="true" role="tab">1. Zirconia Crown</button>
+          <button type="button" class="layer-btn" id="implantBtnAbutment" aria-pressed="false" role="tab">2. Abutment</button>
+          <button type="button" class="layer-btn" id="implantBtnScrew" aria-pressed="false" role="tab">3. Titanium Post</button>
+        </div>
+
+        <div class="canvas-viewport-wrapper">
+          <div id="implant-canvas-container"></div>
+          <div class="interaction-shield" id="interactionShield">
+            <div class="shield-badge">
+              <span>🔄 Tap to Inspect in 3D</span>
+            </div>
+            <span class="shield-subtext">Page scrolls freely until tapped</span>
+          </div>
+        </div>
+
+        <div class="viewer-helper">
+          <span>🔄 Swipe horizontally to rotate</span>
+          <span>🔍 Pinch with 2 fingers to zoom</span>
+        </div>
+
+        <div class="anatomy-details">
+          <h4 id="implantLayerTitle">1. Custom Ceramic Crown</h4>
+          <p id="implantLayerDescription">
+            The visible tooth restoration engineered from high-strength monolithic zirconia or porcelain. Precision-shaded to match your natural smile line and chewing alignment seamlessly.
+          </p>
+        </div>
+      </section>
+
+      <!-- Clinical Comparison -->
+      <section class="content-card">
+        <h2 class="serif-title">Dental Implants vs. Removable Dentures</h2>
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Titanium Implants</th>
+              <th>Removable Dentures</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Stability</strong></td>
+              <td>100% Fixed (Never slips)</td>
+              <td>Slips, clicks, requires glue</td>
+            </tr>
+            <tr>
+              <td><strong>Bone Health</strong></td>
+              <td>Stimulates &amp; preserves jawbone</td>
+              <td>Accelerates bone resorption</td>
+            </tr>
+            <tr>
+              <td><strong>Chewing Comfort</strong></td>
+              <td>Full bite force (Eat anything)</td>
+              <td>Limited chewing efficiency</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- FAQs -->
+      <section class="content-card">
+        <h2 class="serif-title">Frequently Asked Questions</h2>
+        <div class="faq-accordion">
+          <details>
+            <summary>Am I suitable for dental implants?</summary>
+            <p>
+              Most adults in good general health with adequate jawbone density are ideal candidates. A digital clinical assessment and radiographic evaluation determines your exact suitability.
+            </p>
+          </details>
+          <details>
+            <summary>Is the implant placement painful?</summary>
+            <p>
+              No. Placement is performed under gentle, precise local anesthesia and is routinely reported by patients to be as comfortable as a standard filling.
+            </p>
+          </details>
+          <details>
+            <summary>How long do dental implants last?</summary>
+            <p>
+              With routine brushing, flossing, and professional checkups, medical titanium implants have an industry success rate exceeding 95% and can last a lifetime.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Standardized Booking Card -->
+      <section class="desk-card">
+        <h3 class="serif-title">Book an Implant Consultation</h3>
+        <p>Consult with Dr. Julian Vance at Apex Dental Studio.</p>
+
+        <a
+          href="/?service=implants#bookingDeskSection"
+          class="primary-btn"
+        >
+          <span>Book an Appointment</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Apex Dental &amp; Implant Studio · Call: +91 98765 43210</p>
+    </footer>
+
+  </div>
+
+  <div class="mobile-action-bar">
+    <a href="tel:+919876543210" class="mobile-call-btn">Call Desk</a>
+    <a
+      href="/?service=implants#bookingDeskSection"
+      class="mobile-book-btn"
+    >
+      Book an Appointment
+    </a>
+  </div>
+
+  <!-- Medical 3D Engine untouched -->
+  <script>
+    (function () {
+      "use strict";
+
+      const container = document.getElementById('implant-canvas-container');
+      const shield = document.getElementById('interactionShield');
+      const anatomyCard = document.getElementById('anatomyCard');
+
+      const scene = new THREE.Scene();
+
+      const camera = new THREE.PerspectiveCamera(38, container.clientWidth / container.clientHeight, 0.1, 100);
+      camera.position.set(0, 0.1, 7.0);
+
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(0x000000, 0);
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.2;
+      container.appendChild(renderer.domElement);
+
+      const controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 1.5;
+      controls.enablePan = false;
+      controls.minDistance = 4.5;
+      controls.maxDistance = 8.5;
+      controls.maxPolarAngle = Math.PI / 2 + 0.12;
+      controls.enabled = false;
+
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
+      scene.add(ambientLight);
+
+      const keyLight = new THREE.DirectionalLight(0xffffff, 1.5);
+      keyLight.position.set(4, 8, 6);
+      scene.add(keyLight);
+
+      const tealRim = new THREE.DirectionalLight(0x2dd4bf, 1.4);
+      tealRim.position.set(-5, -1, -3);
+      scene.add(tealRim);
+
+      const toothGleam = new THREE.PointLight(0xffffff, 1.2, 10);
+      toothGleam.position.set(0, 2, 4);
+      scene.add(toothGleam);
+
+      const rootGroup = new THREE.Group();
+      rootGroup.position.y = -0.15;
+      scene.add(rootGroup);
+
+      const shadowCanvas = document.createElement('canvas');
+      shadowCanvas.width = 128;
+      shadowCanvas.height = 128;
+      const sCtx = shadowCanvas.getContext('2d');
+      const gradient = sCtx.createRadialGradient(64, 64, 0, 64, 64, 60);
+      gradient.addColorStop(0, 'rgba(0, 0, 0, 0.7)');
+      gradient.addColorStop(0.4, 'rgba(0, 0, 0, 0.35)');
+      gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      sCtx.fillStyle = gradient;
+      sCtx.fillRect(0, 0, 128, 128);
+
+      const shadowTexture = new THREE.CanvasTexture(shadowCanvas);
+      const shadowPlane = new THREE.Mesh(
+        new THREE.PlaneGeometry(3.2, 3.2),
+        new THREE.MeshBasicMaterial({ map: shadowTexture, transparent: true, depthWrite: false })
+      );
+      shadowPlane.rotation.x = -Math.PI / 2;
+      shadowPlane.position.y = -1.65;
+      rootGroup.add(shadowPlane);
+
+      function createAnatomicalMolarGeometry() {
+        const geom = new THREE.CylinderGeometry(0.58, 0.44, 0.85, 32, 20);
+        const pos = geom.attributes.position;
+        const v = new THREE.Vector3();
+
+        for (let i = 0; i < pos.count; i++) {
+          v.fromBufferAttribute(pos, i);
+
+          const r = Math.sqrt(v.x * v.x + v.z * v.z);
+          const angle = Math.atan2(v.z, v.x);
+
+          const lobe = Math.cos(angle * 4) * 0.04;
+          v.x += (v.x / (r || 1)) * lobe;
+          v.z += (v.z / (r || 1)) * lobe;
+
+          const belly = Math.sin((v.y + 0.42) / 0.85 * Math.PI) * 0.08;
+          v.x += (v.x / (r || 1)) * belly;
+          v.z += (v.z / (r || 1)) * belly;
+
+          if (v.y > 0.2) {
+            const cuspMounds = Math.cos(angle * 4) * 0.065 * (r / 0.58);
+            const centerDip = Math.max(0, (0.35 - r) * 0.18);
+            v.y += cuspMounds - centerDip;
+          }
+
+          pos.setXYZ(i, v.x, v.y, v.z);
+        }
+
+        geom.computeVertexNormals();
+        return geom;
+      }
+
+      const crownMat = new THREE.MeshPhysicalMaterial({
+        color: 0xffffff,
+        roughness: 0.10,
+        metalness: 0.0,
+        clearcoat: 1.0,
+        clearcoatRoughness: 0.04,
+        transparent: false,
+        opacity: 1.0,
+        reflectivity: 0.95
+      });
+
+      const crownMesh = new THREE.Mesh(createAnatomicalMolarGeometry(), crownMat);
+      crownMesh.position.y = 1.05;
+      rootGroup.add(crownMesh);
+
+      const abutmentGroup = new THREE.Group();
+      abutmentGroup.position.y = 0.50;
+
+      const abutmentMat = new THREE.MeshStandardMaterial({
+        color: 0x94a3b8,
+        metalness: 0.92,
+        roughness: 0.20
+      });
+
+      const collarGeom = new THREE.CylinderGeometry(0.38, 0.48, 0.32, 32);
+      const collar = new THREE.Mesh(collarGeom, abutmentMat);
+      abutmentGroup.add(collar);
+
+      const postGeom = new THREE.CylinderGeometry(0.26, 0.35, 0.48, 32);
+      const post = new THREE.Mesh(postGeom, abutmentMat);
+      post.position.y = 0.32;
+      abutmentGroup.add(post);
+
+      rootGroup.add(abutmentGroup);
+
+      const fixtureGroup = new THREE.Group();
+      fixtureGroup.position.y = -0.45;
+
+      const fixtureMat = new THREE.MeshStandardMaterial({
+        color: 0x64748b,
+        metalness: 0.94,
+        roughness: 0.26
+      });
+
+      const coreGeom = new THREE.CylinderGeometry(0.42, 0.22, 1.45, 32);
+      const fixtureCore = new THREE.Mesh(coreGeom, fixtureMat);
+      fixtureGroup.add(fixtureCore);
+
+      const threadMat = new THREE.MeshStandardMaterial({
+        color: 0x94a3b8,
+        metalness: 0.96,
+        roughness: 0.22
+      });
+
+      for (let i = 0; i < 10; i++) {
+        const tY = 0.55 - (i * 0.12);
+        const taperRatio = 1.0 - (i * 0.055);
+        const threadGeom = new THREE.TorusGeometry(0.43 * taperRatio, 0.032, 12, 32);
+        const threadMesh = new THREE.Mesh(threadGeom, threadMat);
+        threadMesh.rotation.x = Math.PI / 2 + 0.08;
+        threadMesh.position.y = tY;
+        fixtureGroup.add(threadMesh);
+      }
+
+      const apexGeom = new THREE.SphereGeometry(0.22, 32, 16, 0, Math.PI * 2, 0, Math.PI * 0.5);
+      const apex = new THREE.Mesh(apexGeom, fixtureMat);
+      apex.rotation.x = Math.PI;
+      apex.position.y = -0.72;
+      fixtureGroup.add(apex);
+
+      rootGroup.add(fixtureGroup);
+
+      shield.addEventListener('click', () => {
+        shield.classList.add('is-active');
+        controls.enabled = true;
+      });
+
+      document.addEventListener('pointerdown', (e) => {
+        if (!anatomyCard.contains(e.target)) {
+          shield.classList.remove('is-active');
+          controls.enabled = false;
+        }
+      });
+
+      let targetCrownY = 1.05;
+      let targetAbutmentY = 0.50;
+      let targetFixtureY = -0.45;
+
+      function animate() {
+        requestAnimationFrame(animate);
+
+        crownMesh.position.y += (targetCrownY - crownMesh.position.y) * 0.08;
+        abutmentGroup.position.y += (targetAbutmentY - abutmentGroup.position.y) * 0.08;
+        fixtureGroup.position.y += (targetFixtureY - fixtureGroup.position.y) * 0.08;
+
+        controls.update();
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', () => {
+        if (!container) return;
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+      });
+
+      const implantBtnCrown = document.getElementById('implantBtnCrown');
+      const implantBtnAbutment = document.getElementById('implantBtnAbutment');
+      const implantBtnScrew = document.getElementById('implantBtnScrew');
+      const implantLayerTitle = document.getElementById('implantLayerTitle');
+      const implantLayerDescription = document.getElementById('implantLayerDescription');
+
+      function resetTabs() {
+        [implantBtnCrown, implantBtnAbutment, implantBtnScrew].forEach(b => b.setAttribute('aria-pressed', 'false'));
+      }
+
+      implantBtnCrown.addEventListener('click', () => {
+        resetTabs();
+        implantBtnCrown.setAttribute('aria-pressed', 'true');
+
+        targetCrownY = 1.05;
+        targetAbutmentY = 0.50;
+        targetFixtureY = -0.45;
+
+        abutmentMat.color.setHex(0x94a3b8);
+        fixtureMat.color.setHex(0x64748b);
+
+        implantLayerTitle.textContent = "1. Custom Ceramic Crown";
+        implantLayerDescription.textContent = "The visible tooth restoration engineered from high-strength monolithic zirconia or porcelain. Precision-shaded to match your natural smile line and chewing alignment seamlessly.";
+      });
+
+      implantBtnAbutment.addEventListener('click', () => {
+        resetTabs();
+        implantBtnAbutment.setAttribute('aria-pressed', 'true');
+
+        targetCrownY = 1.65;
+        targetAbutmentY = 0.58;
+        targetFixtureY = -0.45;
+
+        abutmentMat.color.setHex(0x2dd4bf);
+        fixtureMat.color.setHex(0x64748b);
+
+        implantLayerTitle.textContent = "2. Precision Titanium Abutment";
+        implantLayerDescription.textContent = "A custom precision-milled connector linking the bone-integrated root fixture to the coronal restoration, ensuring an airtight bacterial seal at the gum line.";
+      });
+
+      implantBtnScrew.addEventListener('click', () => {
+        resetTabs();
+        implantBtnScrew.setAttribute('aria-pressed', 'true');
+
+        targetCrownY = 1.95;
+        targetAbutmentY = 1.05;
+        targetFixtureY = -0.55;
+
+        abutmentMat.color.setHex(0x94a3b8);
+        fixtureMat.color.setHex(0x2dd4bf);
+
+        implantLayerTitle.textContent = "3. Bio-Compatible Titanium Fixture";
+        implantLayerDescription.textContent = "A medical-grade threaded titanium screw placed into the jawbone. It integrates permanently with natural bone through osseointegration, acting as an artificial tooth root.";
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
