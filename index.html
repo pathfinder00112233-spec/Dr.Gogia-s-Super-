@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apex Dental & Implant Studio | Specialist Implant & Aesthetic Center</title>
+
+  <meta
+    name="description"
+    content="Specialist-led dental implants, clear aligners, and painless root canal therapy. Explore transparent INR procedural estimates and 3D treatment guides."
+  >
+
+  <link rel="canonical" href="https://apexdentalstudio.pages.dev/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Apex Dental & Implant Studio | Specialist Implant & Aesthetic Center">
+  <meta
+    property="og:description"
+    content="Specialist-led surgical dental care with transparent upfront price estimates and interactive 3D digital treatment education."
+  >
+  <meta property="og:url" content="https://apexdentalstudio.pages.dev/">
+  <meta property="og:image" content="hero-radiance-luxury.webp">
+
+  <!-- Structured Data (India Dental Practice) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Apex Dental & Implant Studio",
+    "url": "https://apexdentalstudio.pages.dev/",
+    "telephone": "+919876543210",
+    "email": "care@apexdentalstudio.com",
+    "priceRange": "₹₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Suite 400, Central Medical Square, Sector 4 Main Rd",
+      "addressLocality": "Central District",
+      "addressRegion": "Delhi NCR",
+      "postalCode": "110001",
+      "addressCountry": "IN"
+    },
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Dr. Julian Vance",
+        "jobTitle": "Lead Prosthodontist & Implant Surgeon",
+        "honorificSuffix": "B.D.S., M.D.S. (Prosthodontics & Implantology)"
+      },
+      {
+        "@type": "Person",
+        "name": "Dr. Elena Vance",
+        "jobTitle": "Specialist Orthodontist",
+        "honorificSuffix": "B.D.S., M.D.S. (Orthodontics)"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg-canvas: #faf8f4;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f4ede2;
+
+      --text-main: #14211e;
+      --text-muted: #53645e;
+
+      --teal-primary: #0a3834;
+      --teal-hover: #062623;
+      --teal-soft: #f0f7f5;
+      --teal-border: #b8ded7;
+
+      --emerald-accent: #047857;
+      --emerald-soft: #ecfdf5;
+
+      --gold-primary: #b5893b;
+      --gold-accent: #916823;
+      --gold-soft: #fcf8f0;
+      --gold-border: #ebd9b5;
+
+      --rose-accent: #b91c1c;
+      --blue-maps: #1a73e8;
+
+      --border-color: #ebe3d5;
+      --border-dark: #d5c8b5;
+
+      --shadow-sm: 0 1px 3px rgba(20, 33, 30, 0.04);
+      --shadow-card: 0 4px 20px -3px rgba(20, 33, 30, 0.05);
+      --shadow-desk: 0 18px 45px -8px rgba(10, 56, 52, 0.16);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.55;
+      padding-bottom: 96px;
+    }
+
+    @media (min-width: 900px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    a,
+    button,
+    select,
+    input {
+      font-family: inherit;
+      color: inherit;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    select:focus-visible {
+      outline: 2px solid var(--teal-primary);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+
+    /* Top Institutional Badge */
+    .institutional-top-bar {
+      background: var(--teal-primary);
+      color: #e2edea;
+      text-align: center;
+      padding: 7px 12px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* 1. LUXURY SITE HEADER */
+    .luxury-site-header {
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      margin-top: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+
+    .header-brand-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .gold-tooth-icon {
+      width: clamp(24px, 3.2vw, 34px);
+      height: clamp(24px, 3.2vw, 34px);
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 4px rgba(181, 137, 59, 0.25));
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .brand-name-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1rem, 3.6vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--teal-primary);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-tagline-sans {
+      font-size: clamp(0.42rem, 1.5vw, 0.54rem);
+      color: var(--teal-primary);
+      opacity: 0.85;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    .live-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4.5px;
+      background: #e6f7f2;
+      border: 1px solid #b2ebd9;
+      color: #065f46;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: clamp(0.52rem, 1.8vw, 0.65rem);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .status-indicator {
+      width: 5px;
+      height: 5px;
+      flex-shrink: 0;
+      background-color: #059669;
+      border-radius: 50%;
+    }
+
+    .status-indicator.closed { background-color: #f43f5e; }
+    .live-status-pill.is-closed { background: #f1f5f9; border-color: #cbd5e1; color: #475569; }
+
+    @media (max-width: 420px) {
+      .luxury-site-header {
+        padding: 8px 10px;
+        gap: 6px;
+      }
+      .header-brand-link { gap: 6px; }
+      .live-status-pill {
+        padding: 3.5px 6.5px;
+        font-size: 0.52rem;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .desktop-header-cta-group {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .desktop-header-action-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: #ffffff;
+        border: 1.5px solid var(--border-color);
+        color: var(--teal-primary) !important;
+        padding: 8px 13px;
+        border-radius: var(--radius-sm);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-decoration: none;
+        transition: all 0.15s ease;
+      }
+
+      .desktop-header-action-btn:hover {
+        background: var(--teal-soft);
+        border-color: var(--teal-primary);
+      }
+
+      .desktop-header-cta {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--teal-primary);
+        color: #ffffff !important;
+        padding: 8px 16px;
+        border-radius: var(--radius-sm);
+        font-size: 0.80rem;
+        font-weight: 800;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        transition: background-color 0.15s ease;
+      }
+
+      .desktop-header-cta:hover {
+        background-color: var(--teal-hover);
+      }
+    }
+
+    @media (max-width: 899px) {
+      .desktop-header-cta-group { display: none; }
+    }
+
+    /* 2. HERO BANNER */
+    .luxury-hero-banner {
+      position: relative;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 0;
+      border: 1.5px solid var(--border-color);
+      box-shadow: var(--shadow-card);
+      background-color: #faf6ee;
+      background-image: url('hero-radiance-luxury.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right center;
+      display: flex;
+      align-items: center;
+      min-height: 400px;
+      padding: 44px 38px;
+    }
+
+    .hero-content-col {
+      max-width: 62%;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 767px) {
+      .luxury-hero-banner {
+        min-height: 310px;
+        padding: 24px 18px;
+        background-position: 85% center;
+      }
+
+      .luxury-hero-banner::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(250, 248, 244, 0.95) 0%,
+          rgba(250, 248, 244, 0.75) 60%,
+          rgba(250, 248, 244, 0) 100%
+        );
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .hero-content-col {
+        max-width: 82%;
+      }
+    }
+
+    .hero-eyebrow-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .eyebrow-text {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-accent);
+    }
+
+    .hero-headline {
+      font-size: clamp(2.1rem, 6vw, 3.3rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--teal-primary);
+      margin: 4px 0 10px 0;
+    }
+
+    .hero-subhead {
+      color: var(--text-muted);
+      font-size: clamp(0.88rem, 2vw, 1rem);
+      line-height: 1.45;
+      max-width: 480px;
+      font-weight: 500;
+    }
+
+    .hero-specialty-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    .specialty-tag {
+      font-size: 0.64rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(244, 237, 226, 0.9);
+      color: var(--teal-primary);
+      border: 1px solid var(--border-color);
+    }
+
+    /* 3. UNIFIED STATS STRIP */
+    .unified-stats-strip {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      margin-top: 12px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .strip-stat-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 4px;
+      border-right: 1px solid var(--border-color);
+      min-width: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .strip-stat-cell:last-child {
+      border-right: none;
+    }
+
+    .strip-icon-wrap {
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .strip-icon-wrap svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .strip-text-group {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .strip-text-group strong {
+      font-size: clamp(0.74rem, 2.3vw, 0.90rem);
+      font-weight: 800;
+      color: var(--teal-primary);
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .strip-text-group span {
+      font-size: clamp(0.50rem, 1.6vw, 0.60rem);
+      color: var(--text-muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-top: 1px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* 4. CLINICAL LEADERSHIP DOCTOR PROFILES */
+    .editorial-heading-group {
+      margin: 28px 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .editorial-subhead {
+      font-size: 0.70rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-accent);
+      display: block;
+    }
+
+    .section-display-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      line-height: 1.2;
+    }
+
+    .doctor-luxury-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .doctor-profile-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .doctor-photo-frame {
+      position: relative;
+      width: 90px;
+      height: 108px;
+      flex-shrink: 0;
+      border-radius: 12px;
+    }
+
+    .doctor-photo-rect {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      display: block;
+      border: 1px solid var(--border-color);
+      background-color: var(--teal-soft);
+    }
+
+    .doctor-photo-badge {
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--teal-primary);
+      color: #ffffff;
+      font-size: 0.44rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 2px 6px;
+      border-radius: 999px;
+      white-space: nowrap;
+      border: 1.5px solid #ffffff;
+    }
+
+    .doctor-details-block {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .doc-lead-eyebrow {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold-accent);
+      display: block;
+    }
+
+    .doc-name-serif {
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--teal-primary);
+    }
+
+    .doc-degrees-line {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-top: 2px;
+    }
+
+    .doc-reg-number {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--emerald-accent);
+      margin-top: 1px;
+    }
+
+    .doc-institution-line {
+      font-size: 0.70rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-top: 4px;
+    }
+
+    /* 5. WHY PATIENTS CHOOSE APEX */
+    .why-apex-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .why-apex-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .why-apex-item {
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .why-num-tag {
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: var(--gold-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .why-apex-item h4 {
+      font-size: 0.90rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      line-height: 1.25;
+    }
+
+    .why-apex-item p {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================
+       6. CAROUSEL RAILS & LIGHTENED DISCREET PROGRESS SLIDER
+    =========================================================== */
+    .swipe-hint {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .horizontal-scroll-rail {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px 2px 10px 2px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .horizontal-scroll-rail::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Lightened / Softened Discreet Slider Track */
+    .custom-rail-slider-track {
+      width: 100%;
+      height: 3px;
+      background: #f0e9dc;
+      border-radius: 999px;
+      margin: 4px 0 16px 0;
+      position: relative;
+      overflow: hidden;
+      opacity: 0.75;
+    }
+
+    .custom-rail-slider-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 25%;
+      background: rgba(181, 137, 59, 0.45);
+      border-radius: 999px;
+      transition: transform 0.08s linear;
+    }
+
+    .treatment-card-item {
+      flex: 0 0 250px;
+      max-width: 75vw;
+      scroll-snap-align: start;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-product-stage {
+      width: 100%;
+      height: 160px;
+      overflow: hidden;
+      background: #f4ede2;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+
+    .card-product-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Implant Full-Visibility Fix */
+    .card-implant-stage {
+      background: radial-gradient(circle at 50% 45%, #0f3d37 0%, #062623 70%, #021210 100%) !important;
+    }
+
+    .card-implant-stage img {
+      object-fit: contain !important;
+      padding: 8px 12px !important;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+    }
+
+    .card-body-content {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .card-body-content h4 {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      margin-bottom: 3px;
+    }
+
+    .card-body-content p {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .card-price-pill {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #065f46;
+      background: #ecfdf5;
+      border: 1px solid #b2ebd9;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .btn-card-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: var(--teal-primary);
+      color: #ffffff !important;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      text-decoration: none !important;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-card-action:hover {
+      background: var(--teal-hover);
+    }
+
+    /* BEFORE & AFTER GALLERY */
+    .ba-slide-card {
+      flex: 0 0 280px;
+      max-width: 84vw;
+      scroll-snap-align: start;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ba-image-stage {
+      height: 165px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-color);
+      background-color: #f1ede4;
+    }
+
+    .ba-image-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ba-tag-overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(10, 56, 52, 0.88);
+      color: #fff;
+      font-size: 0.62rem;
+      font-weight: 800;
+      padding: 2.5px 7.5px;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    .ba-card-body {
+      padding: 14px;
+    }
+
+    .ba-card-body h4 {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      margin-bottom: 6px;
+    }
+
+    .ba-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    .ba-meta-list strong {
+      color: var(--text-main);
+    }
+
+    /* INTERIOR TOUR */
+    .interior-slide-card {
+      flex: 0 0 250px;
+      max-width: 76vw;
+      scroll-snap-align: start;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .interior-img-stage {
+      height: 170px;
+      width: 100%;
+      background-color: #f1ede4;
+    }
+
+    .interior-img-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .interior-caption {
+      padding: 10px 12px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      background: #ffffff;
+      text-align: center;
+    }
+
+    /* ==========================================================
+       7. BOOKING DESK: WHATSAPP (1-TAP) + STRICT EMAIL VALIDATION
+    =========================================================== */
+    .desk-card {
+      background: #ffffff;
+      border: 2px solid var(--teal-primary);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-desk);
+      width: 100%;
+      margin: 28px 0 24px 0;
+      position: relative;
+    }
+
+    .desk-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #0a3834, #b5893b);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .desk-card h3 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 4px;
+    }
+
+    .desk-lede {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      margin-bottom: 18px;
+    }
+
+    .field-caption {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+      color: var(--teal-primary);
+    }
+
+    /* Custom Dropdown Control */
+    .custom-select-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .custom-select-trigger {
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      padding: 12px 38px 12px 12px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a3834' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 16px;
+    }
+
+    .custom-dropdown-panel {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0; right: 0;
+      background: #ffffff;
+      border: 1.5px solid var(--teal-border);
+      border-radius: var(--radius-sm);
+      box-shadow: 0 8px 24px -2px rgba(10, 56, 52, 0.18);
+      z-index: 100;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+
+    .custom-select-wrapper.is-open .custom-dropdown-panel {
+      display: block;
+    }
+
+    .custom-optgroup-label {
+      font-size: 0.70rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 7px 12px;
+      color: #065f46;
+      background: #ecfdf5;
+      border-bottom: 1px solid #d1fae5;
+    }
+
+    .custom-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      border-bottom: 1px solid #f6f1e8;
+    }
+
+    .custom-option:last-child {
+      border-bottom: none;
+    }
+
+    .custom-option.is-selected {
+      background: var(--teal-soft);
+      color: var(--teal-primary);
+      font-weight: 700;
+    }
+
+    .custom-option .check-icon {
+      display: none;
+      color: var(--emerald-accent);
+      flex-shrink: 0;
+    }
+
+    .custom-option.is-selected .check-icon {
+      display: inline-block;
+    }
+
+    .option-price-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--emerald-accent);
+      margin-left: 6px;
+    }
+
+    /* Preferred Time Window Chips (Includes 5–7:30 Fix) */
+    .time-chips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .time-chip-btn {
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 10px 6px;
+      text-align: center;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .time-chip-btn[aria-pressed="true"] {
+      background: var(--teal-soft);
+      border-color: var(--teal-primary);
+      color: var(--teal-primary);
+      font-weight: 800;
+      outline: 2px solid var(--teal-primary);
+    }
+
+    .prominent-preview-banner {
+      background: var(--bg-canvas);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-bottom: 18px;
+    }
+
+    .banner-tag {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gold-accent);
+      margin-bottom: 3px;
+    }
+
+    .banner-statement {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      line-height: 1.35;
+    }
+
+    /* Primary Action: WhatsApp 1-Tap CTA */
+    .desk-cta-btn {
+      width: 100%;
+      background: var(--teal-primary);
+      color: #ffffff;
+      border: 1.5px solid var(--teal-primary);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      font-size: 0.94rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(10, 56, 52, 0.22);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .desk-cta-btn:hover {
+      background: var(--teal-hover);
+      transform: translateY(-1px);
+    }
+
+    .desk-cta-btn svg {
+      color: #25d366;
+    }
+
+    .reassurance-note {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    /* Email Booking Form Integration */
+    .email-booking-toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 18px 0 10px 0;
+    }
+
+    .email-booking-toggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--teal-primary);
+      font-size: 0.80rem;
+      font-weight: 800;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+
+    .email-fields-panel {
+      display: none;
+      background: var(--bg-canvas);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-top: 10px;
+    }
+
+    .email-fields-panel.is-open {
+      display: block;
+    }
+
+    .native-input {
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      padding: 10px 12px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .validation-hint-text {
+      font-size: 0.72rem;
+      color: #b91c1c;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .validation-hint-text.is-valid {
+      color: #047857;
+    }
+
+    .email-submit-btn {
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px solid var(--teal-primary);
+      color: var(--teal-primary) !important;
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .email-submit-btn.is-disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+      background: #f1f5f9 !important;
+      border-color: #cbd5e1 !important;
+      color: #94a3b8 !important;
+    }
+
+    .email-submit-btn:not(.is-disabled):hover {
+      background: var(--teal-soft);
+    }
+
+    /* 8. VERIFIED PATIENT REVIEWS */
+    .reviews-carousel-wrap {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 4px;
+      margin-bottom: 24px;
+    }
+
+    .reviews-track {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 12px;
+    }
+
+    .review-card-item {
+      flex: 0 0 280px;
+      max-width: 82vw;
+      scroll-snap-align: start;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .review-author-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .author-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--teal-primary);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .author-info h5 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+    }
+
+    .author-info span {
+      font-size: 0.70rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 0.82rem;
+      letter-spacing: 1px;
+    }
+
+    .review-content {
+      font-size: 0.78rem;
+      color: var(--text-main);
+      line-height: 1.45;
+    }
+
+    .review-view-all-card {
+      flex: 0 0 210px;
+      scroll-snap-align: start;
+      background: var(--gold-soft);
+      border: 1.5px dashed var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      gap: 8px;
+      color: var(--teal-primary);
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+
+    /* 9. FAQ ACCORDION */
+    .faq-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: border-color 0.15s ease;
+    }
+
+    details[open] { border-color: var(--teal-border); }
+
+    summary {
+      padding: 14px 16px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--teal-primary);
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 1.15rem;
+      color: var(--gold-accent);
+      font-weight: 800;
+    }
+    details[open] summary::after { content: '−'; }
+
+    details p {
+      padding: 0 16px 14px;
+      font-size: 0.80rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* 10. INSTITUTIONAL CLINIC FOOTER */
+    .clinic-footer-container {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1.5px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .footer-identity-block h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 4px;
+    }
+
+    .footer-identity-block p {
+      line-height: 1.5;
+    }
+
+    .footer-seo-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-seo-links a {
+      color: var(--teal-primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* 11. MOBILE FLOATING ACTION BAR */
+    .mobile-action-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(250, 248, 244, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    @media (min-width: 900px) {
+      .mobile-action-bar { display: none; }
+    }
+
+    .mobile-call-btn,
+    .mobile-book-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      padding: 13px 0;
+    }
+
+    .mobile-call-btn {
+      flex: 1;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      color: var(--text-main);
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .mobile-book-btn {
+      flex: 2;
+      background: var(--teal-primary);
+      color: #ffffff;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 12px rgba(10, 56, 52, 0.2);
+    }
+
+    /* 12. MICRO POPUP MODAL */
+    .quick-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 24, 21, 0.65);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .quick-modal-backdrop.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .quick-modal-card {
+      background: var(--bg-surface);
+      border: 2px solid var(--teal-primary);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 440px;
+      padding: 22px 20px;
+      box-shadow: 0 20px 40px -10px rgba(10, 56, 52, 0.35);
+      position: relative;
+    }
+
+    .quick-modal-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--teal-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .quick-modal-tag {
+      font-size: 0.66rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-accent);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .quick-modal-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      line-height: 1.15;
+      padding-right: 32px;
+      margin-bottom: 14px;
+    }
+
+    .quick-modal-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .quick-bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.80rem;
+      color: var(--text-main);
+      line-height: 1.4;
+    }
+
+    .quick-bullet-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--emerald-accent);
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    .quick-modal-cta {
+      width: 100%;
+      background: var(--teal-primary);
+      color: #ffffff !important;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 13px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Top Institutional Banner -->
+    <div class="institutional-top-bar">
+      <span>Specialist-Led Surgical Care</span>
+      <span>•</span>
+      <span>Advanced 3D Diagnostics</span>
+    </div>
+
+    <!-- 1. LUXURY SITE HEADER (DESKTOP: CALL & BOOK ONLY) -->
+    <header class="luxury-site-header">
+      <a href="#" class="header-brand-link" aria-label="Apex Dental & Implant Studio">
+        <svg class="gold-tooth-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f5e0a3"/>
+              <stop offset="40%" stop-color="#b5893b"/>
+              <stop offset="80%" stop-color="#8a611c"/>
+              <stop offset="100%" stop-color="#d6ab58"/>
+            </linearGradient>
+          </defs>
+          <path d="M10 4C6.5 4 4 6.8 4 10.8c0 5.2 2.6 11 4.7 16.6.7 2 2.8 2.6 4.1 1.3 1.6-1.6 2.4-4 3.2-6.7.8 2.7 1.6 5.1 3.2 6.7 1.3 1.3 3.4.7 4.1-1.3C25.4 21.8 28 16 28 10.8 28 6.8 25.5 4 22 4c-3.1 0-5 2-6 2s-2.9-2-6-2z" fill="url(#goldShine)" stroke="#8a611c" stroke-width="0.8"/>
+          <path d="M19 8 L20 6 L21 8 L23 9 L21 10 L20 12 L19 10 L17 9 Z" fill="#ffffff"/>
+        </svg>
+
+        <div class="brand-text-block">
+          <span class="brand-name-serif">APEX DENTAL</span>
+          <span class="brand-tagline-sans">IMPLANT &amp; ESTHETIC STUDIO</span>
+        </div>
+      </a>
+
+      <div class="header-right-tools">
+        <div class="live-status-pill" id="clinicStatusPill" role="status" aria-live="polite">
+          <span class="status-indicator" id="statusIndicator" aria-hidden="true"></span>
+          <span id="statusDisplayText">Open · Closes 7:30 PM</span>
+        </div>
+
+        <div class="desktop-header-cta-group">
+          <a href="tel:+919876543210" class="desktop-header-action-btn" aria-label="Call Reception">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Call Reception</span>
+          </a>
+
+          <a href="#bookingDeskSection" class="desktop-header-cta" id="desktopHeaderCta">
+            Book an Appointment
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. HERO BANNER -->
+    <main>
+      <section class="luxury-hero-banner" aria-label="Apex Dental Hero Introduction">
+        <div class="hero-content-col">
+          <div class="hero-eyebrow-row">
+            <span class="eyebrow-text">SPECIALIST IMPLANT &amp; AESTHETIC CARE</span>
+          </div>
+
+          <h1 class="hero-headline serif-title">
+            Exceptional Dentistry.<br>Confident Smiles.
+          </h1>
+
+          <p class="hero-subhead">
+            Specialist-led implants, cosmetic rehabilitation, and digital diagnostics with clear written treatment estimates before care begins.
+          </p>
+
+          <div class="hero-specialty-tags" aria-label="Key Clinical Disciplines">
+            <span class="specialty-tag">Titanium Implants</span>
+            <span class="specialty-tag">Clear Aligners</span>
+            <span class="specialty-tag">Root Canal Therapy</span>
+            <span class="specialty-tag">Zirconia Crowns</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. UNIFIED STATS STRIP -->
+      <div class="unified-stats-strip" aria-label="Practice Overview">
+        <div class="strip-stat-cell">
+          <div class="strip-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="strip-text-group">
+            <strong>15+ Years</strong>
+            <span>Experience</span>
+          </div>
+        </div>
+
+        <div class="strip-stat-cell">
+          <div class="strip-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="strip-text-group">
+            <strong>5,000+</strong>
+            <span>Patients</span>
+          </div>
+        </div>
+
+        <a href="#reviewsSection" class="strip-stat-cell" style="text-decoration: none;">
+          <div class="strip-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="strip-text-group">
+            <strong>4.9 Star</strong>
+            <span>250+ Reviews</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- 4. ATTENDING SPECIALISTS -->
+      <div class="editorial-heading-group">
+        <div>
+          <span class="editorial-subhead">Clinical Leadership</span>
+          <h3 class="section-display-title serif-title">Attending Dental Specialists</h3>
+        </div>
+      </div>
+
+      <section class="doctor-luxury-stack" aria-label="Lead Specialist Profiles">
+        <!-- Lead Prosthodontist -->
+        <div class="doctor-profile-card">
+          <div class="doctor-photo-frame">
+            <img
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=260&q=80"
+              alt="Dr. Julian Vance"
+              class="doctor-photo-rect"
+              loading="eager"
+              width="90"
+              height="108"
+            >
+            <div class="doctor-photo-badge">
+              <span>IMPLANT SURGEON</span>
+            </div>
+          </div>
+
+          <div class="doctor-details-block">
+            <span class="doc-lead-eyebrow">Lead Prosthodontist &amp; Implantologist</span>
+            <h2 class="doc-name-serif serif-title">Dr. Julian Vance</h2>
+            <p class="doc-degrees-line">B.D.S., M.D.S. · Prosthodontics &amp; Implantology</p>
+            <p class="doc-reg-number">State Dental Council Reg. #D-14892</p>
+            <p class="doc-institution-line">
+              Fellow of International Congress of Oral Implantologists (ICOI) · 15+ years specialized clinical focus on 3D computer-guided titanium placement &amp; full arch restoration.
+            </p>
+          </div>
+        </div>
+
+        <!-- Specialist Orthodontist -->
+        <div class="doctor-profile-card">
+          <div class="doctor-photo-frame">
+            <img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=260&q=80"
+              alt="Dr. Elena Vance"
+              class="doctor-photo-rect"
+              loading="lazy"
+              width="90"
+              height="108"
+            >
+            <div class="doctor-photo-badge">
+              <span>ORTHODONTIST</span>
+            </div>
+          </div>
+
+          <div class="doctor-details-block">
+            <span class="doc-lead-eyebrow">Specialist Orthodontist &amp; Dentofacial Orthopedics</span>
+            <h2 class="doc-name-serif serif-title">Dr. Elena Vance</h2>
+            <p class="doc-degrees-line">B.D.S., M.D.S. · Orthodontics &amp; Dentofacial Orthopedics</p>
+            <p class="doc-reg-number">State Dental Council Reg. #D-18234</p>
+            <p class="doc-institution-line">
+              Certified Provider of Clear Aligner Systems · Specialized in digital smile design, adult alignment, and preventive bite stabilization.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. WHY PATIENTS CHOOSE APEX -->
+      <div class="editorial-heading-group">
+        <div>
+          <span class="editorial-subhead">The Apex Standard</span>
+          <h3 class="section-display-title serif-title">Why Patients Choose Apex</h3>
+        </div>
+      </div>
+
+      <section class="why-apex-grid" aria-label="Why Choose Us">
+        <div class="why-apex-item">
+          <span class="why-num-tag">01 · Direct Specialist Care</span>
+          <h4>Appropriate Specialist Oversight</h4>
+          <p>Surgical implants and clear aligners are supervised directly by university-credentialed MDS specialists, never generalists rotating through.</p>
+        </div>
+
+        <div class="why-apex-item">
+          <span class="why-num-tag">02 · Digital Diagnostics</span>
+          <h4>See Your Result in 3D First</h4>
+          <p>Optical scanning captures your teeth in seconds with zero messy putty. We simulate tooth movement and implant positioning before treatment starts.</p>
+        </div>
+
+        <div class="why-apex-item">
+          <span class="why-num-tag">03 · Upfront Clarity</span>
+          <h4>Written Itemized Estimates</h4>
+          <p>You receive a clear, printed cost breakdown covering the fixture, abutment, and crown before procedure confirmation. No hidden add-ons.</p>
+        </div>
+
+        <div class="why-apex-item">
+          <span class="why-num-tag">04 · Patient Comfort</span>
+          <h4>Comfort-Focused Protocols</h4>
+          <p>Computer-controlled local anesthesia and micro-rotary instruments eliminate vibration and pain, allowing for a relaxed visit.</p>
+        </div>
+      </section>
+
+      <!-- 6. CLINICAL SPECIALTIES CAROUSEL (UPDATED "IN 3D" BUTTONS) -->
+      <div class="editorial-heading-group">
+        <div>
+          <span class="editorial-subhead">Clinical Disciplines</span>
+          <h3 class="section-display-title serif-title">Explore Our Treatments</h3>
+        </div>
+        <span class="swipe-hint">Swipe →</span>
+      </div>
+
+      <section class="horizontal-scroll-rail" aria-label="Treatments Carousel" id="treatmentTrack">
+        <!-- Root Canal -->
+        <div class="treatment-card-item">
+          <div class="card-product-stage">
+            <img src="card-rct.webp" alt="Painless Root Canal" loading="lazy">
+          </div>
+          <div class="card-body-content">
+            <div>
+              <h4>Microscope Painless RCT</h4>
+              <p>Specialized rotary instrumentation to relieve pain and eliminate deep pulp infection while saving your natural tooth root.</p>
+              <span class="card-price-pill">₹3,500 – ₹6,500 est.</span>
+            </div>
+            <a href="/rct.html" class="btn-card-action">
+              <span>Tap to Explore in 3D</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dental Implants -->
+        <div class="treatment-card-item">
+          <div class="card-product-stage card-implant-stage">
+            <img src="card-implant.webp" alt="Permanent Dental Implants" loading="lazy">
+          </div>
+          <div class="card-body-content">
+            <div>
+              <h4>Permanent Dental Implants</h4>
+              <p>Biocompatible medical titanium fixture placed via 3D planning. Anchors a custom crown to restore complete chewing strength.</p>
+              <span class="card-price-pill">₹25,000 – ₹45,000 est.</span>
+            </div>
+            <a href="/implants.html" class="btn-card-action">
+              <span>Tap to Explore in 3D</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Clear Aligners -->
+        <div class="treatment-card-item">
+          <div class="card-product-stage">
+            <img src="card-aligners.webp" alt="Clear Aligners" loading="lazy">
+          </div>
+          <div class="card-body-content">
+            <div>
+              <h4>Clear Teeth Aligners</h4>
+              <p>Transparent medical-grade polymer trays that guide crowded teeth into alignment without dark metal wires or bracket irritation.</p>
+              <span class="card-price-pill">₹45,000 – ₹1,20,000 est.</span>
+            </div>
+            <a href="/aligners.html" class="btn-card-action">
+              <span>Tap to Explore in 3D</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Zirconia Crowns -->
+        <div class="treatment-card-item">
+          <div class="card-product-stage">
+            <img src="card-crowns.webp" alt="Ceramic & Zirconia Crowns" loading="lazy">
+          </div>
+          <div class="card-body-content">
+            <div>
+              <h4>Ceramic &amp; Zirconia Crowns</h4>
+              <p>Precision CAD/CAM milled ceramic caps designed to protect cracked, heavily restored, or fractured natural teeth.</p>
+              <span class="card-price-pill">₹5,500 – ₹12,000 est.</span>
+            </div>
+            <button type="button" class="btn-card-action" onclick="openQuickInfo('crowns')">
+              <span>Tap to View Details</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Smile Makeovers -->
+        <div class="treatment-card-item">
+          <div class="card-product-stage">
+            <img src="card-digital.webp" alt="Smile Makeover & Veneers" loading="lazy">
+          </div>
+          <div class="card-body-content">
+            <div>
+              <h4>Smile Makeover &amp; Veneers</h4>
+              <p>Custom ultra-thin porcelain facings designed to correct discoloration, chipped edges, and smile line asymmetries.</p>
+              <span class="card-price-pill">₹8,000 – ₹18,000 / tooth</span>
+            </div>
+            <button type="button" class="btn-card-action" onclick="openQuickInfo('dentures')">
+              <span>Tap to View Details</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Checkup & Cleaning -->
+        <div class="treatment-card-item">
+          <div class="card-product-stage">
+            <img src="card-checkup.webp" alt="Checkup & Cleaning" loading="lazy">
+          </div>
+          <div class="card-body-content">
+            <div>
+              <h4>General Diagnostic Exam &amp; Polish</h4>
+              <p>Gentle ultrasonic removal of hardened tartar, comprehensive oral tissue evaluation, and digital low-dose radiograph check.</p>
+              <span class="card-price-pill">₹500 – ₹1,500 est.</span>
+            </div>
+            <button type="button" class="btn-card-action" onclick="openQuickInfo('checkup')">
+              <span>Tap to View Details</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Softened Discreet Progress Slider (Treatments) -->
+      <div class="custom-rail-slider-track">
+        <div class="custom-rail-slider-thumb" id="treatmentSliderThumb"></div>
+      </div>
+
+      <!-- 7. BEFORE & AFTER CLINICAL CASES -->
+      <div class="editorial-heading-group">
+        <div>
+          <span class="editorial-subhead">Clinical Documentation</span>
+          <h3 class="section-display-title serif-title">Verified Case Outcomes</h3>
+        </div>
+        <span class="swipe-hint">Swipe →</span>
+      </div>
+
+      <section class="horizontal-scroll-rail" aria-label="Before and After Gallery" id="beforeAfterTrack">
+        <!-- Case 1 -->
+        <div class="ba-slide-card">
+          <div class="ba-image-stage">
+            <img src="ba-01-veneers.webp" alt="Ceramic Veneers Restoration" loading="lazy">
+            <span class="ba-tag-overlay">Case 01</span>
+          </div>
+          <div class="ba-card-body">
+            <h4>Upper Ceramic Veneers</h4>
+            <div class="ba-meta-list">
+              <span><strong>Concern:</strong> Chipped incisal edges and midline spacing</span>
+              <span><strong>Treatment:</strong> 4 Custom Monolithic Ceramic Veneers</span>
+              <span><strong>Duration:</strong> 2 appointments (10 days total)</span>
+              <span><strong>Result:</strong> Symmetrical shade match with sealed margins.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="ba-slide-card">
+          <div class="ba-image-stage">
+            <img src="ba-02-implant.webp" alt="Titanium Dental Implant" loading="lazy">
+            <span class="ba-tag-overlay">Case 02</span>
+          </div>
+          <div class="ba-card-body">
+            <h4>Single Tooth Implant</h4>
+            <div class="ba-meta-list">
+              <span><strong>Concern:</strong> Missing premolar causing bite shift</span>
+              <span><strong>Treatment:</strong> Titanium root fixture + custom zirconia crown</span>
+              <span><strong>Duration:</strong> 3-month osseointegration follow-up</span>
+              <span><strong>Result:</strong> Fully restored chewing load without altering neighboring teeth.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="ba-slide-card">
+          <div class="ba-image-stage">
+            <img src="ba-03-aligners.webp" alt="Clear Aligners Orthodontics" loading="lazy">
+            <span class="ba-tag-overlay">Case 03</span>
+          </div>
+          <div class="ba-card-body">
+            <h4>Lower Arch Aligner Therapy</h4>
+            <div class="ba-meta-list">
+              <span><strong>Concern:</strong> Severe lower anterior crowding</span>
+              <span><strong>Treatment:</strong> Progressive clear thermoplastic aligner series</span>
+              <span><strong>Duration:</strong> 6 months active wear</span>
+              <span><strong>Result:</strong> Leveled dental arch with normal floss access.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div class="ba-slide-card">
+          <div class="ba-image-stage">
+            <img src="ba-04-fullarch.webp" alt="Full Arch Zirconia Restoration" loading="lazy">
+            <span class="ba-tag-overlay">Case 04</span>
+          </div>
+          <div class="ba-card-body">
+            <h4>Full Arch Bite Rehabilitation</h4>
+            <div class="ba-meta-list">
+              <span><strong>Concern:</strong> Severe enamel attrition and lost vertical dimension</span>
+              <span><strong>Treatment:</strong> Monolithic Zirconia fixed full-arch prosthesis</span>
+              <span><strong>Duration:</strong> 3 appointments</span>
+              <span><strong>Result:</strong> Restored chewing height and facial balance.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Softened Discreet Progress Slider (Before & After) -->
+      <div class="custom-rail-slider-track">
+        <div class="custom-rail-slider-thumb" id="baSliderThumb"></div>
+      </div>
+
+      <!-- 8. INTERIOR OFFICE TOUR -->
+      <div class="editorial-heading-group">
+        <div>
+          <span class="editorial-subhead">Our Facility</span>
+          <h3 class="section-display-title serif-title">Modern Surgical Facility</h3>
+        </div>
+        <span class="swipe-hint">Swipe →</span>
+      </div>
+
+      <section class="horizontal-scroll-rail" aria-label="Interior Tour Gallery" id="interiorTrack">
+        <div class="interior-slide-card">
+          <div class="interior-img-stage">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=400&q=80" alt="Operatory Suite" loading="lazy">
+          </div>
+          <div class="interior-caption">Private Surgical Operatory Suite</div>
+        </div>
+
+        <div class="interior-slide-card">
+          <div class="interior-img-stage">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=400&q=80" alt="Lounge Area" loading="lazy">
+          </div>
+          <div class="interior-caption">Patient Consultation Lounge</div>
+        </div>
+
+        <div class="interior-slide-card">
+          <div class="interior-img-stage">
+            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=400&q=80" alt="Sterilization Area" loading="lazy">
+          </div>
+          <div class="interior-caption">Hospital-Grade Autoclave Bay</div>
+        </div>
+
+        <div class="interior-slide-card">
+          <div class="interior-img-stage">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&q=80" alt="3D Diagnostic Suite" loading="lazy">
+          </div>
+          <div class="interior-caption">3D Digital Imaging Suite</div>
+        </div>
+      </section>
+
+      <!-- Softened Discreet Progress Slider (Interior) -->
+      <div class="custom-rail-slider-track">
+        <div class="custom-rail-slider-thumb" id="interiorSliderThumb"></div>
+      </div>
+
+      <!-- 9. BOOKING DESK: WHATSAPP (1-TAP) + STRICT EMAIL VALIDATION -->
+      <section id="bookingDeskSection" aria-label="Consultation Booking Desk">
+        <div class="desk-card">
+          <h3 class="serif-title">Book a Consultation</h3>
+          <p class="desk-lede">
+            Select your clinical concern and preferred consultation window. Confirm instantly on WhatsApp or request an email response.
+          </p>
+
+          <form id="scheduleForm" onsubmit="event.preventDefault();">
+            <!-- Procedure Dropdown -->
+            <div class="form-row">
+              <label id="treatmentSelectLabel" class="field-caption">
+                1. Select Procedure or Visit Reason
+              </label>
+
+              <div class="custom-select-wrapper" id="treatmentCustomWrapper">
+                <button
+                  type="button"
+                  id="treatmentSelectTrigger"
+                  class="custom-select-trigger"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                >
+                  <span id="treatmentSelectedText">Permanent Dental Implants (₹25,000 – ₹45,000)</span>
+                </button>
+
+                <div class="custom-dropdown-panel" id="treatmentDropdownPanel" role="listbox">
+                  <div class="custom-optgroup-label">✦ PROCEDURAL RANGES</div>
+                  
+                  <div class="custom-option is-selected" data-value="Permanent Dental Implants" data-price="₹25,000 – ₹45,000">
+                    <span>Permanent Dental Implants</span>
+                    <span class="option-price-tag">₹25,000 – ₹45,000</span>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+
+                  <div class="custom-option" data-value="Microscope Painless RCT" data-price="₹3,500 – ₹6,500">
+                    <span>Microscope Painless RCT</span>
+                    <span class="option-price-tag">₹3,500 – ₹6,500</span>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+
+                  <div class="custom-option" data-value="Clear Teeth Aligners" data-price="₹45,000 – ₹1,20,000">
+                    <span>Clear Teeth Aligners</span>
+                    <span class="option-price-tag">₹45,000 – ₹1,20,000</span>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+
+                  <div class="custom-option" data-value="Ceramic &amp; Zirconia Crowns" data-price="₹5,500 – ₹12,000">
+                    <span>Ceramic &amp; Zirconia Crowns</span>
+                    <span class="option-price-tag">₹5,500 – ₹12,000</span>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+
+                  <div class="custom-option" data-value="Smile Makeover &amp; Veneers" data-price="₹8,000 – ₹18,000">
+                    <span>Smile Makeover &amp; Veneers</span>
+                    <span class="option-price-tag">₹8,000 – ₹18,000</span>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+
+                  <div class="custom-option" data-value="General Checkup &amp; Polish" data-price="₹500 – ₹1,500">
+                    <span>General Checkup &amp; Polish</span>
+                    <span class="option-price-tag">₹500 – ₹1,500</span>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+
+                  <div class="custom-option" data-value="Urgent Dental Pain Relief" data-price="Priority Evaluation">
+                    <span>Urgent Dental Pain Relief</span>
+                    <span class="option-price-tag">Priority Evaluation</span>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                </div>
+
+                <select id="treatmentSelect" style="display: none;">
+                  <option value="Permanent Dental Implants" data-price="₹25,000 – ₹45,000">Permanent Dental Implants</option>
+                  <option value="Microscope Painless RCT" data-price="₹3,500 – ₹6,500">Microscope Painless RCT</option>
+                  <option value="Clear Teeth Aligners" data-price="₹45,000 – ₹1,20,000">Clear Teeth Aligners</option>
+                  <option value="Ceramic &amp; Zirconia Crowns" data-price="₹5,500 – ₹12,000">Ceramic &amp; Zirconia Crowns</option>
+                  <option value="Smile Makeover &amp; Veneers" data-price="₹8,000 – ₹18,000">Smile Makeover &amp; Veneers</option>
+                  <option value="General Checkup &amp; Polish" data-price="₹500 – ₹1,500">General Checkup &amp; Polish</option>
+                  <option value="Urgent Dental Pain Relief" data-price="Priority Evaluation">Urgent Dental Pain Relief</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Time Window Selection Chips (Includes 5–7:30 Fix) -->
+            <div class="form-row">
+              <span class="field-caption">2. Preferred Time of Day</span>
+              <div class="time-chips-grid" role="radiogroup" aria-label="Preferred consultation time">
+                <button type="button" class="time-chip-btn" data-time="Morning (10 AM – 1 PM)" aria-pressed="true">
+                  Morning (10–1)
+                </button>
+                <button type="button" class="time-chip-btn" data-time="Afternoon (1 PM – 5 PM)" aria-pressed="false">
+                  Afternoon (1–5)
+                </button>
+                <button type="button" class="time-chip-btn" data-time="Evening (5 PM – 7:30 PM)" aria-pressed="false">
+                  Evening (5–7:30)
+                </button>
+              </div>
+            </div>
+
+            <!-- Confirmation Summary Banner -->
+            <div class="prominent-preview-banner">
+              <span class="banner-tag">Appointment Request Summary</span>
+              <div class="banner-statement" id="previewSummaryText">
+                Treatment: Permanent Dental Implants · Preferred: Morning (10 AM – 1 PM)
+              </div>
+            </div>
+
+            <!-- Primary Action: WhatsApp 1-Tap CTA -->
+            <a id="deskWhatsAppCta" href="#" class="desk-cta-btn" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/>
+              </svg>
+              <span>Confirm on WhatsApp</span>
+            </a>
+
+            <p class="reassurance-note">
+              Launches WhatsApp directly with reception. No advance payment required.
+            </p>
+
+            <!-- Optional Email Booking Section with Strict Validation -->
+            <div class="email-booking-toggle-row">
+              <button type="button" class="email-booking-toggle-btn" id="emailToggleBtn">
+                ✉ Prefer to book via email? Tap here
+              </button>
+            </div>
+
+            <div class="email-fields-panel" id="emailFieldsPanel">
+              <label for="patientNameInput" class="field-caption">Your Full Name *</label>
+              <input type="text" id="patientNameInput" class="native-input" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+
+              <label for="patientPhoneInput" class="field-caption">Contact Phone Number (Minimum 10 digits) *</label>
+              <input type="tel" id="patientPhoneInput" class="native-input" placeholder="e.g. 9876543210" autocomplete="tel" required>
+
+              <span class="validation-hint-text" id="emailValidationMsg">
+                ⚠ Please enter your full name and at least 10 digits of your phone number to unlock email request.
+              </span>
+
+              <a id="deskEmailSubmitCta" href="#" class="email-submit-btn is-disabled">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Send Email Consultation Request</span>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 10. VERIFIED REVIEWS -->
+      <div class="editorial-heading-group" id="reviewsSection">
+        <div>
+          <span class="editorial-subhead">Patient Feedback</span>
+          <h3 class="section-display-title serif-title">Verified Patient Experiences</h3>
+        </div>
+      </div>
+
+      <section class="reviews-carousel-wrap" aria-label="Verified Patient Reviews">
+        <div class="reviews-track">
+          <div class="review-card-item">
+            <div class="review-author-row">
+              <div class="author-avatar">S</div>
+              <div class="author-info">
+                <h5>Simran Juneja</h5>
+                <span>Verified Patient · 5.0 Rating</span>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Dr. Vance placed two dental implants for me. The 3D scan explanation made everything clear before we started. No pain and the teeth feel completely real."
+            </p>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-author-row">
+              <div class="author-avatar">T</div>
+              <div class="author-info">
+                <h5>Tipur Madaan</h5>
+                <span>Local Guide · 5.0 Rating</span>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "The 3D scanning technology here is fantastic. Being able to visualize the implant procedure before starting gave me immense confidence. Extremely hygienic setup."
+            </p>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-author-row">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h5>Abhishek Raj</h5>
+                <span>Verified Patient · 5.0 Rating</span>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Got full arch zirconia restorations done for my father. The precision and bite comfort are top notch. Clear pricing with zero hidden add-ons. Highly recommended."
+            </p>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-author-row">
+              <div class="author-avatar">P</div>
+              <div class="author-info">
+                <h5>Priya Sharma</h5>
+                <span>Verified Patient · 5.0 Rating</span>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Dr. Elena Vance made my clear aligner journey completely stress-free. Always on time, clear progress scans every month, and friendly chairside support throughout."
+            </p>
+          </div>
+
+          <div class="review-card-item">
+            <div class="review-author-row">
+              <div class="author-avatar">V</div>
+              <div class="author-info">
+                <h5>Vivek Goyal</h5>
+                <span>Verified Patient · 5.0 Rating</span>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "If you want ethical dental care without inflated charges and with modern clinical equipment, this studio sets the benchmark. My root canal was completely painless."
+            </p>
+          </div>
+
+          <a
+            href="https://maps.google.com"
+            target="_blank"
+            rel="noopener"
+            class="review-view-all-card"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            <span>View all 250+ Google reviews →</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 11. FAQ ACCORDION -->
+      <div class="editorial-heading-group">
+        <div>
+          <span class="editorial-subhead">Patient Inquiries</span>
+          <h3 class="section-display-title serif-title">Frequently Asked Questions</h3>
+        </div>
+      </div>
+
+      <section class="faq-accordion" aria-label="Patient Questions">
+        <details>
+          <summary>Are dental implants painful to place?</summary>
+          <p>
+            No. The procedure is completed under local anesthesia. Most patients report feeling only gentle vibration and mild pressure, with postoperative recovery feeling similar to a simple filling.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you give written cost estimates before treatment begins?</summary>
+          <p>
+            Yes. Following your 3D scan and clinical exam, you will receive a transparent written breakdown of all available materials and exact pricing before any treatment starts.
+          </p>
+        </details>
+
+        <details>
+          <summary>What is included in a dental implant estimate?</summary>
+          <p>
+            Our implant estimate includes the initial 3D surgical planning scan, the biocompatible medical titanium root fixture, the precision-milled titanium abutment connector, and the final monolithic zirconia crown.
+          </p>
+        </details>
+
+        <details>
+          <summary>How long does clear aligner treatment take?</summary>
+          <p>
+            Minor adjustments can take 3 to 6 months, while full alignment typically takes between 8 and 14 months depending on tooth movement requirements.
+          </p>
+        </details>
+
+        <details>
+          <summary>What should I do in case of a sudden dental emergency?</summary>
+          <p>
+            We reserve dedicated slots daily for acute emergencies, severe toothaches, and fractured crowns. Select "Urgent Dental Pain Relief" in the booking desk or call our reception directly for same-day priority.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you offer flexible staged payment options?</summary>
+          <p>
+            Yes. For multi-stage treatments such as dental implants and clear aligners, payments are divided across visits as your clinical milestones progress.
+          </p>
+        </details>
+
+        <details>
+          <summary>Are both specialists available on weekends?</summary>
+          <p>
+            Yes. Our clinic maintains consulting and procedure hours on Saturdays (10:00 AM – 7:30 PM) and Sundays (10:00 AM – 2:00 PM).
+          </p>
+        </details>
+      </section>
+
+      <!-- 12. INSTITUTIONAL CLINIC FOOTER -->
+      <footer class="clinic-footer-container">
+        <div class="footer-identity-block">
+          <h4 class="serif-title">APEX DENTAL &amp; IMPLANT STUDIO</h4>
+          <p>
+            Suite 400, Central Medical Square, Sector 4 Main Road, Metro District 110001<br>
+            Direct Reception: +91 98765 43210 · Clinic Email: care@apexdentalstudio.com<br>
+            OPD Hours: Monday – Saturday: 10:00 AM – 7:30 PM · Sunday: 10:00 AM – 2:00 PM
+          </p>
+        </div>
+
+        <div class="footer-seo-links">
+          <a href="/rct.html">Root Canal 3D Guide</a>
+          <a href="/implants.html">Implant 3D Explorer</a>
+          <a href="/aligners.html">Clear Aligners vs Braces</a>
+        </div>
+
+        <p>© 2026 Apex Dental &amp; Implant Studio. All surgical and restorative procedures performed by registered MDS dental surgeons. Dedicated to evidence-backed, transparent dentistry.</p>
+      </footer>
+    </main>
+
+  </div>
+
+  <!-- 13. MOBILE FLOATING ACTION BAR -->
+  <div class="mobile-action-bar">
+    <a href="tel:+919876543210" class="mobile-call-btn" id="mobileCallBtn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span>Call Desk</span>
+    </a>
+
+    <button type="button" id="mobileWhatsAppBtn" class="mobile-book-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      <span>Book an Appointment</span>
+    </button>
+  </div>
+
+  <!-- 14. MICRO POPUP MODAL -->
+  <div class="quick-modal-backdrop" id="quickInfoModal" role="dialog" aria-modal="true" aria-labelledby="quickModalTitle">
+    <div class="quick-modal-card">
+      <button type="button" class="quick-modal-close-btn" id="quickModalCloseBtn">✕</button>
+      <span class="quick-modal-tag" id="quickModalTag">TREATMENT OVERVIEW</span>
+      <h3 class="quick-modal-title serif-title" id="quickModalTitle">Service Name</h3>
+
+      <div class="quick-modal-bullets" id="quickModalBullets"></div>
+
+      <button type="button" class="quick-modal-cta" id="quickModalCtaBtn">
+        <span>Select for This Visit</span>
+        <span>→</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 15. SCRIPTS -->
+  <script>
+    (function () {
+      "use strict";
+
+      const CLINIC_WHATSAPP = "919876543210";
+      const CLINIC_EMAIL = "care@apexdentalstudio.com";
+
+      let chosenTimeWindow = "Morning (10 AM – 1 PM)";
+
+      const treatmentSelect = document.getElementById("treatmentSelect");
+      const treatmentCustomWrapper = document.getElementById("treatmentCustomWrapper");
+      const treatmentSelectTrigger = document.getElementById("treatmentSelectTrigger");
+      const treatmentSelectedText = document.getElementById("treatmentSelectedText");
+      const customOptions = document.querySelectorAll(".custom-option");
+      const previewSummaryText = document.getElementById("previewSummaryText");
+      const deskWhatsAppCta = document.getElementById("deskWhatsAppCta");
+      const mobileWhatsAppBtn = document.getElementById("mobileWhatsAppBtn");
+      const timeChipButtons = document.querySelectorAll(".time-chip-btn");
+
+      const clinicStatusPill = document.getElementById("clinicStatusPill");
+      const statusIndicator = document.getElementById("statusIndicator");
+      const statusDisplayText = document.getElementById("statusDisplayText");
+
+      /* EMAIL BOOKING ELEMENTS & VALIDATION */
+      const emailToggleBtn = document.getElementById("emailToggleBtn");
+      const emailFieldsPanel = document.getElementById("emailFieldsPanel");
+      const patientNameInput = document.getElementById("patientNameInput");
+      const patientPhoneInput = document.getElementById("patientPhoneInput");
+      const emailValidationMsg = document.getElementById("emailValidationMsg");
+      const deskEmailSubmitCta = document.getElementById("deskEmailSubmitCta");
+
+      /* MODAL SETUP */
+      const quickInfoModal = document.getElementById("quickInfoModal");
+      const quickModalCloseBtn = document.getElementById("quickModalCloseBtn");
+      const quickModalTag = document.getElementById("quickModalTag");
+      const quickModalTitle = document.getElementById("quickModalTitle");
+      const quickModalBullets = document.getElementById("quickModalBullets");
+      const quickModalCtaBtn = document.getElementById("quickModalCtaBtn");
+
+      let currentQuickServiceTarget = "";
+
+      const serviceInfoLibrary = {
+        crowns: {
+          tag: "RESTORATIVE DENTISTRY",
+          title: "Ceramic & Zirconia Crowns",
+          bookingValue: "Ceramic & Zirconia Crowns",
+          bullets: [
+            "<strong>Clinical Purpose:</strong> Tooth-colored cap engineered to restore biting structure, seal endodontically treated teeth, and reinforce fractured enamel.",
+            "<strong>Estimated Cost:</strong> ₹5,500 – ₹12,000 (includes digital optical scan, CAD/CAM custom milling, and final permanent resin bonding).",
+            "<strong>Visits:</strong> 2 appointments (scan &amp; permanent placement)."
+          ]
+        },
+        dentures: {
+          tag: "AESTHETIC REHABILITATION",
+          title: "Smile Makeover & Veneers",
+          bookingValue: "Smile Makeover & Veneers",
+          bullets: [
+            "<strong>Clinical Purpose:</strong> High-translucency porcelain shells engineered to correct enamel wear, dark intrinsic stains, and smile asymmetries.",
+            "<strong>Estimated Cost:</strong> ₹8,000 – ₹18,000 per tooth based on multi-layered cosmetic porcelain material.",
+            "<strong>Visits:</strong> 2 appointments (photographic design consultation + final seating)."
+          ]
+        },
+        checkup: {
+          tag: "PREVENTIVE CARE",
+          title: "General Diagnostic Exam & Polish",
+          bookingValue: "General Checkup & Polish",
+          bullets: [
+            "<strong>Clinical Purpose:</strong> Ultrasonic calculus debridement, comprehensive periodontal pocket probing, and low-dose digital radiographic screening.",
+            "<strong>Estimated Cost:</strong> ₹500 – ₹1,500.",
+            "<strong>Duration:</strong> 35 to 45 minutes."
+          ]
+        }
+      };
+
+      window.openQuickInfo = function (key) {
+        const item = serviceInfoLibrary[key];
+        if (!item) return;
+
+        currentQuickServiceTarget = item.bookingValue;
+        quickModalTag.textContent = item.tag;
+        quickModalTitle.textContent = item.title;
+
+        quickModalBullets.innerHTML = item.bullets.map(function (b) {
+          return '<div class="quick-bullet-item"><span class="quick-bullet-dot"></span><div>' + b + '</div></div>';
+        }).join("");
+
+        quickInfoModal.classList.add("is-active");
+      };
+
+      function closeQuickModal() {
+        quickInfoModal.classList.remove("is-active");
+      }
+
+      quickModalCloseBtn.addEventListener("click", closeQuickModal);
+
+      quickInfoModal.addEventListener("click", function (e) {
+        if (e.target === quickInfoModal) closeQuickModal();
+      });
+
+      quickModalCtaBtn.addEventListener("click", function () {
+        closeQuickModal();
+        if (currentQuickServiceTarget) {
+          window.setBookingTreatment(currentQuickServiceTarget);
+        }
+      });
+
+      /* TIME CHIP LOGIC */
+      timeChipButtons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          timeChipButtons.forEach(b => b.setAttribute("aria-pressed", "false"));
+          btn.setAttribute("aria-pressed", "true");
+          chosenTimeWindow = btn.getAttribute("data-time");
+          updateBookingSummary();
+        });
+      });
+
+      /* EMAIL BOOKING TOGGLE */
+      emailToggleBtn.addEventListener("click", function () {
+        const isOpen = emailFieldsPanel.classList.toggle("is-open");
+        emailToggleBtn.textContent = isOpen 
+          ? "✕ Hide email booking form" 
+          : "✉ Prefer to book via email? Tap here";
+        validateAndSyncEmailDraft();
+      });
+
+      /* STRICT VALIDATION FOR EMAIL: NAME + MIN 10 DIGIT PHONE */
+      function validateAndSyncEmailDraft() {
+        const nameVal = patientNameInput.value.trim();
+        const rawPhone = patientPhoneInput.value;
+        const phoneDigits = rawPhone.replace(/\D/g, "");
+
+        const isNameValid = nameVal.length >= 2;
+        const isPhoneValid = phoneDigits.length >= 10;
+        const isFormComplete = isNameValid && isPhoneValid;
+
+        if (isFormComplete) {
+          deskEmailSubmitCta.classList.remove("is-disabled");
+          emailValidationMsg.textContent = "✓ Details verified. Tap button below to send email request.";
+          emailValidationMsg.className = "validation-hint-text is-valid";
+
+          const currentTreatment = treatmentSelect.value;
+          const selectedOption = document.querySelector('.custom-option[data-value="' + currentTreatment + '"]');
+          const price = selectedOption ? selectedOption.getAttribute("data-price") : "";
+
+          const subject = encodeURIComponent("Consultation Request: " + currentTreatment + " (" + nameVal + ")");
+          const bodyText = encodeURIComponent(
+            "Hello Apex Dental Studio,\n\n" +
+            "I would like to request an appointment:\n\n" +
+            "• Patient Name: " + nameVal + "\n" +
+            "• Contact Phone: " + phoneDigits + "\n" +
+            "• Treatment Focus: " + currentTreatment + "\n" +
+            "• Estimate Range: " + price + "\n" +
+            "• Preferred Time Window: " + chosenTimeWindow + "\n\n" +
+            "Please reply with confirmed available chair times."
+          );
+
+          deskEmailSubmitCta.href = "mailto:" + CLINIC_EMAIL + "?subject=" + subject + "&body=" + bodyText;
+        } else {
+          deskEmailSubmitCta.classList.add("is-disabled");
+          deskEmailSubmitCta.removeAttribute("href");
+          emailValidationMsg.className = "validation-hint-text";
+
+          if (!isNameValid && !isPhoneValid) {
+            emailValidationMsg.textContent = "⚠ Please enter your full name and at least 10 digits of your phone number to unlock email request.";
+          } else if (!isNameValid) {
+            emailValidationMsg.textContent = "⚠ Please enter your full name (minimum 2 letters).";
+          } else if (!isPhoneValid) {
+            emailValidationMsg.textContent = "⚠ Please enter a valid phone number with at least 10 digits (" + phoneDigits.length + "/10 digits entered).";
+          }
+        }
+      }
+
+      patientNameInput.addEventListener("input", validateAndSyncEmailDraft);
+      patientPhoneInput.addEventListener("input", validateAndSyncEmailDraft);
+
+      /* CUSTOM DROPDOWN CONTROL */
+      function syncCustomDropdown(value) {
+        let priceTag = "";
+        customOptions.forEach(function (opt) {
+          const isMatch = opt.getAttribute("data-value") === value;
+          opt.classList.toggle("is-selected", isMatch);
+          opt.setAttribute("aria-selected", isMatch ? "true" : "false");
+          if (isMatch) {
+            priceTag = opt.getAttribute("data-price") || "";
+          }
+        });
+        treatmentSelectedText.textContent = value + (priceTag ? " (" + priceTag + ")" : "");
+      }
+
+      treatmentSelectTrigger.addEventListener("click", function (e) {
+        e.preventDefault();
+        const isOpen = treatmentCustomWrapper.classList.toggle("is-open");
+        treatmentSelectTrigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      customOptions.forEach(function (option) {
+        option.addEventListener("click", function () {
+          const val = option.getAttribute("data-value");
+          treatmentSelect.value = val;
+          syncCustomDropdown(val);
+          treatmentCustomWrapper.classList.remove("is-open");
+          treatmentSelectTrigger.setAttribute("aria-expanded", "false");
+          updateBookingSummary();
+        });
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!treatmentCustomWrapper.contains(e.target)) {
+          treatmentCustomWrapper.classList.remove("is-open");
+          treatmentSelectTrigger.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      function updateBookingSummary() {
+        const currentTreatment = treatmentSelect.value;
+        const selectedOption = document.querySelector('.custom-option[data-value="' + currentTreatment + '"]');
+        const price = selectedOption ? selectedOption.getAttribute("data-price") : "";
+
+        previewSummaryText.textContent = "Treatment: " + currentTreatment + " · Preferred: " + chosenTimeWindow;
+
+        // WhatsApp 1-tap message (instant booking)
+        const fullMessage =
+          "Hello Apex Dental Studio,\n\n" +
+          "I would like to schedule a consultation at your clinic:\n\n" +
+          "• Treatment: " + currentTreatment + "\n" +
+          "• Estimate Range: " + price + "\n" +
+          "• Preferred Time Window: " + chosenTimeWindow + "\n\n" +
+          "Please let me know which days have chair availability.";
+
+        deskWhatsAppCta.href = "https://wa.me/" + CLINIC_WHATSAPP + "?text=" + encodeURIComponent(fullMessage);
+        validateAndSyncEmailDraft();
+      }
+
+      window.setBookingTreatment = function (treatmentName) {
+        treatmentSelect.value = treatmentName;
+        syncCustomDropdown(treatmentName);
+        updateBookingSummary();
+
+        const desk = document.getElementById("bookingDeskSection");
+        if (desk) {
+          desk.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      };
+
+      mobileWhatsAppBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const desk = document.getElementById("bookingDeskSection");
+        if (desk) {
+          desk.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      });
+
+      /* ==========================================================
+         TRUE CONTINUOUS INFINITE CIRCULAR SCROLL + SLIDER TRACK SYNC
+      =========================================================== */
+      function setupTrueInfiniteLoopWithSlider(railId, thumbId) {
+        const rail = document.getElementById(railId);
+        const thumb = document.getElementById(thumbId);
+        if (!rail || !thumb) return;
+
+        const originalItems = Array.from(rail.children);
+        originalItems.forEach(item => {
+          rail.appendChild(item.cloneNode(true));
+        });
+
+        const singleSetWidth = () => rail.scrollWidth / 2;
+
+        rail.addEventListener("scroll", function () {
+          const halfWidth = singleSetWidth();
+          if (rail.scrollLeft >= halfWidth) {
+            rail.scrollLeft -= halfWidth;
+          } else if (rail.scrollLeft <= 0) {
+            rail.scrollLeft += halfWidth;
+          }
+
+          const maxCycleScroll = halfWidth - rail.clientWidth;
+          if (maxCycleScroll > 0) {
+            const currentOffset = (rail.scrollLeft % halfWidth);
+            const progress = Math.min(Math.max(currentOffset / maxCycleScroll, 0), 1);
+            thumb.style.transform = `translateX(${progress * 300}%)`;
+          }
+        });
+      }
+
+      setupTrueInfiniteLoopWithSlider("treatmentTrack", "treatmentSliderThumb");
+      setupTrueInfiniteLoopWithSlider("beforeAfterTrack", "baSliderThumb");
+      setupTrueInfiniteLoopWithSlider("interiorTrack", "interiorSliderThumb");
+
+      /* LIVE OPD STATUS */
+      function calculateLiveOPDStatus() {
+        const now = new Date();
+        const day = now.getDay();
+        const minutes = now.getHours() * 60 + now.getMinutes();
+
+        statusIndicator.classList.remove("closed");
+        clinicStatusPill.classList.remove("is-closed");
+
+        // Sunday: 10:00 AM - 2:00 PM
+        if (day === 0) {
+          if (minutes >= 10 * 60 && minutes < 14 * 60) {
+            statusDisplayText.textContent = "Open · Closes 2 PM";
+          } else if (minutes < 10 * 60) {
+            statusIndicator.classList.add("closed");
+            clinicStatusPill.classList.add("is-closed");
+            statusDisplayText.textContent = "Closed · Opens 10 AM";
+          } else {
+            statusIndicator.classList.add("closed");
+            clinicStatusPill.classList.add("is-closed");
+            statusDisplayText.textContent = "Closed · Opens Mon 10 AM";
+          }
+          return;
+        }
+
+        // Mon - Sat: 10:00 AM - 7:30 PM
+        if (minutes >= 10 * 60 && minutes < 19 * 60 + 30) {
+          statusDisplayText.textContent = "Open · Closes 7:30 PM";
+        } else if (minutes < 10 * 60) {
+          statusIndicator.classList.add("closed");
+          clinicStatusPill.classList.add("is-closed");
+          statusDisplayText.textContent = "Closed · Opens 10 AM";
+        } else {
+          statusIndicator.classList.add("closed");
+          clinicStatusPill.classList.add("is-closed");
+          statusDisplayText.textContent = (day === 6) ? "Closed · Opens Sun 10 AM" : "Closed · Tomorrow 10 AM";
+        }
+      }
+
+      calculateLiveOPDStatus();
+      setInterval(calculateLiveOPDStatus, 60 * 1000);
+
+      updateBookingSummary();
+    })();
+  </script>
+
+</body>
+</html>
