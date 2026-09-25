@@ -1,0 +1,3755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coral Dental | Dr. Srishti Punjani | Cosmetic Dentist &amp; Veneer Specialist Delhi</title>
+
+  <meta
+    name="description"
+    content="Specialist-led dental implants, clear aligners, porcelain veneers, and painless root canal therapy by Dr. Srishti Punjani (MFD RCS Ireland) at Coral Dental, Keshav Puram, New Delhi."
+  >
+
+  <link rel="canonical" href="https://coraldental.in/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coral Dental | Dr. Srishti Punjani | Cosmetic Dentist &amp; Veneer Specialist">
+  <meta
+    property="og:description"
+    content="Specialist-led aesthetic and surgical dental care with transparent upfront price estimates and interactive 3D digital treatment education."
+  >
+  <meta property="og:url" content="https://coraldental.in/">
+  <meta property="og:image" content="8450.webp">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Coral Dental",
+    "url": "https://coraldental.in/",
+    "telephone": "+919810047210",
+    "email": "info@coraldental.in",
+    "priceRange": "₹₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C-7/299, Opposite Pillar Number 267, Inside Service Lane Bavanagar, Block C7, Keshav Puram, Tri Nagar",
+      "addressLocality": "North West Delhi",
+      "addressRegion": "Delhi NCR",
+      "postalCode": "110035",
+      "addressCountry": "IN"
+    },
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Dr. Srishti Punjani",
+        "jobTitle": "Lead Cosmetic Dentist & Implantologist",
+        "honorificSuffix": "B.D.S. (MCODS Manipal), MFD (Royal College of Surgeons, Ireland)"
+      },
+      {
+        "@type": "Person",
+        "name": "Dr. Chetna",
+        "jobTitle": "Clinical Coordinator & Associate Dental Surgeon",
+        "honorificSuffix": "B.D.S."
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg-canvas: #faf8f4;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f4ede2;
+
+      --text-main: #14211e;
+      --text-muted: #495a54;
+
+      --teal-primary: #0a3834;
+      --teal-hover: #062623;
+      --teal-soft: #f0f7f5;
+      --teal-border: #b8ded7;
+
+      --emerald-accent: #047857;
+      --emerald-soft: #ecfdf5;
+
+      --gold-primary: #b5893b;
+      --gold-accent: #875e1b;
+      --gold-soft: #fcf8f0;
+      --gold-border: #ebd9b5;
+
+      /* Obsidian Dark Architecture */
+      --card-dark-bg: #071916;
+      --card-dark-border: #143029;
+      --card-dark-text-muted: rgba(240, 247, 245, 0.78);
+      --card-dark-gold: #dfb76c;
+
+      --rose-accent: #b91c1c;
+
+      --border-color: #ebe3d5;
+      --shadow-sm: 0 1px 3px rgba(20, 33, 30, 0.04);
+      --shadow-desk: 0 18px 45px -8px rgba(10, 56, 52, 0.16);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Fixed: No overflow-x on html to keep native mobile anchor scrolling intact */
+    body {
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.55;
+      padding-bottom: 96px;
+    }
+
+    @media (min-width: 900px) and (orientation: landscape) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    a,
+    button,
+    select,
+    input {
+      font-family: inherit;
+      color: inherit;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    select:focus-visible {
+      outline: 2px solid var(--teal-primary);
+      outline-offset: 3px;
+    }
+
+    .fluid-section-band {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 clamp(16px, 3.5vw, 44px);
+    }
+
+    .serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+
+    /* Precise offsets for sticky header jumps */
+    #treatments,
+    #casesSection,
+    #reviewsSection,
+    #bookingDeskSection,
+    #visitSection {
+      scroll-margin-top: 56px;
+    }
+
+    /* ==========================================================
+       LUXURY EDITORIAL ENTRANCE & INERTIAL SCROLL REVEALS
+    =========================================================== */
+    @keyframes gracefulWordDrop {
+      0% {
+        opacity: 0;
+        transform: translateY(-16px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heroBgZoomAnim {
+      0% { opacity: 0.7; transform: scale(1.04); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .hero-brand-name-anim {
+      display: inline-block;
+      animation: gracefulWordDrop 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+    }
+    .hero-brand-tag-anim {
+      display: inline-block;
+      animation: gracefulWordDrop 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
+    }
+    .hero-status-pill-anim {
+      animation: gracefulWordDrop 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
+    }
+
+    .hero-eyebrow-anim {
+      display: inline-block;
+      animation: gracefulWordDrop 0.88s cubic-bezier(0.16, 1, 0.3, 1) 0.40s both;
+    }
+
+    .word-snap {
+      display: inline-block;
+      animation: gracefulWordDrop 0.88s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .ws-1 { animation-delay: 0.52s; }
+    .ws-2 { animation-delay: 0.66s; }
+    .ws-3 { animation-delay: 0.80s; }
+    .ws-4 { animation-delay: 0.94s; }
+
+    .hero-subhead-anim {
+      animation: gracefulWordDrop 0.92s cubic-bezier(0.16, 1, 0.3, 1) 1.10s both;
+    }
+
+    .stag-tag {
+      display: inline-block;
+      animation: gracefulWordDrop 0.80s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .st-1 { animation-delay: 1.25s; }
+    .st-2 { animation-delay: 1.37s; }
+    .st-3 { animation-delay: 1.49s; }
+    .st-4 { animation-delay: 1.61s; }
+
+    #heroParallaxTarget {
+      will-change: transform, opacity;
+      transition: transform 0.05s linear;
+    }
+
+    .reveal-scroll {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-scroll.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-1 { transition-delay: 0.06s; }
+    .delay-2 { transition-delay: 0.12s; }
+    .delay-3 { transition-delay: 0.18s; }
+    .delay-4 { transition-delay: 0.24s; }
+
+    /* ==========================================================
+       1. UNIFIED FULL-BLEED HERO (CINEMATIC CONTRAST ON MOBILE)
+    =========================================================== */
+    .hero-fullbleed-wrapper {
+      position: relative;
+      width: 100%;
+      background-color: var(--bg-canvas);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom: none !important;
+    }
+
+    .hero-fullbleed-wrapper::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 140px;
+      background: linear-gradient(
+        to bottom,
+        rgba(250, 248, 244, 0) 0%,
+        rgba(250, 248, 244, 0.45) 40%,
+        rgba(250, 248, 244, 0.92) 80%,
+        #faf8f4 100%
+      );
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    .hero-video-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      pointer-events: none;
+      animation: heroBgZoomAnim 1.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .hero-scrim-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .luxury-site-header {
+      position: relative;
+      z-index: 20;
+      width: 100%;
+      padding-top: clamp(14px, 2.5vw, 22px);
+      padding-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      background: transparent;
+      border: none;
+    }
+
+    .header-brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .gold-tooth-icon {
+      width: clamp(30px, 3.2vw, 42px);
+      height: clamp(30px, 3.2vw, 42px);
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 6px rgba(181, 137, 59, 0.35));
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      flex-shrink: 1;
+    }
+
+    /* ZERO TRUNCATION / NO ELLIPSIS CUTOFF ON MOBILE */
+    .brand-name-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.15rem, 3.5vw, 1.75rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--teal-primary);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: visible !important;
+      text-overflow: clip !important;
+    }
+
+    .brand-tagline-sans {
+      font-size: clamp(0.44rem, 1.2vw, 0.62rem);
+      color: var(--teal-primary);
+      opacity: 0.9;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: visible !important;
+      text-overflow: clip !important;
+    }
+
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    .live-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(230, 247, 242, 0.94);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(178, 235, 217, 0.9);
+      color: #065f46;
+      border-radius: 999px;
+      padding: 5px 11px;
+      font-size: clamp(0.58rem, 1.5vw, 0.72rem);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .status-indicator {
+      width: 6px;
+      height: 6px;
+      flex-shrink: 0;
+      background-color: #059669;
+      border-radius: 50%;
+    }
+
+    .status-indicator.closed { background-color: #f43f5e; }
+    .live-status-pill.is-closed { background: #f1f5f9; border-color: #cbd5e1; color: #475569; }
+
+    @media (min-width: 900px) and (orientation: landscape) {
+      .desktop-header-cta-group {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .desktop-header-action-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border: 1.5px solid var(--border-color);
+        color: var(--teal-primary) !important;
+        padding: 9px 16px;
+        border-radius: var(--radius-sm);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-decoration: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        transition: all 0.15s ease;
+      }
+
+      .desktop-header-action-btn:hover {
+        background: var(--teal-soft);
+        border-color: var(--teal-primary);
+      }
+
+      .desktop-header-cta {
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--teal-primary);
+        color: #ffffff !important;
+        padding: 10px 20px;
+        border-radius: var(--radius-sm);
+        font-size: 0.82rem;
+        font-weight: 800;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(10, 56, 52, 0.2);
+        transition: background-color 0.15s ease, transform 0.15s ease;
+      }
+
+      .desktop-header-cta:hover {
+        background-color: var(--teal-hover);
+        transform: translateY(-1px);
+      }
+    }
+
+    @media (max-width: 899px), (orientation: portrait) {
+      .desktop-header-cta-group { display: none; }
+    }
+
+    .hero-stage-body {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .hero-content-col {
+      max-width: 650px;
+    }
+
+    .hero-eyebrow-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .eyebrow-text {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-accent);
+      background: rgba(244, 237, 226, 0.96);
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--gold-border);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      display: inline-block;
+    }
+
+    .hero-headline {
+      font-size: clamp(2.35rem, 5.2vw, 4.2rem);
+      font-weight: 700;
+      line-height: 1.06;
+      color: var(--teal-primary);
+      margin: 8px 0 14px 0;
+    }
+
+    .hero-subhead {
+      color: #1a2c26;
+      font-size: clamp(0.96rem, 2vw, 1.15rem);
+      line-height: 1.5;
+      max-width: 560px;
+      font-weight: 600;
+    }
+
+    .hero-specialty-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .specialty-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 5px 12px;
+      border-radius: 6px;
+      background: rgba(244, 237, 226, 0.95);
+      color: var(--teal-primary);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    @media (min-width: 900px) and (orientation: landscape) {
+      .hero-fullbleed-wrapper { min-height: 85vh; }
+      .hero-video-bg { object-position: right center; }
+      .hero-scrim-overlay {
+        background: linear-gradient(
+          90deg,
+          rgba(250, 248, 244, 0.96) 0%,
+          rgba(250, 248, 244, 0.88) 42%,
+          rgba(250, 248, 244, 0.28) 75%,
+          transparent 100%
+        );
+      }
+      .hero-stage-body { padding-top: 30px; padding-bottom: 50px; }
+    }
+
+    /* CINEMATIC DIRECTIONAL VIGNETTE FOR MOBILE:
+       Dense at top behind text, open & deep in lower 50% so tooth + gold sparks pop */
+    @media (max-width: 899px), (orientation: portrait) {
+      .hero-fullbleed-wrapper { min-height: 90vh; }
+      .hero-video-bg { 
+        object-position: 85% 75%;
+      }
+      .hero-scrim-overlay {
+        background: linear-gradient(
+          180deg,
+          rgba(250, 248, 244, 0.94) 0%,
+          rgba(250, 248, 244, 0.82) 42%,
+          rgba(250, 248, 244, 0.22) 68%,
+          rgba(250, 248, 244, 0.08) 84%,
+          rgba(250, 248, 244, 0.88) 100%
+        );
+      }
+      .hero-stage-body {
+        padding-top: 14px;
+        padding-bottom: 30px;
+        justify-content: flex-start;
+      }
+      .hero-headline {
+        font-size: clamp(2.1rem, 7.5vw, 2.7rem);
+      }
+      .hero-subhead {
+        font-size: 0.92rem;
+        line-height: 1.45;
+        max-width: 92%;
+      }
+    }
+
+    /* ==========================================================
+       ALWAYS-VISIBLE 4-CHIP NAVIGATION STRIP (ZERO CUTOFF)
+    =========================================================== */
+    .sticky-chip-strip {
+      position: sticky;
+      top: 0;
+      z-index: 850;
+      background: rgba(250, 248, 244, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: 0 2px 8px rgba(10, 56, 52, 0.04);
+      padding: 7px clamp(8px, 2.5vw, 32px);
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .chip-track {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(5px, 1.5vw, 8px);
+      margin: 0 auto;
+      max-width: 100%;
+      overflow-x: hidden; /* 4 chips fit perfectly with zero horizontal scroll on mobile */
+    }
+
+    .nav-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px clamp(9px, 2.2vw, 14px);
+      border-radius: 999px;
+      font-size: clamp(0.68rem, 1.8vw, 0.74rem);
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--text-muted);
+      background: #ffffff;
+      border: 1.2px solid var(--border-color);
+      white-space: nowrap;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .nav-chip:hover {
+      border-color: var(--teal-primary);
+      color: var(--teal-primary);
+    }
+
+    .nav-chip.is-active {
+      background: var(--teal-primary);
+      border-color: var(--teal-primary);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(10, 56, 52, 0.2);
+    }
+
+    /* ==========================================================
+       2. ZERO-BOX STATS SECTION
+    =========================================================== */
+    .stats-seamless-editorial {
+      width: 100%;
+      margin: 36px 0 24px 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    .stats-editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      background: transparent;
+      border: none;
+    }
+
+    .strip-stat-cell-clean {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 8px;
+      border: none !important;
+      text-decoration: none;
+      background: transparent;
+    }
+
+    .strip-icon-wrap {
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .strip-icon-wrap svg { width: 26px; height: 26px; }
+
+    .strip-text-group {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .strip-text-group strong {
+      font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+      font-weight: 800;
+      color: var(--teal-primary);
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+
+    .strip-text-group span {
+      font-size: clamp(0.62rem, 1.4vw, 0.76rem);
+      color: var(--text-muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    /* ==========================================================
+       3. ATTENDING SPECIALISTS
+    =========================================================== */
+    .editorial-heading-group {
+      margin: 54px 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .editorial-subhead {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-accent);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .section-display-title {
+      font-size: clamp(1.75rem, 3.6vw, 2.4rem);
+      font-weight: 700;
+      color: var(--teal-primary);
+      line-height: 1.2;
+    }
+
+    .btn-swipe-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: 999px;
+      padding: 7px 15px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: var(--teal-primary);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .btn-swipe-trigger:hover {
+      background: var(--teal-soft);
+      border-color: var(--teal-primary);
+    }
+
+    .doctors-editorial-spread {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-top: 18px;
+      background: transparent;
+      border: none;
+    }
+
+    @media (min-width: 900px) and (orientation: landscape) {
+      .doctors-editorial-spread {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+      }
+    }
+
+    .doctor-feature-entry {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .doctor-photo-frame {
+      position: relative;
+      width: 105px;
+      height: 126px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(10, 56, 52, 0.1);
+    }
+
+    .doctor-photo-rect {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .doctor-photo-badge {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(10, 56, 52, 0.9);
+      color: #ffffff;
+      font-size: 0.46rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 4px;
+      text-align: center;
+    }
+
+    .doctor-details-block {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .doc-lead-eyebrow {
+      font-size: 0.66rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold-accent);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .doc-name-serif {
+      font-size: 1.45rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--teal-primary);
+    }
+
+    .doc-degrees-line {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-top: 3px;
+    }
+
+    .doc-reg-number {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--emerald-accent);
+      margin-top: 1px;
+    }
+
+    .doc-institution-line {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.48;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    /* ==========================================================
+       4. WHY PATIENTS CHOOSE CORAL DENTAL
+    =========================================================== */
+    .why-apex-seamless-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 20px;
+      background: transparent;
+      border: none;
+    }
+
+    @media (min-width: 950px) and (orientation: landscape) {
+      .why-apex-seamless-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 580px), (orientation: portrait) {
+      .why-apex-seamless-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .why-apex-column {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: transparent;
+      border: none;
+    }
+
+    .why-num-tag {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+
+    .why-apex-column h4 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      line-height: 1.25;
+    }
+
+    .why-apex-column p {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    /* ==========================================================
+       5. CLINICAL PROCEDURES (TARGET: #treatments)
+    =========================================================== */
+    .treatment-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+
+    .filter-pills-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .filter-pills-row::-webkit-scrollbar { display: none; }
+
+    .treatment-filter-btn {
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .treatment-filter-btn:hover {
+      border-color: var(--teal-primary);
+      color: var(--teal-primary);
+    }
+
+    .treatment-filter-btn.is-active {
+      background: var(--teal-primary);
+      border-color: var(--teal-primary);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(10, 56, 52, 0.2);
+    }
+
+    /* DRAG-TO-SCROLL HORIZONTAL RAILS */
+    .treatment-horizontal-track {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      scroll-snap-type: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 6px 4px 18px;
+      scrollbar-width: none;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .treatment-horizontal-track:active {
+      cursor: grabbing;
+    }
+
+    .treatment-horizontal-track::-webkit-scrollbar { display: none; }
+
+    .treatment-card-item {
+      flex: 0 0 310px;
+      max-width: 84vw;
+      background: var(--card-dark-bg);
+      border: 1.5px solid var(--card-dark-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px -4px rgba(7, 25, 22, 0.35);
+      user-select: none;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .treatment-card-item.is-dimmed {
+      opacity: 0.25;
+      transform: scale(0.96);
+      pointer-events: none;
+    }
+
+    .card-product-stage {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 45%, #0f3d37 0%, #062623 70%, #021210 100%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+    }
+
+    .card-product-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
+      pointer-events: none;
+      display: block;
+    }
+
+    .card-body-content {
+      padding: 20px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      background: var(--card-dark-bg);
+    }
+
+    .card-body-content h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .card-types-line {
+      font-size: 0.70rem;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.35;
+      margin-bottom: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 5px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card-types-line strong {
+      color: var(--card-dark-gold);
+    }
+
+    .card-specs-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 12px;
+    }
+
+    .card-spec-chip {
+      font-size: 0.64rem;
+      font-weight: 700;
+      background: rgba(4, 120, 87, 0.18);
+      border: 1px solid rgba(184, 222, 215, 0.25);
+      color: #b8ded7;
+      padding: 2.5px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .card-price-pill {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--card-dark-gold);
+      margin-bottom: 14px;
+      letter-spacing: 0.03em;
+    }
+
+    .card-cta-group {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .btn-card-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      background: rgba(255, 255, 255, 0.04);
+      color: #ffffff !important;
+      border: 1.2px solid rgba(255, 255, 255, 0.28);
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 9px 8px;
+      border-radius: 999px;
+      text-decoration: none !important;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      box-sizing: border-box;
+      white-space: nowrap;
+    }
+
+    .btn-card-action:hover {
+      background: #ffffff;
+      color: #071916 !important;
+      border-color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .btn-card-action.btn-3d-highlight {
+      background: rgba(223, 183, 108, 0.15);
+      border-color: var(--card-dark-gold);
+      color: var(--card-dark-gold) !important;
+    }
+
+    .btn-card-action.btn-3d-highlight:hover {
+      background: var(--card-dark-gold);
+      color: #071916 !important;
+    }
+
+    /* ==========================================================
+       6. BEFORE & AFTER CLINICAL CASES (TARGET: #casesSection)
+    =========================================================== */
+    .horizontal-scroll-rail {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      scroll-snap-type: none !important;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
+      scrollbar-width: none;
+      padding: 8px 2px 14px 2px;
+      touch-action: pan-x pan-y;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .horizontal-scroll-rail:active {
+      cursor: grabbing;
+    }
+
+    .horizontal-scroll-rail::-webkit-scrollbar { display: none; }
+
+    .custom-rail-slider-track {
+      width: 100%;
+      height: 4px;
+      background: #ebe3d5;
+      border-radius: 999px;
+      margin: 4px 0 24px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .custom-rail-slider-thumb {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 25%;
+      background: var(--gold-primary);
+      border-radius: 999px;
+      transition: transform 0.08s linear;
+    }
+
+    .ba-slide-card {
+      flex: 0 0 320px;
+      max-width: 84vw;
+      background: var(--card-dark-bg);
+      border: 1.5px solid var(--card-dark-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 8px 24px -4px rgba(7, 25, 22, 0.35);
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    .ba-image-stage {
+      height: 180px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background-color: #0c211d;
+    }
+
+    .ba-image-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+      display: block;
+    }
+
+    .ba-tag-overlay {
+      position: absolute;
+      top: 10px; left: 10px;
+      background: rgba(6, 22, 20, 0.90);
+      border: 1px solid rgba(223, 183, 108, 0.45);
+      color: var(--card-dark-gold);
+      font-size: 0.62rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .ba-card-body {
+      padding: 18px 16px;
+      background: var(--card-dark-bg);
+    }
+
+    .ba-card-body h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.28rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.15;
+    }
+
+    .ba-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.75rem;
+      color: var(--card-dark-text-muted);
+      line-height: 1.4;
+    }
+
+    .ba-meta-list strong {
+      color: var(--card-dark-gold);
+    }
+
+    /* ==========================================================
+       7. BALANCED 2x2 ARCHITECTURAL BENTO SHOWCASE (ZERO VOID)
+    =========================================================== */
+    .bento-facility-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 18px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .bento-facility-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .bento-cell {
+      position: relative;
+      background: var(--card-dark-bg);
+      border: 1.5px solid var(--card-dark-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 10px 28px -4px rgba(7, 25, 22, 0.35);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bento-img-stage {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background-color: #0c211d;
+    }
+
+    .bento-img-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .bento-cell:hover .bento-img-stage img {
+      transform: scale(1.03);
+    }
+
+    .bento-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(7, 25, 22, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(223, 183, 108, 0.4);
+      color: var(--card-dark-gold);
+      font-size: 0.62rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .bento-caption {
+      padding: 16px 18px;
+      background: var(--card-dark-bg);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      flex: 1;
+    }
+
+    .bento-caption h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.15;
+    }
+
+    .bento-caption p {
+      font-size: 0.74rem;
+      color: var(--card-dark-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================
+       8. BOOKING DESK
+    =========================================================== */
+    .desk-card {
+      background: #ffffff;
+      border: 2px solid var(--teal-primary);
+      border-radius: var(--radius-lg);
+      padding: clamp(24px, 3.5vw, 44px);
+      box-shadow: var(--shadow-desk);
+      width: 100%;
+      margin: 44px 0 32px 0;
+      position: relative;
+    }
+
+    .desk-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #0a3834, #b5893b);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .desk-card h3 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 4px;
+    }
+
+    .desk-lede {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .form-row { margin-bottom: 20px; }
+
+    .field-caption {
+      display: block;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+      color: var(--teal-primary);
+    }
+
+    .custom-select-wrapper { position: relative; width: 100%; }
+
+    .custom-select-trigger {
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      padding: 13px 40px 13px 16px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a3834' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 16px;
+    }
+
+    .custom-dropdown-panel {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0; right: 0;
+      background: #ffffff;
+      border: 1.5px solid var(--teal-border);
+      border-radius: var(--radius-sm);
+      box-shadow: 0 8px 24px -2px rgba(10, 56, 52, 0.18);
+      z-index: 100;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+
+    .custom-select-wrapper.is-open .custom-dropdown-panel { display: block; }
+
+    .custom-optgroup-label {
+      font-size: 0.70rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 8px 14px;
+      color: #065f46;
+      background: #ecfdf5;
+      border-bottom: 1px solid #d1fae5;
+    }
+
+    .custom-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      border-bottom: 1px solid #f6f1e8;
+    }
+
+    .custom-option:last-child { border-bottom: none; }
+
+    .custom-option.is-selected {
+      background: var(--teal-soft);
+      color: var(--teal-primary);
+      font-weight: 700;
+    }
+
+    .custom-option .check-icon {
+      display: none;
+      color: var(--emerald-accent);
+      flex-shrink: 0;
+    }
+
+    .custom-option.is-selected .check-icon { display: inline-block; }
+
+    .option-price-tag {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--emerald-accent);
+      margin-left: 6px;
+    }
+
+    .time-chips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .time-chip-btn {
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 12px 10px;
+      text-align: center;
+      font-size: 0.80rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .time-chip-btn[aria-pressed="true"] {
+      background: var(--teal-soft);
+      border-color: var(--teal-primary);
+      color: var(--teal-primary);
+      font-weight: 800;
+      outline: 2px solid var(--teal-primary);
+    }
+
+    .prominent-preview-banner {
+      background: var(--bg-canvas);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+
+    .banner-tag {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gold-accent);
+      margin-bottom: 4px;
+    }
+
+    .banner-statement {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      line-height: 1.35;
+    }
+
+    .desk-cta-btn {
+      width: 100%;
+      background: var(--teal-primary);
+      color: #ffffff;
+      border: 1.5px solid var(--teal-primary);
+      border-radius: var(--radius-md);
+      padding: 17px;
+      font-size: 0.98rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(10, 56, 52, 0.22);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .desk-cta-btn:hover {
+      background: var(--teal-hover);
+      transform: translateY(-1px);
+    }
+
+    .desk-cta-btn svg { color: #25d366; }
+
+    .reassurance-note {
+      text-align: center;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    /* ==========================================================
+       9. VERIFIED PATIENT REVIEWS (TARGET: #reviewsSection)
+    =========================================================== */
+    .reviews-carousel-wrap {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 4px;
+      margin-bottom: 24px;
+    }
+
+    .reviews-track {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: none !important;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
+      padding-bottom: 12px;
+      scrollbar-width: none;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .reviews-track:active {
+      cursor: grabbing;
+    }
+
+    .reviews-track::-webkit-scrollbar { display: none; }
+
+    .review-card-item {
+      flex: 0 0 300px;
+      max-width: 82vw;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: var(--shadow-sm);
+      user-select: none;
+    }
+
+    .review-author-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .author-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--teal-primary);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .author-info h5 {
+      font-size: 0.90rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+    }
+
+    .author-info span {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 0.84rem;
+      letter-spacing: 1px;
+    }
+
+    .review-content {
+      font-size: 0.80rem;
+      color: var(--text-main);
+      line-height: 1.45;
+    }
+
+    .review-view-all-card {
+      flex: 0 0 220px;
+      background: var(--gold-soft);
+      border: 1.5px dashed var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      gap: 8px;
+      color: var(--teal-primary);
+      font-weight: 700;
+      font-size: 0.84rem;
+    }
+
+    /* ==========================================================
+       10. FAQ ACCORDION
+    =========================================================== */
+    .faq-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: border-color 0.15s ease;
+    }
+
+    details[open] { border-color: var(--teal-border); }
+
+    summary {
+      padding: 16px 18px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--teal-primary);
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 1.2rem;
+      color: var(--gold-accent);
+      font-weight: 800;
+    }
+    details[open] summary::after { content: '−'; }
+
+    details p {
+      padding: 0 18px 16px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================
+       11. INSTITUTIONAL CLINIC FOOTER (TARGET: #visitSection)
+    =========================================================== */
+    .clinic-footer-container {
+      margin-top: 56px;
+      padding: 32px 0 24px 0;
+      border-top: 1.5px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .footer-identity-block h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      margin-bottom: 4px;
+    }
+
+    .footer-identity-block p { line-height: 1.55; }
+
+    .footer-seo-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-seo-links a {
+      color: var(--teal-primary);
+      font-weight: 700;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-seo-links a:hover {
+      color: var(--gold-accent);
+    }
+
+    /* ==========================================================
+       12. MOBILE FLOATING ACTION BAR (OUTLINED CALENDAR ICON)
+    =========================================================== */
+    .mobile-action-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(250, 248, 244, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-color);
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    @media (min-width: 900px) and (orientation: landscape) {
+      .mobile-action-bar { display: none; }
+    }
+
+    .mobile-call-btn,
+    .mobile-book-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      padding: 13px 0;
+    }
+
+    .mobile-call-btn {
+      flex: 1;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      color: var(--text-main);
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .mobile-book-btn {
+      flex: 2;
+      background: var(--teal-primary);
+      color: #ffffff;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 12px rgba(10, 56, 52, 0.2);
+    }
+
+    /* ==========================================================
+       13. QUICK VIEW MODAL
+    =========================================================== */
+    .quick-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 24, 21, 0.70);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.22s ease, visibility 0.22s ease;
+    }
+
+    .quick-modal-backdrop.is-active { opacity: 1; visibility: visible; }
+
+    .quick-modal-card {
+      background: #ffffff;
+      border: 2px solid var(--teal-primary);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 530px;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 0;
+      box-shadow: 0 24px 50px -12px rgba(10, 56, 52, 0.45);
+      position: relative;
+    }
+
+    .quick-modal-sticky-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 18px 22px 12px 22px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 100;
+    }
+
+    .quick-modal-scrollable-body { padding: 16px 22px 24px 22px; }
+
+    .quick-modal-close-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--teal-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+
+    .quick-modal-close-btn:hover { background: var(--teal-primary); color: #ffffff; }
+
+    .quick-modal-tag {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-accent);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .quick-modal-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--teal-primary);
+      line-height: 1.15;
+    }
+
+    .modal-section-block { margin-bottom: 14px; }
+
+    .modal-section-title {
+      font-size: 0.70rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--teal-primary);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .modal-types-container { display: flex; flex-direction: column; gap: 6px; }
+
+    .modal-type-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.76rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      padding: 7px 12px;
+      border-radius: 6px;
+    }
+
+    .modal-type-row strong { color: var(--teal-primary); }
+    .modal-type-price { font-weight: 800; color: var(--emerald-accent); }
+
+    .modal-specs-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      background: var(--teal-soft);
+      border: 1px solid var(--teal-border);
+      border-radius: var(--radius-sm);
+      padding: 10px;
+    }
+
+    .modal-spec-cell {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .modal-spec-cell strong {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--teal-primary);
+      line-height: 1.2;
+    }
+
+    .modal-spec-cell span {
+      font-size: 0.60rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .modal-steps-container { display: flex; flex-direction: column; gap: 8px; }
+
+    .modal-step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.78rem;
+      color: var(--text-main);
+      line-height: 1.4;
+      background: #faf8f4;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    .modal-step-num {
+      font-weight: 800;
+      color: var(--gold-accent);
+      flex-shrink: 0;
+      font-size: 0.75rem;
+    }
+
+    .quick-modal-cta {
+      width: 100%;
+      background: var(--teal-primary);
+      color: #ffffff !important;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      margin-top: 14px;
+      box-shadow: 0 4px 12px rgba(10, 56, 52, 0.2);
+    }
+
+    .quick-modal-cta:hover { background: var(--teal-hover); }
+  </style>
+
+/* ==========================================================
+   PREMIUM MOTION LAYER — section-specific, restrained, responsive
+========================================================== */
+:root { --motion-ease: cubic-bezier(.16,1,.3,1); }
+
+/* Upgrade the generic reveal without making every section identical. */
+.reveal-scroll {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition: opacity .8s var(--motion-ease), transform .9s var(--motion-ease);
+}
+.reveal-scroll.is-revealed { opacity: 1; transform: translate3d(0,0,0); }
+
+/* Images reveal with a soft editorial mask. */
+.motion-image-reveal {
+  clip-path: inset(10% 0 10% 0 round 0);
+  --parallax-y: 0px;
+  transform: translate3d(0,var(--parallax-y),0) scale(1.035);
+  opacity: .72;
+  transition: clip-path 1.05s var(--motion-ease), transform 1.15s var(--motion-ease), opacity .9s ease;
+  will-change: clip-path, transform, opacity;
+}
+.motion-image-reveal.is-motion-visible {
+  clip-path: inset(0 0 0 0 round 0);
+  transform: translate3d(0,var(--parallax-y),0) scale(1);
+  opacity: 1;
+}
+
+/* Slight depth on large photographic frames. */
+.motion-parallax { will-change: transform; }
+
+/* Staggered content groups. */
+.motion-stagger > * { opacity: 0; transform: translateY(20px); }
+.motion-stagger.is-motion-visible > * {
+  animation: premiumStaggerIn .72s var(--motion-ease) forwards;
+}
+.motion-stagger.is-motion-visible > *:nth-child(1) { animation-delay: .02s; }
+.motion-stagger.is-motion-visible > *:nth-child(2) { animation-delay: .08s; }
+.motion-stagger.is-motion-visible > *:nth-child(3) { animation-delay: .14s; }
+.motion-stagger.is-motion-visible > *:nth-child(4) { animation-delay: .20s; }
+.motion-stagger.is-motion-visible > *:nth-child(5) { animation-delay: .26s; }
+.motion-stagger.is-motion-visible > *:nth-child(6) { animation-delay: .32s; }
+@keyframes premiumStaggerIn { to { opacity: 1; transform: translateY(0); } }
+
+/* Large headings get a refined line-rise treatment. */
+.motion-heading { overflow: hidden; }
+.motion-heading > * { opacity: 0; transform: translateY(105%); }
+.motion-heading.is-motion-visible > * {
+  animation: headingRise .85s var(--motion-ease) forwards;
+}
+.motion-heading.is-motion-visible > *:nth-child(2) { animation-delay: .08s; }
+@keyframes headingRise { to { opacity: 1; transform: translateY(0); } }
+
+/* Horizontal rails feel deliberate rather than like ordinary overflow. */
+.treatment-horizontal-track,
+.horizontal-scroll-rail { scroll-behavior: smooth; }
+
+/* Premium hover depth, without exaggerated scaling. */
+.ba-slide-card, .doctor-feature-entry, .facility-bento-card, .treatment-card {
+  transition: transform .5s var(--motion-ease), box-shadow .5s var(--motion-ease);
+}
+@media (hover:hover) {
+  .ba-slide-card:hover, .doctor-feature-entry:hover, .facility-bento-card:hover, .treatment-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-scroll, .motion-image-reveal, .motion-stagger > *, .motion-heading > * {
+    opacity: 1 !important; transform: none !important; clip-path: none !important;
+  }
+}
+
+</head>
+
+<body>
+
+  <!-- ==========================================================
+       1. UNIFIED FULL-BLEED HERO (PIXEL 0, 100% SEAMLESS MELT)
+  =========================================================== -->
+  <section class="hero-fullbleed-wrapper" aria-label="Coral Dental Hero Introduction">
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="8450.webp"
+      class="hero-video-bg"
+    >
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-scrim-overlay"></div>
+
+    <header class="luxury-site-header fluid-section-band">
+      <a href="#" class="header-brand-link" aria-label="Coral Dental Home">
+        <svg class="gold-tooth-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f5e0a3"/>
+              <stop offset="40%" stop-color="#b5893b"/>
+              <stop offset="80%" stop-color="#8a611c"/>
+              <stop offset="100%" stop-color="#d6ab58"/>
+            </linearGradient>
+          </defs>
+          <path d="M10 4C6.5 4 4 6.8 4 10.8c0 5.2 2.6 11 4.7 16.6.7 2 2.8 2.6 4.1 1.3 1.6-1.6 2.4-4 3.2-6.7.8 2.7 1.6 5.1 3.2 6.7 1.3 1.3 3.4.7 4.1-1.3C25.4 21.8 28 16 28 10.8 28 6.8 25.5 4 22 4c-3.1 0-5 2-6 2s-2.9-2-6-2z" fill="url(#goldShine)" stroke="#8a611c" stroke-width="0.8"/>
+          <path d="M19 8 L20 6 L21 8 L23 9 L21 10 L20 12 L19 10 L17 9 Z" fill="#ffffff"/>
+        </svg>
+
+        <div class="brand-text-block">
+          <span class="brand-name-serif hero-brand-name-anim">CORAL DENTAL</span>
+          <span class="brand-tagline-sans hero-brand-tag-anim">COSMETIC DENTISTRY &amp; VENEER STUDIO</span>
+        </div>
+      </a>
+
+      <div class="header-right-tools">
+        <div class="live-status-pill hero-status-pill-anim" id="clinicStatusPill" role="status" aria-live="polite">
+          <span class="status-indicator" id="statusIndicator" aria-hidden="true"></span>
+          <span id="statusDisplayText">Open · Closes 8:00 PM</span>
+        </div>
+
+        <div class="desktop-header-cta-group">
+          <a href="tel:+919810047210" class="desktop-header-action-btn" aria-label="Call Reception">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Call Reception</span>
+          </a>
+
+          <a href="#bookingDeskSection" class="desktop-header-cta" id="desktopHeaderCta">
+            Book an Appointment
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-stage-body fluid-section-band">
+      <div class="hero-content-col" id="heroParallaxTarget">
+        <div class="hero-eyebrow-row">
+          <span class="eyebrow-text hero-eyebrow-anim">DR. SRISHTI PUNJANI · MFD RCS IRELAND</span>
+        </div>
+
+        <h1 class="hero-headline serif-title">
+          <span class="word-snap ws-1">Artistry in</span>
+          <span class="word-snap ws-2">Veneers.</span><br>
+          <span class="word-snap ws-3">Confident</span>
+          <span class="word-snap ws-4">Smiles.</span>
+        </h1>
+
+        <p class="hero-subhead hero-subhead-anim">
+          Celebrated cosmetic dentistry, ultra-thin porcelain veneers, and computer-guided dental implants tailored to your facial harmony in Keshav Puram, New Delhi.
+        </p>
+
+        <div class="hero-specialty-tags" aria-label="Key Clinical Disciplines">
+          <span class="specialty-tag stag-tag st-1">Porcelain Veneers</span>
+          <span class="specialty-tag stag-tag st-2">Clear Aligners</span>
+          <span class="specialty-tag stag-tag st-3">Root Canal Therapy</span>
+          <span class="specialty-tag stag-tag st-4">Guided Implants</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================
+       ALWAYS-VISIBLE 4-CHIP NAVIGATION STRIP
+  =========================================================== -->
+  <nav class="sticky-chip-strip" id="stickyChipStrip" aria-label="Page Quick Links">
+    <div class="chip-track" id="stickyChipTrack">
+      <button type="button" class="nav-chip is-active" data-target="treatments">Treatments &amp; Cost</button>
+      <button type="button" class="nav-chip" data-target="casesSection">Veneer Cases</button>
+      <button type="button" class="nav-chip" data-target="reviewsSection">200+ Reviews</button>
+      <button type="button" class="nav-chip" data-target="visitSection">Location</button>
+    </div>
+  </nav>
+
+  <!-- ==========================================================
+       MAIN FLUID CONTENT CONTAINER
+  =========================================================== -->
+  <main class="fluid-section-band">
+
+    <!-- 2. ZERO-BOX STATS SECTION -->
+    <div class="stats-seamless-editorial reveal-scroll" id="statsBarTrigger" aria-label="Practice Overview">
+      <div class="stats-editorial-grid">
+        <div class="strip-stat-cell-clean">
+          <div class="strip-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="strip-text-group">
+            <strong id="counterYears">12+ Years</strong>
+            <span>Experience</span>
+          </div>
+        </div>
+
+        <div class="strip-stat-cell-clean">
+          <div class="strip-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="strip-text-group">
+            <strong id="counterPatients">3,500+</strong>
+            <span>Patients</span>
+          </div>
+        </div>
+
+        <a href="#reviewsSection" class="strip-stat-cell-clean">
+          <div class="strip-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="strip-text-group">
+            <strong id="counterRating">5.0 Star</strong>
+            <span>205+ Reviews</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 3. ATTENDING SPECIALISTS -->
+    <div class="editorial-heading-group reveal-scroll">
+      <div>
+        <span class="editorial-subhead">Clinical Leadership</span>
+        <h3 class="section-display-title serif-title">Attending Dental Specialists</h3>
+      </div>
+    </div>
+
+    <section class="doctors-editorial-spread" aria-label="Lead Specialist Profiles">
+      <!-- Dr. Srishti Punjani: Verified Female Doctor Portrait -->
+      <div class="doctor-feature-entry reveal-scroll delay-1">
+        <div class="doctor-photo-frame">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Dr. Srishti Punjani"
+            class="doctor-photo-rect"
+            width="105"
+            height="126"
+          >
+          <div class="doctor-photo-badge">FOUNDER • RCS IRELAND</div>
+        </div>
+
+        <div class="doctor-details-block">
+          <span class="doc-lead-eyebrow">Lead Aesthetic Dentist &amp; Implantologist</span>
+          <h2 class="doc-name-serif serif-title">Dr. Srishti Punjani</h2>
+          <p class="doc-degrees-line">B.D.S. (MCODS Manipal) · MFD RCS (Ireland)</p>
+          <p class="doc-reg-number">Cosmetic Dentist · Dental Educator · 35K+ Community</p>
+          <p class="doc-institution-line">Specialist in aesthetic porcelain veneers, complex smile revisions, and minimally invasive implantology with international fellowship training.</p>
+        </div>
+      </div>
+
+      <!-- Dr. Chetna -->
+      <div class="doctor-feature-entry reveal-scroll delay-2">
+        <div class="doctor-photo-frame">
+          <img
+            src="https://images.unsplash.com/photo-1683348758447-05c0c0755a2f?auto=format&fit=crop&fm=jpg&q=80&w=600"
+            alt="Dr. Chetna"
+            class="doctor-photo-rect"
+            width="105"
+            height="126"
+          >
+          <div class="doctor-photo-badge">CLINICAL COORDINATOR</div>
+        </div>
+
+        <div class="doctor-details-block">
+          <span class="doc-lead-eyebrow">Clinical Coordinator &amp; Associate Dental Surgeon</span>
+          <h2 class="doc-name-serif serif-title">Dr. Chetna</h2>
+          <p class="doc-degrees-line">B.D.S. · Clinical Dental Surgery</p>
+          <p class="doc-reg-number">Patient Care Lead · Restorative Specialist</p>
+          <p class="doc-institution-line">Renowned across patient reviews for unhurried consultations, comfortable chairside management, and seamless treatment scheduling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHY PATIENTS CHOOSE CORAL DENTAL -->
+    <div class="editorial-heading-group reveal-scroll">
+      <div>
+        <span class="editorial-subhead">The Coral Dental Standard</span>
+        <h3 class="section-display-title serif-title">Why Patients Choose Our Boutique</h3>
+      </div>
+    </div>
+
+    <section class="why-apex-seamless-grid" aria-label="Why Choose Us">
+      <div class="why-apex-column reveal-scroll delay-1">
+        <span class="why-num-tag">01</span>
+        <h4>Royal College Certified</h4>
+        <p>MFD Fellowship from RCS Ireland</p>
+      </div>
+
+      <div class="why-apex-column reveal-scroll delay-2">
+        <span class="why-num-tag">02</span>
+        <h4>Veneer Precision</h4>
+        <p>Zero Sensitivity · Custom Shade Mapping</p>
+      </div>
+
+      <div class="why-apex-column reveal-scroll delay-3">
+        <span class="why-num-tag">03</span>
+        <h4>Digital Diagnostics</h4>
+        <p>Zero Putty · 3-Minute 3D Optical Scan</p>
+      </div>
+
+      <div class="why-apex-column reveal-scroll delay-4">
+        <span class="why-num-tag">04</span>
+        <h4>Transparent Pricing</h4>
+        <p>Itemized Printed Quote Before Treatment</p>
+      </div>
+    </section>
+
+    <!-- 5. CLINICAL PROCEDURES (TARGET: #treatments) -->
+    <div class="editorial-heading-group reveal-scroll" id="treatments">
+      <div>
+        <span class="editorial-subhead">Clinical Disciplines</span>
+        <h3 class="section-display-title serif-title">Explore Our Treatments</h3>
+      </div>
+    </div>
+
+    <div class="treatment-filter-bar reveal-scroll">
+      <div class="filter-pills-row">
+        <button type="button" class="treatment-filter-btn is-active" data-filter="all">All Procedures (7)</button>
+        <button type="button" class="treatment-filter-btn" data-filter="aesthetic">Aesthetic &amp; Orthodontics</button>
+        <button type="button" class="treatment-filter-btn" data-filter="surgical">Surgical &amp; Implants</button>
+      </div>
+      <button type="button" class="btn-swipe-trigger" onclick="fastSwipeTrack('treatmentRailTrack')" aria-label="Swipe Treatments">
+        <span>Swipe</span> →
+      </button>
+    </div>
+
+    <section class="treatment-horizontal-track reveal-scroll" id="treatmentRailTrack" aria-label="Treatments Carousel">
+      
+      <!-- Slide 1: Clear Aligners (HAS 3D BUTTON) -->
+      <div class="treatment-card-item" data-category="aesthetic">
+        <div class="card-product-stage">
+          <img src="card-aligners.webp" alt="Clear Aligners">
+        </div>
+        <div class="card-body-content">
+          <div>
+            <h4>Clear Teeth<br>Aligners &amp; Braces</h4>
+            <div class="card-types-line">
+              <strong>Mild Cosmetic:</strong> ₹45k–₹65k<br>
+              <strong>Comprehensive:</strong> ₹75k–₹1.2L · <strong>Retainers:</strong> ₹8k
+            </div>
+            <div class="card-specs-row">
+              <span class="card-spec-chip">⏱ 4–12 Mo</span>
+              <span class="card-spec-chip">🛡 Medical Polymer</span>
+              <span class="card-spec-chip">🔄 Removable</span>
+            </div>
+            <span class="card-price-pill">₹45,000 – ₹1,20,000 est.</span>
+          </div>
+          <div class="card-cta-group">
+            <button type="button" class="btn-card-action" onclick="openQuickInfo('aligners')">Quick View</button>
+            <a href="/aligners.html" class="btn-card-action btn-3d-highlight">Tap to Explore in 3D →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Permanent Dental Implants (HAS 3D BUTTON) -->
+      <div class="treatment-card-item" data-category="surgical">
+        <div class="card-product-stage">
+          <img src="card-implant.webp" alt="Permanent Dental Implants">
+        </div>
+        <div class="card-body-content">
+          <div>
+            <h4>Permanent Dental<br>Implants</h4>
+            <div class="card-types-line">
+              <strong>Single:</strong> ₹25k–₹45k · <strong>Bridge:</strong> ₹50k–₹85k<br>
+              <strong>Full Arch (All-on-4/6):</strong> ₹1.8L–₹3.5L
+            </div>
+            <div class="card-specs-row">
+              <span class="card-spec-chip">⏱ 60–90 Min</span>
+              <span class="card-spec-chip">🛡 Titanium / Zirconia</span>
+              <span class="card-spec-chip">♾ Lifetime</span>
+            </div>
+            <span class="card-price-pill">₹25,000 – ₹3,50,000 est.</span>
+          </div>
+          <div class="card-cta-group">
+            <button type="button" class="btn-card-action" onclick="openQuickInfo('implants')">Quick View</button>
+            <a href="/implants.html" class="btn-card-action btn-3d-highlight">Tap to Explore in 3D →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Microscope Painless RCT (NO 3D BUTTON) -->
+      <div class="treatment-card-item" data-category="surgical">
+        <div class="card-product-stage">
+          <img src="card-rct.webp" alt="Painless Root Canal">
+        </div>
+        <div class="card-body-content">
+          <div>
+            <h4>Microscope Painless<br>Root Canal (RCT)</h4>
+            <div class="card-types-line">
+              <strong>Single Sitting:</strong> ₹3.5k–₹5.5k<br>
+              <strong>Re-RCT:</strong> ₹5k–₹7.5k · <strong>Pediatric:</strong> ₹2k–₹3.5k
+            </div>
+            <div class="card-specs-row">
+              <span class="card-spec-chip">⏱ 45 Min</span>
+              <span class="card-spec-chip">🛡 100% Numbed</span>
+              <span class="card-spec-chip">🌿 Save Root</span>
+            </div>
+            <span class="card-price-pill">₹2,000 – ₹7,500 est.</span>
+          </div>
+          <div class="card-cta-group">
+            <button type="button" class="btn-card-action" style="flex: 1;" onclick="openQuickInfo('rct')">Quick View</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Ceramic & Zirconia Crowns (NO 3D BUTTON) -->
+      <div class="treatment-card-item" data-category="aesthetic">
+        <div class="card-product-stage">
+          <img src="card-crowns.webp" alt="Ceramic &amp; Zirconia Crowns">
+        </div>
+        <div class="card-body-content">
+          <div>
+            <h4>Ceramic &amp; Zirconia<br>Crowns &amp; Bridges</h4>
+            <div class="card-types-line">
+              <strong>Single Crown:</strong> ₹5.5k–₹12k · <strong>Veneer:</strong> ₹8k–₹18k<br>
+              <strong>Fixed Bridge:</strong> ₹16k–₹35k
+            </div>
+            <div class="card-specs-row">
+              <span class="card-spec-chip">⏱ 1–2 Visits</span>
+              <span class="card-spec-chip">🛡 Metal-Free Zirconia</span>
+              <span class="card-spec-chip">💎 15+ Yrs</span>
+            </div>
+            <span class="card-price-pill">₹5,500 – ₹35,000 est.</span>
+          </div>
+          <div class="card-cta-group">
+            <button type="button" class="btn-card-action" style="flex: 1;" onclick="openQuickInfo('crowns')">Quick View</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Smile Makeover & Veneers (NO 3D BUTTON) -->
+      <div class="treatment-card-item" data-category="aesthetic">
+        <div class="card-product-stage">
+          <img src="card-digital.webp" alt="Smile Makeover &amp; Veneers">
+        </div>
+        <div class="card-body-content">
+          <div>
+            <h4>Smile Makeover &amp;<br>Custom Veneers</h4>
+            <div class="card-types-line">
+              <strong>E-Max Porcelain:</strong> ₹8k–₹18k / tooth<br>
+              <strong>Composite:</strong> ₹2.5k–₹5k · <strong>Full Smile:</strong> ₹60k+
+            </div>
+            <div class="card-specs-row">
+              <span class="card-spec-chip">⏱ 2 Visits</span>
+              <span class="card-spec-chip">🛡 Porcelain Shell</span>
+              <span class="card-spec-chip">✨ Stain-Resist</span>
+            </div>
+            <span class="card-price-pill">₹2,500 – ₹1,50,000 est.</span>
+          </div>
+          <div class="card-cta-group">
+            <button type="button" class="btn-card-action" style="flex: 1;" onclick="openQuickInfo('veneers')">Quick View</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Diagnostic Exam & Scaling (NO 3D BUTTON) -->
+      <div class="treatment-card-item" data-category="surgical">
+        <div class="card-product-stage">
+          <img src="card-checkup.webp" alt="Checkup &amp; Cleaning">
+        </div>
+        <div class="card-body-content">
+          <div>
+            <h4>General Diagnostic<br>Exam &amp; Polish</h4>
+            <div class="card-types-line">
+              <strong>Routine Care:</strong> Ultrasonic cleaning, stain removal &amp; exam
+            </div>
+            <div class="card-specs-row">
+              <span class="card-spec-chip">⏱ 30–45 Mins</span>
+              <span class="card-spec-chip">🛡 Ultrasonic Waves</span>
+              <span class="card-spec-chip">🧼 Fresh Gums</span>
+            </div>
+            <span class="card-price-pill">₹500 – ₹1,500 est.</span>
+          </div>
+          <div class="card-cta-group">
+            <button type="button" class="btn-card-action" style="flex: 1;" onclick="openQuickInfo('checkup')">Quick View</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7: Urgent Dental Pain (NO 3D BUTTON) -->
+      <div class="treatment-card-item" data-category="surgical">
+        <div class="card-product-stage">
+          <img src="card-urgent.webp" alt="Emergency Dental Pain">
+        </div>
+        <div class="card-body-content">
+          <div>
+            <h4 style="color: #f87171;">Urgent Dental Pain<br>&amp; Emergency Exam</h4>
+            <div class="card-types-line">
+              <strong>Same-Day Emergency:</strong> Fast relief for acute toothaches &amp; swelling
+            </div>
+            <div class="card-specs-row">
+              <span class="card-spec-chip">⏱ Same-Day Priority</span>
+              <span class="card-spec-chip">🛡 Instant Relief</span>
+              <span class="card-spec-chip">🚨 No Waiting</span>
+            </div>
+            <span class="card-price-pill" style="color: #fca5a5;">Immediate Priority Available</span>
+          </div>
+          <div class="card-cta-group">
+            <a href="tel:+919810047210" class="btn-card-action" style="background: var(--rose-accent); border-color: var(--rose-accent); flex: 1;">Call Reception Now</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 6. BEFORE & AFTER CLINICAL CASES (TARGET: #casesSection) -->
+    <div class="editorial-heading-group reveal-scroll" id="casesSection">
+      <div>
+        <span class="editorial-subhead">Clinical Documentation</span>
+        <h3 class="section-display-title serif-title">Verified Case Outcomes</h3>
+      </div>
+      <button type="button" class="btn-swipe-trigger" onclick="fastSwipeTrack('beforeAfterTrack')" aria-label="Swipe Cases">
+        <span>Swipe</span> →
+      </button>
+    </div>
+
+    <section class="horizontal-scroll-rail reveal-scroll" aria-label="Before and After Gallery" id="beforeAfterTrack">
+      <div class="ba-slide-card">
+        <div class="ba-image-stage">
+          <img src="ba-01-veneers.webp" alt="Ceramic Veneers Restoration">
+          <span class="ba-tag-overlay">Case 01</span>
+        </div>
+        <div class="ba-card-body">
+          <h4>Upper Ceramic Veneers</h4>
+          <div class="ba-meta-list">
+            <span><strong>Concern:</strong> Chipped front teeth &amp; middle gap</span>
+            <span><strong>Treatment:</strong> 4 Custom Ceramic Veneers (₹48,000)</span>
+            <span><strong>Duration:</strong> 2 visits (10 days total)</span>
+            <span><strong>Result:</strong> Symmetrical shade match with sealed margins.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ba-slide-card">
+        <div class="ba-image-stage">
+          <img src="ba-02-implant.webp" alt="Titanium Dental Implant">
+          <span class="ba-tag-overlay">Case 02</span>
+        </div>
+        <div class="ba-card-body">
+          <h4>Single Tooth Implant</h4>
+          <div class="ba-meta-list">
+            <span><strong>Concern:</strong> Missing premolar causing bite shift</span>
+            <span><strong>Treatment:</strong> Titanium fixture + zirconia crown (₹32,000)</span>
+            <span><strong>Duration:</strong> 3-month bone healing &amp; complete root fusion</span>
+            <span><strong>Result:</strong> Fully restored chewing strength without touching adjacent teeth.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ba-slide-card">
+        <div class="ba-image-stage">
+          <img src="ba-03-aligners.webp" alt="Clear Aligners Orthodontics">
+          <span class="ba-tag-overlay">Case 03</span>
+        </div>
+        <div class="ba-card-body">
+          <h4>Lower Arch Aligner Therapy</h4>
+          <div class="ba-meta-list">
+            <span><strong>Concern:</strong> Severe lower anterior crowding</span>
+            <span><strong>Treatment:</strong> Clear thermoplastic aligner series (₹58,000)</span>
+            <span><strong>Duration:</strong> 6 months active wear</span>
+            <span><strong>Result:</strong> Leveled dental arch with normal floss access.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ba-slide-card">
+        <div class="ba-image-stage">
+          <img src="ba-04-fullarch.webp" alt="Full Arch Zirconia Restoration">
+          <span class="ba-tag-overlay">Case 04</span>
+        </div>
+        <div class="ba-card-body">
+          <h4>Full Arch Bite Rehabilitation</h4>
+          <div class="ba-meta-list">
+            <span><strong>Concern:</strong> Worn-down flat teeth &amp; collapsed bite</span>
+            <span><strong>Treatment:</strong> Metal-Free Zirconia fixed bridge (₹2,10,000)</span>
+            <span><strong>Duration:</strong> 3 appointments</span>
+            <span><strong>Result:</strong> Restored chewing height and facial balance.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="custom-rail-slider-track">
+      <div class="custom-rail-slider-thumb" id="baSliderThumb"></div>
+    </div>
+
+    <!-- 7. BALANCED 2x2 ARCHITECTURAL BENTO SHOWCASE (ZERO VOID) -->
+    <div class="editorial-heading-group reveal-scroll">
+      <div>
+        <span class="editorial-subhead">Our Facility</span>
+        <h3 class="section-display-title serif-title">Modern Surgical Facility</h3>
+      </div>
+    </div>
+
+    <section class="bento-facility-grid reveal-scroll" aria-label="Surgical Facility Showcase">
+      <div class="bento-cell">
+        <div class="bento-img-stage">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Private Surgical Operatory Suite">
+          <span class="bento-badge">Surgical Operatory 01</span>
+        </div>
+        <div class="bento-caption">
+          <h4>Private Surgical Operatory Suite</h4>
+          <p>Ergonomic motorized treatment chairs, integrated intraoral cameras, and Shadowless LED surgical field lighting.</p>
+        </div>
+      </div>
+
+      <div class="bento-cell">
+        <div class="bento-img-stage">
+          <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Autoclave Sterilization Bay">
+          <span class="bento-badge">Class-B Sterilization</span>
+        </div>
+        <div class="bento-caption">
+          <h4>Hospital-Grade Autoclave Bay</h4>
+          <p>Strict 4-tier bio-barrier sterilization protocol with vacuum autoclave packaging for zero cross-contamination.</p>
+        </div>
+      </div>
+
+      <div class="bento-cell">
+        <div class="bento-img-stage">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80" alt="3D CBCT Imaging Suite">
+          <span class="bento-badge">Low-Dose 3D CBCT</span>
+        </div>
+        <div class="bento-caption">
+          <h4>3D Digital Imaging Suite</h4>
+          <p>High-resolution low-dose CBCT tomographic imaging for virtual computer-guided implant planning.</p>
+        </div>
+      </div>
+
+      <div class="bento-cell">
+        <div class="bento-img-stage">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Patient Consultation Lounge">
+          <span class="bento-badge">Private Discussion</span>
+        </div>
+        <div class="bento-caption">
+          <h4>Patient Consultation Lounge</h4>
+          <p>Dedicated private consultation space for unhurried treatment planning, digital smile previews, and cost transparency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BOOKING DESK -->
+    <section id="bookingDeskSection" class="reveal-scroll" aria-label="Consultation Booking Desk">
+      <div class="desk-card">
+        <h3 class="serif-title">Book a Consultation</h3>
+        <p class="desk-lede">
+          Select your clinical concern and preferred consultation window. Confirm instantly on WhatsApp directly with our reception desk.
+        </p>
+
+        <form id="scheduleForm" onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <label id="treatmentSelectLabel" class="field-caption">
+              1. Select Procedure or Visit Reason
+            </label>
+
+            <div class="custom-select-wrapper" id="treatmentCustomWrapper">
+              <button
+                type="button"
+                id="treatmentSelectTrigger"
+                class="custom-select-trigger"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span id="treatmentSelectedText">Clear Teeth Aligners &amp; Invisible Braces (₹45k – ₹1.2L)</span>
+              </button>
+
+              <div class="custom-dropdown-panel" id="treatmentDropdownPanel" role="listbox">
+                <div class="custom-optgroup-label">✦ COMPREHENSIVE PROCEDURAL RANGES</div>
+                
+                <div class="custom-option is-selected" data-value="Clear Teeth Aligners" data-price="₹45,000 – ₹1,20,000">
+                  <span>Clear Teeth Aligners &amp; Invisible Braces</span>
+                  <span class="option-price-tag">₹45k – ₹1.2L</span>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+
+                <div class="custom-option" data-value="Permanent Dental Implants" data-price="₹25,000 – ₹3,50,000">
+                  <span>Permanent Dental Implants (Single / Full Arch)</span>
+                  <span class="option-price-tag">₹25k – ₹3.5L</span>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+
+                <div class="custom-option" data-value="Microscope Painless RCT" data-price="₹2,000 – ₹7,500">
+                  <span>Microscope Painless Root Canal (RCT)</span>
+                  <span class="option-price-tag">₹2,000 – ₹7,500</span>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+
+                <div class="custom-option" data-value="Ceramic &amp; Zirconia Crowns" data-price="₹5,500 – ₹35,000">
+                  <span>Ceramic &amp; Zirconia Crowns &amp; Bridges</span>
+                  <span class="option-price-tag">₹5,500 – ₹35,000</span>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+
+                <div class="custom-option" data-value="Smile Makeover &amp; Veneers" data-price="₹2,500 – ₹1,50,000">
+                  <span>Smile Makeover &amp; Custom Veneers</span>
+                  <span class="option-price-tag">₹2.5k – ₹1.5L</span>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+
+                <div class="custom-option" data-value="General Checkup &amp; Polish" data-price="₹500 – ₹1,500">
+                  <span>General Diagnostic Exam &amp; Polish</span>
+                  <span class="option-price-tag">₹500 – ₹1,500</span>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+
+                <div class="custom-option" data-value="Urgent Dental Pain Relief" data-price="Priority Evaluation">
+                  <span>Urgent Dental Pain &amp; Emergency Exam</span>
+                  <span class="option-price-tag">Priority Evaluation</span>
+                  <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+              </div>
+
+              <select id="treatmentSelect" style="display: none;">
+                <option value="Clear Teeth Aligners" data-price="₹45,000 – ₹1,20,000" selected>Clear Teeth Aligners</option>
+                <option value="Permanent Dental Implants" data-price="₹25,000 – ₹3,50,000">Permanent Dental Implants</option>
+                <option value="Microscope Painless RCT" data-price="₹2,000 – ₹7,500">Microscope Painless RCT</option>
+                <option value="Ceramic &amp; Zirconia Crowns" data-price="₹5,500 – ₹35,000">Ceramic &amp; Zirconia Crowns</option>
+                <option value="Smile Makeover &amp; Veneers" data-price="₹2,500 – ₹1,50,000">Smile Makeover &amp; Veneers</option>
+                <option value="General Checkup &amp; Polish" data-price="₹500 – ₹1,500">General Checkup &amp; Polish</option>
+                <option value="Urgent Dental Pain Relief" data-price="Priority Evaluation">Urgent Dental Pain Relief</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <span class="field-caption">2. Preferred Time of Day</span>
+            <div class="time-chips-grid" role="radiogroup" aria-label="Preferred consultation time">
+              <button type="button" class="time-chip-btn" data-time="Morning (10:30 AM – 1:30 PM)" aria-pressed="true">
+                Morning (10:30–1:30)
+              </button>
+              <button type="button" class="time-chip-btn" data-time="Afternoon (1:30 PM – 5 PM)" aria-pressed="false">
+                Afternoon (1:30–5)
+              </button>
+              <button type="button" class="time-chip-btn" data-time="Evening (5 PM – 8 PM)" aria-pressed="false">
+                Evening (5–8)
+              </button>
+            </div>
+          </div>
+
+          <div class="prominent-preview-banner">
+            <span class="banner-tag">Appointment Request Summary</span>
+            <div class="banner-statement" id="previewSummaryText">
+              Treatment: Clear Teeth Aligners · Preferred: Morning (10:30 AM – 1:30 PM)
+            </div>
+          </div>
+
+          <a id="deskWhatsAppCta" href="#" class="desk-cta-btn" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/>
+            </svg>
+            <span>Confirm on WhatsApp</span>
+          </a>
+
+          <p class="reassurance-note">
+            Launches WhatsApp directly with reception. No advance payment required.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 9. VERIFIED PATIENT REVIEWS (TARGET: #reviewsSection) -->
+    <div class="editorial-heading-group reveal-scroll" id="reviewsSection">
+      <div>
+        <span class="editorial-subhead">Patient Feedback</span>
+        <h3 class="section-display-title serif-title">Verified Patient Experiences</h3>
+      </div>
+      <button type="button" class="btn-swipe-trigger" onclick="fastSwipeTrack('reviewsTrack')" aria-label="Swipe Reviews">
+        <span>Swipe</span> →
+      </button>
+    </div>
+
+    <section class="reviews-carousel-wrap reveal-scroll" aria-label="Verified Patient Reviews">
+      <div class="reviews-track" id="reviewsTrack">
+        <div class="review-card-item">
+          <div class="review-author-row">
+            <div class="author-avatar">B</div>
+            <div class="author-info">
+              <h5>B Dutt</h5>
+              <span>Local Guide · 5.0 Rating</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">
+            "Had a really good experience with my 8 veneers treatment with Dr. Shristi Punjani. She explained everything clearly and made the whole process comfortable. The staff was also very friendly and supportive throughout. Really happy with the final results and my new smile!"
+          </p>
+        </div>
+
+        <div class="review-card-item">
+          <div class="review-author-row">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <h5>Arun Kumar Gautam</h5>
+              <span>From Uttarakhand · 5.0 Rating</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">
+            "I have come from uttarakhand to get venners done frorm srishti mam I had a good experience staff is very cooperative and patient .i finnally have a gap free smile"
+          </p>
+        </div>
+
+        <div class="review-card-item">
+          <div class="review-author-row">
+            <div class="author-avatar">J</div>
+            <div class="author-info">
+              <h5>Jyoti Kumari</h5>
+              <span>From Bihar · 5.0 Rating</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">
+            "hello am jyoti from bihar i have got my veneers treatment done from Dr Srishti Punjani am satisfied with the treatment ... More"
+          </p>
+        </div>
+
+        <div class="review-card-item">
+          <div class="review-author-row">
+            <div class="author-avatar">N</div>
+            <div class="author-info">
+              <h5>Neeru</h5>
+              <span>Verified Patient · 5.0 Rating</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">
+            "Hello mam neeraj I got my porcelain veneers done today Am so happy with my treatment I would recommend everyone to get veneers treatment from here"
+          </p>
+        </div>
+
+        <div class="review-card-item">
+          <div class="review-author-row">
+            <div class="author-avatar">D</div>
+            <div class="author-info">
+              <h5>Darshan Singh</h5>
+              <span>Local Guide · 29 reviews · 5.0 Rating</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">
+            "Had a great experience with Dr srishti she explained everything with patience"
+          </p>
+        </div>
+
+        <div class="review-card-item">
+          <div class="review-author-row">
+            <div class="author-avatar">R</div>
+            <div class="author-info">
+              <h5>Rahhol Sidana</h5>
+              <span>Verified Patient · 5.0 Rating</span>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">
+            "Hi am rahul i took my single day composite veeners treatment I am too happy with the treatment My smile got changed ... More"
+          </p>
+        </div>
+
+        <a
+          href="https://maps.app.goo.gl/pVgXvnanMGS2wvzM6"
+          target="_blank"
+          rel="noopener"
+          class="review-view-all-card"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+          <span>View all 200+ Google reviews →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 10. FAQ ACCORDION -->
+    <div class="editorial-heading-group reveal-scroll">
+      <div>
+        <span class="editorial-subhead">Patient Inquiries</span>
+        <h3 class="section-display-title serif-title">Frequently Asked Questions</h3>
+      </div>
+    </div>
+
+    <section class="faq-accordion reveal-scroll" aria-label="Patient Questions">
+      <details>
+        <summary>Are dental implants painful to place?</summary>
+        <p>
+          No. The procedure is completed under local anesthesia. Most patients report feeling only gentle vibration and mild pressure, with postoperative recovery feeling similar to a simple filling.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you give written cost estimates before treatment begins?</summary>
+        <p>
+          Yes. Following your 3D scan and clinical exam, you will receive a transparent written breakdown of all available materials and exact pricing before any treatment starts.
+        </p>
+      </details>
+
+      <details>
+        <summary>What is included in a dental implant estimate?</summary>
+        <p>
+          Our implant estimate includes the initial 3D surgical planning scan, the biocompatible medical titanium root fixture, the precision-milled titanium abutment connector, and the final monolithic zirconia crown.
+        </p>
+      </details>
+
+      <details>
+        <summary>How long does clear aligner treatment take?</summary>
+        <p>
+          Minor adjustments can take 3 to 6 months, while full alignment typically takes between 8 and 14 months depending on tooth movement requirements.
+        </p>
+      </details>
+
+      <details>
+        <summary>What should I do in case of a sudden dental emergency?</summary>
+        <p>
+          We reserve dedicated slots daily for acute emergencies, severe toothaches, and fractured crowns. Select "Urgent Dental Pain Relief" in the booking desk or call our reception directly for same-day priority.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you offer flexible staged payment options?</summary>
+        <p>
+          Yes. For multi-stage treatments such as dental implants and clear aligners, payments are divided across visits as your clinical milestones progress.
+        </p>
+      </details>
+
+      <details>
+        <summary>Are both specialists available on weekends?</summary>
+        <p>
+          Yes. Our clinic maintains consulting and procedure hours on Saturdays (10:30 AM – 8:00 PM) and appointments are available by schedule.
+        </p>
+      </details>
+    </section>
+
+    <!-- 11. INSTITUTIONAL CLINIC FOOTER & VISIT ANCHOR (TARGET: #visitSection) -->
+    <footer class="clinic-footer-container reveal-scroll" id="visitSection">
+      <div class="footer-identity-block">
+        <h4 class="serif-title">CORAL DENTAL &bull; DR. SRISHTI PUNJANI</h4>
+        <p>
+          C-7/299, Opposite Pillar Number 267, Inside Service Lane Bavanagar, Block C7, Keshav Puram, Tri Nagar Delhi, 110035<br>
+          Direct Reception: +91 98100 47210 · Clinic Email: info@coraldental.in<br>
+          OPD Hours: Monday – Saturday: 10:30 AM – 8:00 PM (By Appointment)
+        </p>
+      </div>
+
+      <div class="footer-seo-links">
+        <a href="/aligners.html">Clear Aligners 3D Guide</a>
+        <a href="/implants.html">Implant 3D Explorer</a>
+        <a href="https://maps.app.goo.gl/pVgXvnanMGS2wvzM6" target="_blank" rel="noopener">Google Business Profile</a>
+        <a href="https://instagram.com/coraldentalclinic" target="_blank" rel="noopener">Instagram (@coraldentalclinic)</a>
+      </div>
+
+      <p>© 2026 Coral Dental. All surgical and restorative procedures performed by registered dental surgeons. Dedicated to evidence-backed, transparent dentistry.</p>
+    </footer>
+
+  </main>
+
+  <!-- 12. MOBILE FLOATING ACTION BAR (CRISP OUTLINED CALENDAR ICON) -->
+  <div class="mobile-action-bar">
+    <a href="tel:+919810047210" class="mobile-call-btn" id="mobileCallBtn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span>Call Desk</span>
+    </a>
+
+    <!-- Clean outlined calendar icon (no solid white rectangle) -->
+    <button type="button" id="mobileWhatsAppBtn" class="mobile-book-btn">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      <span>Book an Appointment</span>
+    </button>
+  </div>
+
+  <!-- 13. QUICK VIEW MODAL -->
+  <div class="quick-modal-backdrop" id="quickInfoModal" role="dialog" aria-modal="true" aria-labelledby="quickModalTitle">
+    <div class="quick-modal-card">
+      <div class="quick-modal-sticky-header">
+        <div>
+          <span class="quick-modal-tag" id="quickModalTag">CLINICAL GUIDE</span>
+          <h3 class="quick-modal-title serif-title" id="quickModalTitle">Service Name</h3>
+        </div>
+        <button type="button" class="quick-modal-close-btn" id="quickModalCloseBtn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="quick-modal-scrollable-body">
+        <div id="quickModalDynamicBody"></div>
+
+        <button type="button" class="quick-modal-cta" id="quickModalCtaBtn">
+          <span>Book This Visit on WhatsApp →</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       14. SCRIPT ENGINES (ALWAYS-VISIBLE 4-CHIP JUMP, FILTERS)
+  =========================================================== -->
+  <script>
+    (function () {
+      "use strict";
+
+      const CLINIC_WHATSAPP = "919810047210";
+      let chosenTimeWindow = "Morning (10:30 AM – 1:30 PM)";
+
+      /* ==========================================================
+         A. HERO PARALLAX DEPTH SINK
+      =========================================================== */
+      const heroParallaxTarget = document.getElementById("heroParallaxTarget");
+
+      function updateHeroParallax() {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollY <= 500 && heroParallaxTarget) {
+          const translateY = scrollY * 0.28;
+          const opacity = Math.max(1 - (scrollY / 340), 0);
+          heroParallaxTarget.style.transform = `translateY(${translateY}px)`;
+          heroParallaxTarget.style.opacity = `${opacity}`;
+        }
+      }
+
+      window.addEventListener("scroll", () => {
+        requestAnimationFrame(updateHeroParallax);
+      }, { passive: true });
+
+      /* ==========================================================
+         B. BULLETPROOF 1-TAP 4-CHIP JUMP NAVIGATION & SCROLL-SPY
+      =========================================================== */
+      const navChips = document.querySelectorAll(".nav-chip");
+      const observedSectionIds = ["treatments", "casesSection", "reviewsSection", "visitSection"];
+      const observedSections = observedSectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+      let isNavClicking = false;
+
+      function setActiveChip(targetId) {
+        navChips.forEach(chip => {
+          const isMatch = chip.getAttribute("data-target") === targetId;
+          chip.classList.toggle("is-active", isMatch);
+        });
+      }
+
+      navChips.forEach(chip => {
+        chip.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = chip.getAttribute("data-target");
+          const targetEl = document.getElementById(targetId);
+          if (!targetEl) return;
+
+          setActiveChip(targetId);
+          isNavClicking = true;
+
+          const headerOffset = 52;
+          const elementPosition = targetEl.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+
+          setTimeout(() => {
+            isNavClicking = false;
+          }, 850);
+        });
+      });
+
+      // Flawless bidirectional scroll spy: automatically shifts to "Location" when scrolled down
+      function updateScrollSpy() {
+        if (isNavClicking) return;
+
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const docHeight = document.documentElement.scrollHeight;
+
+        // Snaps directly to Location when reaching the bottom portion
+        if (windowHeight + scrollY >= docHeight - 140) {
+          setActiveChip("visitSection");
+          return;
+        }
+
+        const triggerY = 110;
+        let currentId = observedSectionIds[0];
+
+        for (let i = 0; i < observedSections.length; i++) {
+          const sec = observedSections[i];
+          if (sec) {
+            const rect = sec.getBoundingClientRect();
+            if (rect.top <= triggerY) {
+              currentId = sec.id;
+            }
+          }
+        }
+
+        setActiveChip(currentId);
+      }
+
+      window.addEventListener("scroll", () => {
+        requestAnimationFrame(updateScrollSpy);
+      }, { passive: true });
+
+      updateScrollSpy();
+
+      /* ==========================================================
+         C. TREATMENT RAIL CATEGORY FILTER CONTROLLER
+      =========================================================== */
+      const filterButtons = document.querySelectorAll(".treatment-filter-btn");
+      const treatmentCards = document.querySelectorAll(".treatment-card-item");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterButtons.forEach(b => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+
+          const filterVal = btn.getAttribute("data-filter");
+
+          treatmentCards.forEach((card) => {
+            const cardCat = card.getAttribute("data-category");
+            if (filterVal === "all" || cardCat === filterVal) {
+              card.classList.remove("is-dimmed");
+            } else {
+              card.classList.add("is-dimmed");
+            }
+          });
+        });
+      });
+
+      /* ==========================================================
+         D. CLINICAL DATABASE & QUICK VIEW MODAL
+      =========================================================== */
+      const clinicalDatabase = {
+        aligners: {
+          tag: "DIGITAL ORTHODONTICS",
+          title: "Clear Teeth Aligners & Invisible Braces",
+          bookingValue: "Clear Teeth Aligners",
+          types: [
+            { name: "Mild Alignment (Cosmetic fix)", price: "₹45,000 – ₹65,000" },
+            { name: "Comprehensive Alignment (Bite fix)", price: "₹75,000 – ₹1,20,000" },
+            { name: "Invisible Retention Trays", price: "₹8,000 – ₹15,000" }
+          ],
+          specs: { time: "4–12 Months", material: "BPA-Free Polymer", durability: "Permanent Alignment" },
+          steps: [
+            { num: "01", title: "3D Smile Simulation", desc: "Optical intraoral scan previews your straightened smile before beginning." },
+            { num: "02", title: "Custom Tray Printing", desc: "Series of laser-cut clear medical polymer aligners custom-made for your bite." },
+            { num: "03", title: "Progressive Daily Wear", desc: "Wear 22 hours daily, switching trays every 10–14 days. Remove freely to eat." },
+            { num: "04", title: "Smile Retention", desc: "Clear retainers to permanently lock your newly aligned teeth in position." }
+          ]
+        },
+        implants: {
+          tag: "HIGH-PRECISION IMPLANTOLOGY",
+          title: "Permanent Dental Implants",
+          bookingValue: "Permanent Dental Implants",
+          types: [
+            { name: "Single Tooth Implant", price: "₹25,000 – ₹45,000" },
+            { name: "Multiple Teeth (Implant Bridge)", price: "₹50,000 – ₹85,000" },
+            { name: "Full Arch (All-on-4 / All-on-6)", price: "₹1,80,000 – ₹3,50,000" }
+          ],
+          specs: { time: "60–90 Min", material: "Titanium / Zirconia", durability: "Lifetime With Care" },
+          steps: [
+            { num: "01", title: "Digital 3D Assessment", desc: "Low-dose CBCT scan to evaluate jawbone volume with zero goopy impressions." },
+            { num: "02", title: "Computerized Planning", desc: "3D virtual implant mapping to achieve ideal depth and nerve avoidance." },
+            { num: "03", title: "Gentle Surgical Placement", desc: "Biocompatible medical titanium fixture placed under localized anesthesia." },
+            { num: "04", title: "Final Ceramic Crown", desc: "Custom CAD/CAM tooth attached for immediate natural bite and chewing strength." }
+          ]
+        },
+        rct: {
+          tag: "ENDODONTIC PAIN RELIEF",
+          title: "Microscope Painless Root Canal (RCT)",
+          bookingValue: "Microscope Painless RCT",
+          types: [
+            { name: "Single-Sitting Rotary RCT", price: "₹3,500 – ₹5,500" },
+            { name: "Re-treatment (Failed Previous RCT)", price: "₹5,000 – ₹7,500" },
+            { name: "Pediatric / Milk Tooth RCT", price: "₹2,000 – ₹3,500" }
+          ],
+          specs: { time: "45 Min / Visit", material: "100% Numbed", durability: "Saves Natural Root" },
+          steps: [
+            { num: "01", title: "Digital Diagnosis", desc: "High-definition x-ray maps root canals and pinpoints deep pulp infection." },
+            { num: "02", title: "Gentle Local Numbing", desc: "Computerized localized anesthesia ensures treatment is completely pain-free." },
+            { num: "03", title: "Microscopic Cleaning", desc: "Motorized flexible rotary files sterilize root canals with zero vibration." },
+            { num: "04", title: "Biocompatible Seal", desc: "Gutta-percha sterile root seal placed, ready for protective ceramic crown." }
+          ]
+        },
+        crowns: {
+          tag: "CAD/CAM RESTORATIONS",
+          title: "Ceramic & Zirconia Crowns",
+          bookingValue: "Ceramic & Zirconia Crowns",
+          types: [
+            { name: "Single Metal-Free Zirconia Crown", price: "₹5,500 – ₹12,000" },
+            { name: "Cosmetic Porcelain Veneer", price: "₹8,000 – ₹18,000" },
+            { name: "Fixed Multi-Unit Bridge (3+ Units)", price: "₹16,000 – ₹35,000" }
+          ],
+          specs: { time: "1–2 Visits", material: "Metal-Free Zirconia", durability: "15+ Years Durability" },
+          steps: [
+            { num: "01", title: "Tooth Preparation", desc: "Gentle conservative shaping to remove decay while preserving natural tooth structure." },
+            { num: "02", title: "3D Digital Scan", desc: "High-accuracy optical scan replaces uncomfortable physical impression putty." },
+            { num: "03", title: "Precision Milling", desc: "CAD/CAM milling unit carves a high-strength tooth matching your natural shade." },
+            { num: "04", title: "Permanent Bonding", desc: "Hermetically sealed with resin cement to reinforce and seal the tooth." }
+          ]
+        },
+        veneers: {
+          tag: "AESTHETIC SMILE MAKEOVER",
+          title: "Smile Makeover & Custom Veneers",
+          bookingValue: "Smile Makeover & Veneers",
+          types: [
+            { name: "E-Max Porcelain Veneers", price: "₹8,000 – ₹18,000 / tooth" },
+            { name: "Direct Composite Bonding", price: "₹2,500 – ₹5,000 / tooth" },
+            { name: "Full Smile Line Reshaping", price: "₹60,000 – ₹1,50,000" }
+          ],
+          specs: { time: "2 Visits", material: "Cosmetic Porcelain", durability: "Stain-Resistant" },
+          steps: [
+            { num: "01", title: "Facial Aesthetic Scan", desc: "Digital photography and smile symmetry analysis customized to your face." },
+            { num: "02", title: "Smile Mockup", desc: "Try in a preview of your new smile shape in your mouth before any preparation." },
+            { num: "03", title: "Micro-Layer Preparation", desc: "Minimal enamel smoothing to ensure a natural, seamless transition." },
+            { num: "04", title: "Permanent Seating", desc: "High-strength cosmetic bonding for a luminous, natural aesthetic finish." }
+          ]
+        },
+        checkup: {
+          tag: "PREVENTIVE ROUTINE HYGIENE",
+          title: "General Diagnostic Exam & Polish",
+          bookingValue: "General Checkup & Polish",
+          isRoutine: true,
+          specsOnly: [
+            "<strong>Time Required:</strong> 30–45 minutes for a complete sparkling refresh.",
+            "<strong>Does It Hurt?</strong> Zero scraping pain; uses gentle ultrasonic sound wave vibrations to dissolve hardened plaque.",
+            "<strong>What You Get:</strong> Ultrasonic scaling, tooth polishing, gum evaluation, and digital low-dose x-ray check."
+          ]
+        }
+      };
+
+      const quickInfoModal = document.getElementById("quickInfoModal");
+      const quickModalCloseBtn = document.getElementById("quickModalCloseBtn");
+      const quickModalTag = document.getElementById("quickModalTag");
+      const quickModalTitle = document.getElementById("quickModalTitle");
+      const quickModalDynamicBody = document.getElementById("quickModalDynamicBody");
+      const quickModalCtaBtn = document.getElementById("quickModalCtaBtn");
+      let currentQuickServiceTarget = "";
+
+      window.openQuickInfo = function (key) {
+        const item = clinicalDatabase[key];
+        if (!item) return;
+
+        currentQuickServiceTarget = item.bookingValue;
+        quickModalTag.textContent = item.tag;
+        quickModalTitle.textContent = item.title;
+
+        if (item.isRoutine) {
+          quickModalDynamicBody.innerHTML = `
+            <div class="modal-section-block">
+              <span class="modal-section-title">Quick Treatment Facts</span>
+              <div class="modal-steps-container">
+                ${item.specsOnly.map(spec => `<div class="modal-step-item"><div>${spec}</div></div>`).join("")}
+              </div>
+            </div>
+          `;
+        } else {
+          quickModalDynamicBody.innerHTML = `
+            <div class="modal-section-block">
+              <span class="modal-section-title">1. Clinical Variations &amp; Upfront Estimates</span>
+              <div class="modal-types-container">
+                ${item.types.map(t => `
+                  <div class="modal-type-row">
+                    <strong>${t.name}</strong>
+                    <span class="modal-type-price">${t.price}</span>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+
+            <div class="modal-section-block">
+              <span class="modal-section-title">2. Quick Reassurance Specs</span>
+              <div class="modal-specs-strip">
+                <div class="modal-spec-cell">
+                  <strong>${item.specs.time}</strong>
+                  <span>Chair Time</span>
+                </div>
+                <div class="modal-spec-cell">
+                  <strong>${item.specs.material}</strong>
+                  <span>Materials</span>
+                </div>
+                <div class="modal-spec-cell">
+                  <strong>${item.specs.durability}</strong>
+                  <span>Durability</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-section-block">
+              <span class="modal-section-title">3. Four-Step Care Roadmap</span>
+              <div class="modal-steps-container">
+                ${item.steps.map(s => `
+                  <div class="modal-step-item">
+                    <span class="modal-step-num">${s.num}</span>
+                    <div>
+                      <strong>${s.title}:</strong> ${s.desc}
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+          `;
+        }
+
+        quickInfoModal.classList.add("is-active");
+      };
+
+      function closeQuickModal() {
+        quickInfoModal.classList.remove("is-active");
+      }
+
+      if (quickModalCloseBtn) quickModalCloseBtn.addEventListener("click", closeQuickModal);
+      if (quickInfoModal) {
+        quickInfoModal.addEventListener("click", (e) => {
+          if (e.target === quickInfoModal) closeQuickModal();
+        });
+      }
+
+      if (quickModalCtaBtn) {
+        quickModalCtaBtn.addEventListener("click", () => {
+          closeQuickModal();
+          if (currentQuickServiceTarget) {
+            window.setBookingTreatment(currentQuickServiceTarget);
+          }
+        });
+      }
+
+      /* ==========================================================
+         E. BOOKING DESK: WHATSAPP 1-TAP SYNC
+      =========================================================== */
+      const treatmentSelect = document.getElementById("treatmentSelect");
+      const treatmentCustomWrapper = document.getElementById("treatmentCustomWrapper");
+      const treatmentSelectTrigger = document.getElementById("treatmentSelectTrigger");
+      const treatmentSelectedText = document.getElementById("treatmentSelectedText");
+      const customOptions = document.querySelectorAll(".custom-option");
+      const previewSummaryText = document.getElementById("previewSummaryText");
+      const deskWhatsAppCta = document.getElementById("deskWhatsAppCta");
+      const mobileWhatsAppBtn = document.getElementById("mobileWhatsAppBtn");
+      const timeChipButtons = document.querySelectorAll(".time-chip-btn");
+
+      timeChipButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          timeChipButtons.forEach(b => b.setAttribute("aria-pressed", "false"));
+          btn.setAttribute("aria-pressed", "true");
+          chosenTimeWindow = btn.getAttribute("data-time");
+          updateBookingSummary();
+        });
+      });
+
+      function syncCustomDropdown(value) {
+        let priceTag = "";
+        customOptions.forEach((opt) => {
+          const isMatch = opt.getAttribute("data-value") === value;
+          opt.classList.toggle("is-selected", isMatch);
+          opt.setAttribute("aria-selected", isMatch ? "true" : "false");
+          if (isMatch) {
+            priceTag = opt.getAttribute("data-price") || "";
+          }
+        });
+        if (treatmentSelectedText) {
+          treatmentSelectedText.textContent = value + (priceTag ? " (" + priceTag + ")" : "");
+        }
+      }
+
+      if (treatmentSelectTrigger) {
+        treatmentSelectTrigger.addEventListener("click", (e) => {
+          e.preventDefault();
+          const isOpen = treatmentCustomWrapper.classList.toggle("is-open");
+          treatmentSelectTrigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+      }
+
+      customOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          const val = option.getAttribute("data-value");
+          if (treatmentSelect) treatmentSelect.value = val;
+          syncCustomDropdown(val);
+          if (treatmentCustomWrapper) treatmentCustomWrapper.classList.remove("is-open");
+          if (treatmentSelectTrigger) treatmentSelectTrigger.setAttribute("aria-expanded", "false");
+          updateBookingSummary();
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (treatmentCustomWrapper && !treatmentCustomWrapper.contains(e.target)) {
+          treatmentCustomWrapper.classList.remove("is-open");
+          if (treatmentSelectTrigger) treatmentSelectTrigger.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      function updateBookingSummary() {
+        if (!treatmentSelect) return;
+        const currentTreatment = treatmentSelect.value;
+        const selectedOption = document.querySelector(`.custom-option[data-value="${currentTreatment}"]`);
+        const price = selectedOption ? selectedOption.getAttribute("data-price") : "";
+
+        if (previewSummaryText) {
+          previewSummaryText.textContent = `Treatment: ${currentTreatment} · Preferred: ${chosenTimeWindow}`;
+        }
+
+        const fullMessage =
+          "Hello Coral Dental Reception,\n\n" +
+          "I would like to schedule a consultation at your clinic:\n\n" +
+          "• Treatment: " + currentTreatment + "\n" +
+          "• Estimate Range: " + price + "\n" +
+          "• Preferred Time Window: " + chosenTimeWindow + "\n\n" +
+          "Please let me know which days have chair availability.";
+
+        if (deskWhatsAppCta) {
+          deskWhatsAppCta.href = `https://wa.me/${CLINIC_WHATSAPP}?text=${encodeURIComponent(fullMessage)}`;
+        }
+      }
+
+      window.setBookingTreatment = function (treatmentName) {
+        if (treatmentSelect) treatmentSelect.value = treatmentName;
+        syncCustomDropdown(treatmentName);
+        updateBookingSummary();
+
+        const desk = document.getElementById("bookingDeskSection");
+        if (desk) {
+          const headerOffset = 52;
+          const elementPosition = desk.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+        }
+      };
+
+      if (mobileWhatsAppBtn) {
+        mobileWhatsAppBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const desk = document.getElementById("bookingDeskSection");
+          if (desk) {
+            const headerOffset = 52;
+            const elementPosition = desk.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+          }
+        });
+      }
+
+      /* ==========================================================
+         F. FAST SWIPE & DESKTOP MOUSE DRAG-TO-SCROLL
+      =========================================================== */
+      window.fastSwipeTrack = function(trackId) {
+        const track = document.getElementById(trackId);
+        if (!track) return;
+        // Pause continuous background marquee so manual click scrolls cleanly
+        if (track._pauseMarquee) {
+          track._pauseMarquee();
+        }
+        const firstCard = track.querySelector('.ba-slide-card, .review-card-item, .treatment-card-item');
+        const scrollAmount = firstCard ? (firstCard.offsetWidth + 18) : 320;
+        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      };
+
+      function enableMouseDragScroll(trackId) {
+        const track = document.getElementById(trackId);
+        if (!track) return;
+
+        let isDown = false;
+        let startX = 0;
+        let scrollLeft = 0;
+        let hasMoved = false;
+
+        track.addEventListener('mousedown', (e) => {
+          if (e.target.closest('button, a, select, input')) return;
+          isDown = true;
+          hasMoved = false;
+          startX = e.pageX - track.offsetLeft;
+          scrollLeft = track.scrollLeft;
+        });
+
+        window.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - track.offsetLeft;
+          const walk = (x - startX) * 1.5;
+          if (Math.abs(walk) > 4) hasMoved = true;
+          track.scrollLeft = scrollLeft - walk;
+        });
+
+        window.addEventListener('mouseup', () => {
+          if (!isDown) return;
+          isDown = false;
+        });
+
+        track.addEventListener('click', (e) => {
+          if (hasMoved) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        }, true);
+      }
+
+      enableMouseDragScroll("treatmentRailTrack");
+      enableMouseDragScroll("beforeAfterTrack");
+      enableMouseDragScroll("reviewsTrack");
+
+      function setupContinuousMarqueeWithPause(trackId, thumbId, speed = 0.55) {
+        const track = document.getElementById(trackId);
+        const thumb = document.getElementById(thumbId);
+        if (!track) return;
+
+        const originalItems = Array.from(track.children);
+        originalItems.forEach(item => {
+          track.appendChild(item.cloneNode(true));
+        });
+
+        let isHolding = false;
+        let isUserInteracting = false;
+        let resumeTimer = null;
+        let halfWidth = track.scrollWidth / 2;
+
+        const updateWidth = () => { halfWidth = track.scrollWidth / 2; };
+        window.addEventListener('resize', updateWidth);
+
+        const freeze = () => {
+          isHolding = true;
+          isUserInteracting = true;
+          if (resumeTimer) clearTimeout(resumeTimer);
+          resumeTimer = setTimeout(() => {
+            isHolding = false;
+            isUserInteracting = false;
+          }, 1800);
+        };
+
+        const unfreeze = () => {
+          isHolding = false;
+          isUserInteracting = false;
+          if (resumeTimer) clearTimeout(resumeTimer);
+          resumeTimer = setTimeout(() => {
+            if (!isUserInteracting) isHolding = false;
+          }, 1200);
+        };
+
+        // Attach freeze hook for fastSwipeTrack buttons
+        track._pauseMarquee = freeze;
+
+        track.addEventListener('mouseenter', freeze);
+        track.addEventListener('mouseleave', unfreeze);
+        track.addEventListener('pointerdown', freeze, { passive: true });
+        window.addEventListener('pointerup', unfreeze, { passive: true });
+        window.addEventListener('pointercancel', unfreeze, { passive: true });
+        track.addEventListener('touchstart', freeze, { passive: true });
+        window.addEventListener('touchend', unfreeze, { passive: true });
+        window.addEventListener('touchcancel', unfreeze, { passive: true });
+
+        track.addEventListener('scroll', () => {
+          if (isUserInteracting) {
+            if (resumeTimer) clearTimeout(resumeTimer);
+            resumeTimer = setTimeout(() => {
+              if (!isUserInteracting) isHolding = false;
+            }, 1200);
+          }
+
+          if (thumb && halfWidth > track.clientWidth) {
+            const maxScroll = halfWidth - track.clientWidth;
+            const current = track.scrollLeft % halfWidth;
+            const prog = Math.min(Math.max(current / maxScroll, 0), 1);
+            thumb.style.transform = `translateX(${prog * 300}%)`;
+          }
+        }, { passive: true });
+
+        function renderFrame() {
+          if (!isHolding && !isUserInteracting) {
+            track.scrollLeft += speed;
+            if (track.scrollLeft >= halfWidth) {
+              track.scrollLeft -= halfWidth;
+            } else if (track.scrollLeft <= 0) {
+              track.scrollLeft += halfWidth;
+            }
+
+            if (thumb && halfWidth > track.clientWidth) {
+              const maxCycle = halfWidth - track.clientWidth;
+              const currentOffset = (track.scrollLeft % halfWidth);
+              const progress = Math.min(Math.max(currentOffset / maxCycle, 0), 1);
+              thumb.style.transform = `translateX(${progress * 300}%)`;
+            }
+          }
+          requestAnimationFrame(renderFrame);
+        }
+        requestAnimationFrame(renderFrame);
+      }
+
+      setupContinuousMarqueeWithPause("beforeAfterTrack", "baSliderThumb", 0.55);
+
+      /* ==========================================================
+         G. ROLLING NUMBERS & OPD STATUS
+      =========================================================== */
+      let statsCounted = false;
+      function animateRollingStats() {
+        if (statsCounted) return;
+        statsCounted = true;
+
+        const elYears = document.getElementById('counterYears');
+        const elPatients = document.getElementById('counterPatients');
+        const elRating = document.getElementById('counterRating');
+
+        const duration = 1600;
+        const startTime = performance.now();
+
+        function updateNumbers(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const easeOut = 1 - Math.pow(1 - progress, 3);
+
+          if (elYears) elYears.textContent = Math.floor(easeOut * 12) + "+ Years";
+          if (elPatients) elPatients.textContent = Math.floor(easeOut * 3500).toLocaleString('en-IN') + "+";
+          if (elRating) elRating.textContent = (easeOut * 5.0).toFixed(1) + " Star";
+
+          if (progress < 1) {
+            requestAnimationFrame(updateNumbers);
+          } else {
+            if (elYears) elYears.textContent = "12+ Years";
+            if (elPatients) elPatients.textContent = "3,500+";
+            if (elRating) elRating.textContent = "5.0 Star";
+          }
+        }
+        requestAnimationFrame(updateNumbers);
+      }
+
+      const clinicStatusPill = document.getElementById("clinicStatusPill");
+      const statusIndicator = document.getElementById("statusIndicator");
+      const statusDisplayText = document.getElementById("statusDisplayText");
+
+      function calculateLiveOPDStatus() {
+        if (!statusIndicator || !clinicStatusPill || !statusDisplayText) return;
+        const now = new Date();
+        const day = now.getDay();
+        const minutes = now.getHours() * 60 + now.getMinutes();
+
+        statusIndicator.classList.remove("closed");
+        clinicStatusPill.classList.remove("is-closed");
+
+        // Sunday: Closed / By appointment
+        if (day === 0) {
+          statusIndicator.classList.add("closed");
+          clinicStatusPill.classList.add("is-closed");
+          statusDisplayText.textContent = "Closed · Opens Mon 10:30 AM";
+          return;
+        }
+
+        // Mon - Sat: 10:30 AM - 8:00 PM
+        if (minutes >= 10 * 60 + 30 && minutes < 20 * 60) {
+          statusDisplayText.textContent = "Open · Closes 8:00 PM";
+        } else if (minutes < 10 * 60 + 30) {
+          statusIndicator.classList.add("closed");
+          clinicStatusPill.classList.add("is-closed");
+          statusDisplayText.textContent = "Closed · Opens 10:30 AM";
+        } else {
+          statusIndicator.classList.add("closed");
+          clinicStatusPill.classList.add("is-closed");
+          statusDisplayText.textContent = (day === 6) ? "Closed · Opens Mon 10:30 AM" : "Closed · Tomorrow 10:30 AM";
+        }
+      }
+
+      calculateLiveOPDStatus();
+      setInterval(calculateLiveOPDStatus, 60 * 1000);
+
+      const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            if (entry.target.id === 'statsBarTrigger') {
+              animateRollingStats();
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -20px 0px'
+      });
+
+      document.querySelectorAll('.reveal-scroll').forEach(el => {
+        scrollObserver.observe(el);
+      });
+
+      updateBookingSummary();
+    })();
+  </script>
+
+<script>
+/* ==========================================================
+   PREMIUM SCROLL MOTION
+   Different sections get different motion jobs instead of one
+   repeated fade-up effect everywhere.
+========================================================== */
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return;
+
+  const q = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+  /* 1) Assign image-reveal treatment to important photography. */
+  const imageGroups = [
+    '.doctor-photo-frame img',
+    '.ba-image-stage img',
+    '.facility-bento-card img',
+    '.treatment-card img',
+    '.review-photo img',
+    '.hero-editorial-image img'
+  ];
+  q(imageGroups.join(',')).forEach(img => {
+    img.classList.add('motion-image-reveal', 'motion-parallax');
+  });
+
+  /* 2) Stagger cards inside content-heavy sections. */
+  q('.doctors-editorial-spread, .why-apex-seamless-grid, .treatment-horizontal-track, .horizontal-scroll-rail, .bento-facility-grid, .reviews-carousel-wrap').forEach(el => {
+    el.classList.add('motion-stagger');
+  });
+
+  /* 3) Give display headings a line-rise moment. */
+  q('.editorial-heading-group, .section-display-title').forEach(el => {
+    el.classList.add('motion-heading');
+  });
+
+  /* 4) One observer drives all section-specific states. */
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-motion-visible');
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+  q('.motion-image-reveal, .motion-stagger, .motion-heading').forEach(el => observer.observe(el));
+
+  /* 5) Very subtle image parallax. Only while an image is on screen. */
+  const parallax = q('.motion-parallax');
+  let ticking = false;
+  function updateParallax() {
+    ticking = false;
+    const vh = window.innerHeight || 800;
+    parallax.forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.bottom < -80 || r.top > vh + 80) return;
+      const center = r.top + r.height / 2;
+      const offset = Math.max(-14, Math.min(14, (vh / 2 - center) * 0.025));
+      el.style.setProperty('--parallax-y', offset.toFixed(2) + 'px');
+    });
+  }
+  function requestParallax() {
+    if (!ticking) { ticking = true; requestAnimationFrame(updateParallax); }
+  }
+  window.addEventListener('scroll', requestParallax, { passive: true });
+  window.addEventListener('resize', requestParallax, { passive: true });
+  requestParallax();
+
+  /* 6) Make horizontal rails gently respond to wheel input on desktop,
+        while preserving normal touch scrolling on mobile. */
+  if (window.matchMedia('(min-width: 900px)').matches) {
+    q('.treatment-horizontal-track, .horizontal-scroll-rail').forEach(track => {
+      track.addEventListener('wheel', e => {
+        if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+        const canScroll = track.scrollWidth > track.clientWidth + 2;
+        if (!canScroll) return;
+        const atStart = track.scrollLeft <= 0 && e.deltaY < 0;
+        const atEnd = track.scrollLeft >= track.scrollWidth - track.clientWidth - 2 && e.deltaY > 0;
+        if (atStart || atEnd) return;
+        e.preventDefault();
+        track.scrollLeft += e.deltaY;
+      }, { passive: false });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
